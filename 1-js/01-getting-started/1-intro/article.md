@@ -1,120 +1,119 @@
-# An Introduction to JavaScript
+# ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੀ ਜਾਣ ਪਛਾਣ।
 
-Let's see what's so special about JavaScript, what we can achieve with it, and which other technologies play well with it.
+ਆਓ ਵੇਖੀਏ ਕਿ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੇ ਬਾਰੇ ਕੀ ਵਿਸ਼ੇਸ਼ ਹੈ, ਅਸੀਂ ਇਸ ਨਾਲ ਕੀ ਪ੍ਰਾਪਤ ਕਰ ਸਕਦੇ ਹਾਂ, ਅਤੇ ਕਿਹੜੀਆਂ ਹੋਰ ਤਕਨਾਲੋਜੀਆਂ ਇਸ ਨਾਲ ਵਧੀਆ ਮੇਲ ਖਾਂਦੀਆਂ ਹਨ।
 
-## What is JavaScript?
+## ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਕੀ ਹੈ?
 
-*JavaScript* was initially created to *"make web pages alive"*.
+* ਜਾਵਾ ਸਕ੍ਰਿਪਟ * ਸ਼ੁਰੂਆਤ ਵਿੱਚ * "ਵੈੱਬ ਪੇਜਾਂ ਨੂੰ ਜੀਵੰਤ" * ਬਣਾਉਣ ਲਈ ਬਣਾਈ ਗਈ ਸੀ।
 
-The programs in this language are called *scripts*. They can be written right in a web page's HTML and run automatically as the page loads.
+ਇਸ ਭਾਸ਼ਾ ਦੇ ਪ੍ਰੋਗਰਾਮਾਂ ਨੂੰ * ਸਕ੍ਰਿਪਟਾਂ * ਕਿਹਾ ਜਾਂਦਾ ਹੈ. ਉਹ ਇਕ ਵੈੱਬ ਪੇਜ ਦੇ HTML ਵਿਚ ਸਹੀ ਤਰ੍ਹਾਂ ਲਿਖੇ ਜਾ ਸਕਦੇ ਹਨ ਅਤੇ ਪੰਨੇ ਦੇ ਲੋਡ ਹੋਣ ਦੇ ਨਾਲ ਆਪਣੇ ਆਪ ਚਲ ਸਕਦੇ ਹਨ।
 
-Scripts are provided and executed as plain text. They don't need special preparation or compilation to run.
+ਸਕ੍ਰਿਪਟਾਂ ਸਧਾਰਨ ਟੈਕਸਟ ਦੇ ਰੂਪ ਵਿੱਚ ਪ੍ਰਦਾਨ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ. ਉਨ੍ਹਾਂ ਨੂੰ ਚਲਾਉਣ ਲਈ ਵਿਸ਼ੇਸ਼ ਤਿਆਰੀ ਜਾਂ ਸੰਕਲਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।
 
-In this aspect, JavaScript is very different from another language called [Java](https://en.wikipedia.org/wiki/Java_(programming_language)).
+ਇਸ ਪਹਿਲੂ ਵਿਚ, ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਇਕ ਹੋਰ ਭਾਸ਼ਾ [ਜਾਵਾ] (https://en.wikedia.org/wiki/Java_ (ਪ੍ਰੋਗਰਾਮਿੰਗ_ਲੰਗੇਜ)) ਤੋਂ ਬਿਲਕੁਲ ਵੱਖਰੀ ਹੈ।
 
-```smart header="Why is it called <u>Java</u>Script?"
-When JavaScript was created, it initially had another name: "LiveScript". But Java was very popular at that time, so it was decided that positioning a new language as a "younger brother" of Java would help.
+`` `स्मार्ट ਸਿਰਲੇਖ =" ਇਸਨੂੰ <u> ਜਾਵਾ </ u> ਸਕ੍ਰਿਪਟ ਕਿਉਂ ਕਿਹਾ ਜਾਂਦਾ ਹੈ? "
+ਜਦੋਂ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਬਣਾਈ ਗਈ ਸੀ, ਇਸਦਾ ਸ਼ੁਰੂ ਵਿਚ ਇਕ ਹੋਰ ਨਾਮ ਸੀ: "ਲਾਈਵਸਕ੍ਰਿਪਟ". ਪਰ ਜਾਵਾ ਉਸ ਸਮੇਂ ਬਹੁਤ ਮਸ਼ਹੂਰ ਸੀ, ਇਸ ਲਈ ਇਹ ਫੈਸਲਾ ਲਿਆ ਗਿਆ ਸੀ ਕਿ ਜਾਵਾ ਦੇ ਇੱਕ "ਛੋਟੇ ਭਰਾ" ਵਜੋਂ ਇੱਕ ਨਵੀਂ ਭਾਸ਼ਾ ਸਥਾਪਤ ਕਰਨ ਵਿੱਚ ਸਹਾਇਤਾ ਮਿਲੇਗੀ।
 
-But as it evolved, JavaScript became a fully independent language with its own specification called [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript), and now it has no relation to Java at all.
-```
+ਪਰ ਜਿਵੇਂ ਇਹ ਵਿਕਸਤ ਹੋਈ, ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਪੂਰੀ ਤਰ੍ਹਾਂ ਸੁਤੰਤਰ ਭਾਸ਼ਾ ਬਣ ਗਈ ਜੋ ਆਪਣੀ ਵਿਸ਼ੇਸ਼ਤਾ [ECMAScript] (http://en.wikedia.org/wiki/ECMAScript) ਲਈ ਜਾਣੀ ਜਾਂਦੀ ਹੈ, ਅਤੇ ਹੁਣ ਇਸ ਦਾ ਜਾਵਾ ਨਾਲ ਕੋਈ ਸਬੰਧ ਨਹੀਂ ਹੈ।
+`` `
 
-Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called [the JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine).
+ਅੱਜ, ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਸਿਰਫ ਬ੍ਰਾਜ਼ਰ ਵਿੱਚ ਹੀ ਨਹੀਂ, ਬਲਕਿ ਸਰਵਰ ਉੱਤੇ, ਜਾਂ ਅਸਲ ਵਿੱਚ ਕਿਸੇ ਵੀ ਡਿਵਾਈਸ ਤੇ ਵੀ ਲਾਗੂ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ ਜਿਸਦਾ [ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਇੰਜਣ] ਨਾਮ ਦਾ ਇੱਕ ਵਿਸ਼ੇਸ਼ ਪ੍ਰੋਗਰਾਮ ਹੈ (https://en.wikedia.org/wiki/JavaScript_engine)।
 
-The browser has an embedded engine sometimes called a "JavaScript virtual machine".
+ਬ੍ਰਾਜ਼ਰ ਵਿੱਚ ਏਮਬੇਡਡ ਇੰਜਨ ਹੁੰਦਾ ਹੈ ਜਿਸ ਨੂੰ ਕਈ ਵਾਰ "ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਵਰਚੁਅਲ ਮਸ਼ੀਨ" ਕਿਹਾ ਜਾਂਦਾ ਹੈ।
 
-Different engines have different "codenames". For example:
+ਵੱਖ ਵੱਖ ਇੰਜਣਾਂ ਦੇ ਵੱਖਰੇ "ਕੋਡਨੇਮ" ਹੁੰਦੇ ਹਨ. ਉਦਾਹਰਣ ਲਈ:
 
-- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- in Chrome and Opera.
-- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- in Firefox.
-- ...There are other codenames like "Trident" and "Chakra" for different versions of IE, "ChakraCore" for Microsoft Edge, "Nitro" and "SquirrelFish" for Safari, etc.
+- [ਵੀ 8] (https://en.wikedia.org/wiki/V8_ (ਜਾਵਾ ਸਕ੍ਰਿਪਟ_ਜਿੰਕ)) - ਕਰੋਮ ਅਤੇ ਓਪੇਰਾ ਵਿੱਚ।
+- [ਸਪਾਈਡਰਮੋਨਕੀ] (https://en.wikedia.org/wiki/SpiderMonkey) - ਫਾਇਰਫਾਕਸ ਵਿੱਚ।
+- ... ਹੋਰ ਕੋਡਨੇਮ ਹਨ ਜਿਵੇਂ ਕਿ "ਟ੍ਰਿਡੈਂਟ" ਅਤੇ ਆਈ.ਈ. ਦੇ ਵੱਖ ਵੱਖ ਸੰਸਕਰਣਾਂ ਲਈ "ਚਕਰਾ", ਮਾਈਕਰੋਸੌਫਟ ਐਜ ਲਈ "ਚਕਰਾਕੋਰ", "ਨਾਈਟਰੋ" ਅਤੇ ਸਫਾਰੀ ਲਈ "ਸਕੁਅਰਲਫਿਸ਼", ਆਦਿ।
 
-The terms above are good to remember because they are used in developer articles on the internet. We'll use them too. For instance, if "a feature X is supported by V8", then it probably works in Chrome and Opera.
+ਉਪਰੋਕਤ ਨਿਯਮ ਯਾਦ ਰੱਖਣੇ ਚੰਗੇ ਹਨ ਕਿਉਂਕਿ ਉਹ ਇੰਟਰਨੈਟ ਤੇ ਡਿਵੈਲਪਰ ਲੇਖਾਂ ਵਿੱਚ ਵਰਤੇ ਜਾਂਦੇ ਹਨ. ਅਸੀਂ ਉਨ੍ਹਾਂ ਦੀ ਵਰਤੋਂ ਵੀ ਕਰਾਂਗੇ. ਉਦਾਹਰਣ ਦੇ ਲਈ, ਜੇ "ਇੱਕ ਫੀਚਰ ਐਕਸ ਵੀ 8 ਦੁਆਰਾ ਸਹਿਯੋਗੀ ਹੈ", ਤਾਂ ਇਹ ਸ਼ਾਇਦ ਕ੍ਰੋਮ ਅਤੇ ਓਪੇਰਾ ਵਿੱਚ ਕੰਮ ਕਰਦਾ ਹੈ।
 
-```smart header="How do engines work?"
+`` `ਸਮਾਰਟ ਸਿਰਲੇਖ =" ਇੰਜਣ ਕਿਵੇਂ ਕੰਮ ਕਰਦੇ ਹਨ? "
 
-Engines are complicated. But the basics are easy.
+ਇੰਜਣ ਗੁੰਝਲਦਾਰ ਹਨ. ਪਰ ਮੁਢਲੀਆਂ ਗੱਲਾਂ ਅਸਾਨ ਹਨ.
 
-1. The engine (embedded if it's a browser) reads ("parses") the script.
-2. Then it converts ("compiles") the script to the machine language.
-3. And then the machine code runs, pretty fast.
+1. ਇੰਜਣ (ਜੇ ਇਹ ਬਰਾਜ਼ਰ ਵਿੱਚ ਏਮਬੇਡ ਹੁੰਦਾ ਹੈ) ਸਕਰਿਪਟ ਨੂੰ ਪੜ੍ਹਦਾ ਹੈ ("ਪਾਰਸ" ਕਰਦਾ ਹੈ)।
+2. ਫਿਰ ਇਹ ਸਕ੍ਰਿਪਟ ਨੂੰ ਮਸ਼ੀਨ ਦੀ ਭਾਸ਼ਾ ਵਿਚ ਬਦਲਦਾ ਹੈ।
+3. ਅਤੇ ਫਿਰ ਮਸ਼ੀਨ ਕੋਡ ਤੇਜੀ ਨਾਲ ਚਲਦਾ ਹੈ। 
 
-The engine applies optimizations at each step of the process. It even watches the compiled script as it runs, analyzes the data that flows through it, and further optimizes the machine code based on that knowledge.
-```
+ਇੰਜਣ ਪ੍ਰਕਿਰਿਆ ਦੇ ਹਰੇਕ ਪੜਾਅ 'ਤੇ ਅਨੁਕੂਲਤਾ ਲਾਗੂ ਕਰਦਾ ਹੈ. ਇਹ ਕੰਪਾਇਲ ਕੀਤੀ ਸਕ੍ਰਿਪਟ ਨੂੰ ਵੀ ਵੇਖਦਾ ਹੈ ਅਤੇ ਵਿਚਰਦਾ ਹੈ, ਇਸਦੇ ਦੁਆਰਾ ਡਾਟਾ ਦੇ ਵੇਹਣ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਅਤੇ ਉਸ ਗਿਆਨ ਦੇ ਅਧਾਰ ਤੇ ਮਸ਼ੀਨ ਕੋਡ ਨੂੰ ਅਨੁਕੂਲ ਬਣਾਇਆ ਜਾਂਦਾ ਹੈ।
+`` `
 
-## What can in-browser JavaScript do?
+## ਇਨ-ਬ੍ਰਾਜ਼ਰ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਕੀ ਕਰ ਸਕਦੀ ਹੈ?
 
-Modern JavaScript is a "safe" programming language. It does not provide low-level access to memory or CPU, because it was initially created for browsers which do not require it.
+ਆਧੁਨਿਕ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਇੱਕ "ਸੁਰੱਖਿਅਤ" ਪ੍ਰੋਗਰਾਮਿੰਗ ਭਾਸ਼ਾ ਹੈ. ਇਹ ਮੈਮੋਰੀ ਜਾਂ ਸੀਪੀਯੂ ਤੱਕ ਹੇਠਲੇ-ਪੱਧਰ ਦੀ ਪਹੁੰਚ ਪ੍ਰਦਾਨ ਨਹੀਂ ਕਰਦਾ ਹੈ, ਕਿਉਂਕਿ ਇਹ ਸ਼ੁਰੂ ਵਿੱਚ ਬ੍ਰਾਜ਼ਰਾਂ ਲਈ ਬਣਾਇਆ ਗਿਆ ਸੀ ਜਿਸ ਨੂੰ ਹੇਠਲੇ-ਪੱਧਰ ਦੀ ਪਹੁੰਚ ਦੀ ਜ਼ਰੂਰਤ ਨਹੀਂ ਹੁੰਦੀ।
 
-JavaScript's capabilities greatly depend on the environment it's running in. For instance, [Node.js](https://wikipedia.org/wiki/Node.js) supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc.
+ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੀਆਂ ਸਮਰੱਥਾਵਾਂ ਇਸ ਦੇ ਵਾਤਾਵਰਣ ਤੇ ਬਹੁਤ ਨਿਰਭਰ ਕਰਦੀਆਂ ਹਨ. ਉਦਾਹਰਣ ਵਜੋਂ, [ਨੋਡ.ਜੇਜ਼] (https://wikedia.org/wiki/Node.js) ਫੰਕਸ਼ਨਾਂ ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ ਜੋ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਨੂੰ ਮਨਮਾਨੀ ਫਾਈਲਾਂ ਨੂੰ ਪੜ੍ਹ / ਲਿਖਣ, ਨੈੱਟਵਰਕ ਬੇਨਤੀਆਂ ਕਰਨ, ਆਦਿ ਇਨ-ਬ੍ਰਾਜ਼ਰ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਵੈਬਪੇਜ ਹੇਰਾਫੇਰੀ, ਉਪਭੋਗਤਾ ਨਾਲ ਗੱਲਬਾਤ ਅਤੇ ਵੈਬਸਰਵਰ ਨਾਲ ਸੰਬੰਧਿਤ ਸਭ ਕੁਝ ਕਰ ਸਕਦੀ ਹੈ।
 
-In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver.
+ਉਦਾਹਰਣ ਦੇ ਲਈ, ਇਨ-ਬ੍ਰਾਜ਼ਰ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਨਿਮਨਲਿਖਤ ਦੇ ਯੋਗ ਹੈ:
 
-For instance, in-browser JavaScript is able to:
+- ਪੰਨੇ 'ਤੇ ਨਵਾਂ ਐਚਟੀਐਮਐਲ ਸ਼ਾਮਲ ਕਰਨ ਲਈ, ਮੌਜੂਦਾ ਸਮਗਰੀ ਨੂੰ ਬਦਲਣ ਲਈ, ਸ਼ੈਲੀਆਂ ਨੂੰ ਸੋਧਣ ਲਈ।
+- ਉਪਭੋਗਤਾ ਕਾਰਵਾਈਆਂ ਤੇ ਪ੍ਰਤੀਕਰਮ, ਮਾਊਸ ਕਲਿਕਸ, ਪੁਆਇੰਟਰ ਦੀਆਂ ਹਰਕਤਾਂ, ਕੁੰਜੀ ਪ੍ਰੈਸਾਂ।
+- ਨੈੱਟਵਰਕ ਤੋਂ ਰਿਮੋਟ ਸਰਵਰਾਂ ਤੇ ਬੇਨਤੀਆਂ ਭੇਜੋ, ਫਾਈਲਾਂ ਡਾਉਨਲੋਡ ਕਰੋ ਅਤੇ ਅਪਲੋਡ ਕਰੋ (ਅਖੌਤੀ [ਏਜੇਐਕਸ] (https://en.wikedia.org/wiki/Ajax_ (ਪ੍ਰੋਗਰਾਮਿੰਗ)) ਅਤੇ [COMET] (https: // en) ਵਿਕੀਪੀਡੀਆ.org/wiki/Comet_( ਪ੍ਰੋਗਰਾਮ)) ਤਕਨਾਲੋਜੀ)।
+- ਕੂਕੀਜ਼ ਪ੍ਰਾਪਤ ਕਰੋ ਅਤੇ ਸੈਟ ਕਰੋ, ਵਿਜ਼ਟਰ ਨੂੰ ਪ੍ਰਸ਼ਨ ਪੁੱਛੋ, ਸੁਨੇਹੇ ਦਿਖਾਓ।
+- ਕਲਾਇੰਟ-ਸਾਈਡ ("ਸਥਾਨਕ ਸਟੋਰੇਜ") ਤੇ ਡਾਟਾ ਯਾਦ ਰਖਣ ਲਈ।
 
-- Add new HTML to the page, change the existing content, modify styles.
-- React to user actions, run on mouse clicks, pointer movements, key presses.
-- Send requests over the network to remote servers, download and upload files (so-called [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) and [COMET](https://en.wikipedia.org/wiki/Comet_(programming)) technologies).
-- Get and set cookies, ask questions to the visitor, show messages.
-- Remember the data on the client-side ("local storage").
+## ਇਨ-ਬ੍ਰਾਜ਼ਰ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਕੀ ਨਹੀਂ ਕਰ ਸਕਦੀ?
 
-## What CAN'T in-browser JavaScript do?
+ਬਰਾਜ਼ਰ ਵਿਚ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੀਆਂ ਯੋਗਤਾਵਾਂ ਉਪਭੋਗਤਾ ਦੀ ਸੁਰੱਖਿਆ ਲਈ ਸੀਮਿਤ ਹਨ. ਉਦੇਸ਼ ਕਿਸੇ ਗਲਤ ਵੈਬ ਪੇਜ ਨੂੰ ਨਿੱਜੀ ਜਾਣਕਾਰੀ ਤੱਕ ਪਹੁੰਚਣ ਜਾਂ ਉਪਭੋਗਤਾ ਦੇ ਡੇਟਾ ਨੂੰ ਨੁਕਸਾਨ ਪਹੁੰਚਾਉਣ ਤੋਂ ਰੋਕਣਾ ਹੈ।
 
-JavaScript's abilities in the browser are limited for the sake of the user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
+ਅਜਿਹੀਆਂ ਪਾਬੰਦੀਆਂ ਦੀਆਂ ਉਦਾਹਰਣਾਂ ਵਿੱਚ ਸ਼ਾਮਲ ਹਨ:
 
-Examples of such restrictions include:
+- ਇੱਕ ਵੈੱਬਪੇਜ 'ਤੇ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਹਾਰਡ ਡਿਸਕ' ਤੇ ਆਪਹੁਦਾਰੀ ਫਾਈਲਾਂ ਨੂੰ ਨਹੀਂ ਪੜ੍ਹ / ਲਿਖ ਸਕਦੀ ਹੈ, ਉਹਨਾਂ ਦੀ ਨਕਲ ਨਹੀਂ ਕਰ ਸਕਦੀ ਹੈ ਅੱਤੇ ਨਾ ਹੀ ਕਿਸੇ ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਚਲਾਉਂਦੀ ਹੈ. ਔਪਰੇਟਿੰਗ ਸਿਸਟਮ ਫੰਕਸ਼ਨਾਂ ਤੱਕ ਇਸ ਦੀ ਸਿੱਧੀ ਪਹੁੰਚ ਨਹੀਂ ਹੈ।
 
-- JavaScript on a webpage may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS functions.
+    ਆਧੁਨਿਕ ਬ੍ਰਾਜ਼ਰ ਇਸ ਨੂੰ ਫਾਈਲਾਂ ਨਾਲ ਕੰਮ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦੇ ਹਨ, ਪਰ ਐਕਸੈਸ ਸੀਮਿਤ ਹੈ ਅਤੇ ਕੇਵਲ ਤਾਂ ਹੀ ਪ੍ਰਦਾਨ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ ਜੇ ਉਪਭੋਗਤਾ ਕੁਝ ਕਾਰਵਾਈਆਂ ਕਰਦਾ ਹੈ, ਜਿਵੇਂ ਕਿ ਇੱਕ ਫਾਈਲ ਨੂੰ ਬ੍ਰਾਜ਼ਰ ਵਿੰਡੋ ਵਿੱਚ "ਛੱਡਣਾ" ਜਾਂ ਇੱਕ in <ਇਨਪੁਟ> `ਟੈਗ ਦੁਆਰਾ ਚੁਣਨਾ।
 
-    Modern browsers allow it to work with files, but the access is limited and only provided if the user does certain actions, like "dropping" a file into a browser window or selecting it via an `<input>` tag.
+    ਕੈਮਰੇ / ਮਾਈਕ੍ਰੋਫੋਨ ਅਤੇ ਹੋਰ ਡਿਵਾਈਸਾਂ ਨਾਲ ਗੱਲਬਾਤ ਕਰਨ ਦੇ ਤਰੀਕੇ ਹਨ, ਪਰ ਉਨ੍ਹਾਂ ਨੂੰ ਉਪਭੋਗਤਾ ਦੀ ਸਪਸ਼ਟ ਆਗਿਆ ਦੀ ਲੋੜ ਹੈ. ਇਸ ਲਈ ਜਾਵਾ ਸਕ੍ਰਿਪਟ-ਸਮਰਥਿਤ ਪੰਨਾ ਹੋ ਸਕਦਾ ਹੈ ਕਿ ਇੱਕ ਵੈੱਬ-ਕੈਮਰਾ ਨੂੰ ਏਨੇਬਲ ਨਾ ਕਰ ਸਕੇ, ਤਾਕੀ ਓਹ ਆਲੇ ਦੁਆਲੇ ਦਾ ਨਿਰੀਖਣ ਕਰਨ ਅਤੇ ਜਾਣਕਾਰੀ [ਐਨਐਸਏ] (https://en.wikedia.org/wiki/National_Security_Agency) ਨੂੰ ਭੇਜਣ ਵਿੱਚ ਸਮਰਥ ਹੋ ਜਾਵੇ।
+- ਵੱਖਰੀਆਂ ਟੈਬਾਂ / ਵਿੰਡੋਜ਼ ਆਮ ਤੌਰ 'ਤੇ ਇਕ ਦੂਜੇ ਬਾਰੇ ਨਹੀਂ ਜਾਣਦੀਆਂ. ਕਈ ਵਾਰ ਉਹ ਕਰ ਸਕਦੇ ਹਨ, ਉਦਾਹਰਣ ਵਜੋਂ ਜਦੋਂ ਇੱਕ ਵਿੰਡੋ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਨੂੰ ਦੂਜੀ ਨੂੰ ਖੋਲ੍ਹਣ ਲਈ ਵਰਤਦੀ ਹੈ। ਪਰ ਇਸ ਸਥਿਤੀ ਵਿਚ ਵੀ, ਇਕ ਪੰਨੇ ਤੋਂ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੂਜੇ ਨੂੰ ਐਕਸੈਸ ਨਹੀਂ ਕਰ ਸਕਦੀ ਜੇ ਉਹ ਵੱਖਰੀਆਂ ਸਾਈਟਾਂ ਤੋਂ ਆਉਂਦੇ ਹਨ। (ਵੱਖਰੇ ਡੋਮੇਨ, ਪ੍ਰੋਟੋਕੋਲ ਜਾਂ ਪੋਰਟ ਤੋਂ)
 
-    There are ways to interact with camera/microphone and other devices, but they require a user's explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the [NSA](https://en.wikipedia.org/wiki/National_Security_Agency).
-- Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other if they come from different sites (from a different domain, protocol or port).
+ਇਸ ਨੂੰ "ਸਮਾਨ ਮੂਲ ਨੀਤੀ" ਕਿਹਾ ਜਾਂਦਾ ਹੈ। ਇਸ ਦੇ ਦੁਆਲੇ ਕੰਮ ਕਰਨ ਲਈ, ਦੋਵੇਂ ਪੰਨੇ ਡੇਟਾ ਐਕਸਚੇਂਜ ਲਈ ਸਹਿਮਤ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ ਅਤੇ ਇਸ ਵਿੱਚ ਇੱਕ ਵਿਸ਼ੇਸ਼ ਜਾਵਾਸਕ੍ਰਿਪਟ ਕੋਡ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਜੋ ਇਸਨੂੰ ਸੰਭਾਲਦਾ ਹੈ. ਅਸੀਂ ਇਸਨੂੰ ਤੁਤੋਰਿਆਲ ਵਿੱਚ ਕਵਰ ਕਰਾਂਗੇ।
 
-    This is called the "Same Origin Policy". To work around that, *both pages* must agree for data exchange and contain a special JavaScript code that handles it. We'll cover that in the tutorial.
+ਇਹ ਸੀਮਾ ਉਪਭੋਗਤਾ ਦੀ ਸੁਰੱਖਿਆ ਲਈ ਹੈ। Http://anysite.com ਦਾ ਇੱਕ ਪੰਨਾ ਜਿਸ ਨੂੰ ਉਪਭੋਗਤਾ ਨੇ ਖੋਲ੍ਹਿਆ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਉਹ URL http://gmail.com ਦੇ ਨਾਲ ਇੱਕ ਹੋਰ ਬ੍ਰਾਜ਼ਰ ਟੈਬ ਤੱਕ ਪਹੁੰਚਣ ਦੇ ਯੋਗ ਨਹੀਂ ਹੋਣਾ ਚਾਹੀਦਾ ਜਿਸ ਤੋਂ ਓਹ ਜਾਣਕਾਰੀ ਚੋਰੀ ਕਰ ਸਕਦਾ ਹੈ।
 
-    This limitation is, again, for the user's safety. A page from `http://anysite.com` which a user has opened must not be able to access another browser tab with the URL `http://gmail.com` and steal information from there.
-- JavaScript can easily communicate over the net to the server where the current page came from. But its ability to receive data from other sites/domains is crippled. Though possible, it requires explicit agreement (expressed in HTTP headers) from the remote side. Once again, that's a safety limitation.
+ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਨੈੱਟ ਤੇ ਆਸਾਨੀ ਨਾਲ ਸਰਵਰ ਤੇ ਸੰਪਰਕ ਕਰ ਸਕਦੀ ਹੈ ਜਿਥੇ ਮੌਜੂਦਾ ਪੰਨਾ ਆਇਆ ਹੈ। ਪਰ ਦੂਜੀਆਂ ਸਾਈਟਾਂ / ਡੋਮੇਨਾਂ ਤੋਂ ਡੇਟਾ ਪ੍ਰਾਪਤ ਕਰਨ ਦੀ ਯੋਗਤਾ ਅਪੰਗ ਹੈ. ਹਾਲਾਂਕਿ ਸੰਭਵ ਹੈ, ਇਸਦੇ ਲਈ ਰਿਮੋਟ ਵਾਲੇ ਪਾਸਿਓਂ ਸਪਸ਼ਟ ਸਮਝੌਤੇ (HTTP ਸਿਰਲੇਖਾਂ ਵਿੱਚ ਪ੍ਰਗਟ ਕੀਤੇ) ਦੀ ਲੋੜ ਹੈ. ਇਕ ਵਾਰ ਫਿਰ, ਇਹ ਇਕ ਸੁਰੱਖਿਆ ਸੀਮਾ ਹੈ।
 
 ![](limitations.svg)
 
-Such limits do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugin/extensions which may ask for extended permissions.
+ਜੇ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਬਰਾਜ਼ਰ ਤੋਂ ਬਾਹਰ ਵਰਤੀ ਜਾਏ, ਅਜਿਹੀਆਂ ਸੀਮਾਵਾਂ ਉਸ ਲਈ ਮੌਜੂਦ ਨਹੀਂ ਹਨ  ਉਦਾਹਰਣ ਲਈ ਸਰਵਰ ਉੱਤੇ. ਆਧੁਨਿਕ ਬ੍ਰਾਜ਼ਰ ਪਲੱਗਇਨ / ਐਕਸਟੈਂਸ਼ਨਾਂ ਦੀ ਆਗਿਆ ਵੀ ਦਿੰਦੇ ਹਨ ਜੋ ਹੋਰ ਵਾਧੂ ਅਗਿਆਵਾਂ ਦੀ ਮੰਗ ਕਰ ਸਕਦੇ ਹਨ।
 
-## What makes JavaScript unique?
+## ਕਿਹੜੀ ਚੀਜ਼ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਨੂੰ ਵਿਲੱਖਣ ਬਣਾਉਂਦੀ ਹੈ?
 
-There are at least *three* great things about JavaScript:
+ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਘੱਟੋ ਘੱਟ * ਤਿੰਨ * ਵਿਸੇਸ਼ਤਾਵਾਂ ਹਨ:
 
-```compare
-+ Full integration with HTML/CSS.
-+ Simple things are done simply.
-+ Support by all major browsers and enabled by default.
-```
-JavaScript is the only browser technology that combines these three things.
+`` `ਤੁਲਨਾ ਕਰੋ
+HTML / CSS ਦੇ ਨਾਲ ਪੂਰਾ ਏਕੀਕਰਣ.
++ ਸਧਾਰਣ ਚੀਜ਼ਾਂ ਸਿੱਧੇ ਤਰੀਕੇ ਨਾਲ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।
++ ਸਾਰੇ ਪ੍ਰਮੁੱਖ ਬ੍ਰਾਜ਼ਰਾਂ ਦੁਆਰਾ ਸਮਰਥਨ ਅਤੇ ਮੂਲ ਰੂਪ ਵਿੱਚ ਸਮਰਥਿਤ।
+`` `
+ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਇਕੋ ਇਕ ਬ੍ਰਾਜ਼ਰ ਟੈਕਨੋਲੋਜੀ ਹੈ ਜੋ ਇਨ੍ਹਾਂ ਤਿੰਨ ਚੀਜ਼ਾਂ ਨੂੰ ਜੋੜਦੀ ਹੈ।
 
-That's what makes JavaScript unique. That's why it's the most widespread tool for creating browser interfaces.
+ਇਹ ਹੀ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਨੂੰ ਵਿਲੱਖਣ ਬਣਾਉਂਦਾ ਹੈ. ਇਸ ਲਈ ਬਰਾਜ਼ਰ ਇੰਟਰਫੇਸ ਬਣਾਉਣ ਲਈ ਇਹ ਸਭ ਤੋਂ ਜਿਆਦਾ ਉਪਯੋਗੀ ਸਾਧਨ ਹੈ।
 
-That said, JavaScript also allows to create servers, mobile applications, etc.
+ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਸਰਵਰ, ਮੋਬਾਈਲ ਐਪਲੀਕੇਸ਼ਨਾਂ, ਆਦਿ ਬਣਾਉਣ ਦੀ ਯੋਗੀਆਤਾ ਵੀ ਦਿੰਦੀ ਹੈ।
 
-## Languages "over" JavaScript
+## ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਅੱਤੇ ਹੋਰ ਭਾਸ਼ਾਵਾਂ।
 
-The syntax of JavaScript does not suit everyone's needs. Different people want different features.
+ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦਾ ਸੰਟੈਕਸ ਹਰੇਕ ਦੀ ਜ਼ਰੂਰਤ ਦੇ ਅਨੁਸਾਰ ਨਹੀਂ ਹੈ। ਵੱਖੋ ਵੱਖਰੇ ਲੋਕ ਵੱਖੋ ਵੱਖਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਚਾਹੁੰਦੇ ਹਨ।
 
-That's to be expected, because projects and requirements are different for everyone.
+ਇਸਦੀ ਉਮੀਦ ਕੀਤੀ ਜਾਣੀ ਚਾਹੀਦੀ ਹੈ, ਕਿਉਂਕਿ ਪ੍ਰੋਜੈਕਟ ਅਤੇ ਜ਼ਰੂਰਤਾਂ ਹਰੇਕ ਲਈ ਵੱਖਰੀਆਂ ਹਨ.
 
-So recently a plethora of new languages appeared, which are *transpiled* (converted) to JavaScript before they run in the browser.
+ਇਸ ਲਈ ਹਾਲ ਹੀ ਵਿੱਚ ਨਵੀਆਂ ਭਾਸ਼ਾਵਾਂ ਦੀ ਬਹੁਤਾਤ ਸਾਹਮਣੇ ਆਈ ਹੈ, ਜਿਹੜੀਆਂ ਬ੍ਰਾਜ਼ਰ ਵਿੱਚ ਚੱਲਣ ਤੋਂ ਪਹਿਲਾਂ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਵਿੱਚ * ਟਰਾਂਸਪੇਲ * (ਪਰਿਵਰਤਿਤ) ਹੋ ਜਾਂਦੀਆਂ ਹਨ.
 
-Modern tools make the transpilation very fast and transparent, actually allowing developers to code in another language and auto-converting it "under the hood".
+ਆਧੁਨਿਕ ਟੂਲਸ ਟ੍ਰਾਂਸਪਲੇਸ਼ਨ ਨੂੰ ਬਹੁਤ ਤੇਜ਼ ਅਤੇ ਪਾਰਦਰਸ਼ੀ ਬਣਾਉਂਦੇ ਹਨ, ਅਸਲ ਵਿੱਚ ਡਿਵੈਲਪਰਾਂ ਨੂੰ ਕਿਸੇ ਹੋਰ ਭਾਸ਼ਾ ਵਿੱਚ ਕੋਡ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦੇ ਹਨ ਅਤੇ ਇਸ ਨੂੰ "ਸਿਰ ਦੇ ਹੇਠਾਂ" ਆਟੋਮੈਟਿਕ ਰੂਪਾਂਤਰਿਤ ਕਰਦੇ ਹਨ.
 
-Examples of such languages:
+ਅਜਿਹੀਆਂ ਭਾਸ਼ਾਵਾਂ ਦੀਆਂ ਉਦਾਹਰਣਾਂ:
 
-- [CoffeeScript](http://coffeescript.org/) is a "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
-- [TypeScript](http://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
-- [Flow](http://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
-- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
+- [ਕੌਫੀਸਕ੍ਰਿਪਟ] (http://coffeescript.org/) ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਲਈ ਇੱਕ "ਸਿੰਨੈਟਿਕ ਸ਼ੂਗਰ" ਹੈ. ਇਹ ਛੋਟਾ ਸੰਟੈਕਸ ਪੇਸ਼ ਕਰਦਾ ਹੈ, ਜਿਸ ਨਾਲ ਸਾਨੂੰ ਸਾਫ ਅਤੇ ਵਧੇਰੇ ਸਹੀ ਕੋਡ ਲਿਖਣ ਦੀ ਆਗਿਆ ਮਿਲਦੀ ਹੈ. ਆਮ ਤੌਰ 'ਤੇ, ਰੂਬੀ ਡੇਵਲੋਪਰ ਇਸਨੂੰ ਪਸੰਦ ਕਰਦੇ ਹਨ.
+- [ਟਾਈਪਸਕ੍ਰਿਪਟ] (http://www.typescriptlang.org.org) ਗੁੰਝਲਦਾਰ ਪ੍ਰਣਾਲੀਆਂ ਦੇ ਵਿਕਾਸ ਅਤੇ ਸਹਾਇਤਾ ਨੂੰ ਸੌਖਾ ਬਣਾਉਣ ਲਈ "ਸਖਤ ਡਾਟਾ ਟਾਈਪਿੰਗ" ਜੋੜਨ 'ਤੇ ਕੇਂਦ੍ਰਿਤ ਹੈ. ਇਹ ਮਾਈਕ੍ਰੋਸਾੱਫਟ ਦੁਆਰਾ ਵਿਕਸਤ ਕੀਤਾ ਗਿਆ ਹੈ.
+- [ਫਲੋ] (http://flow.org/) ਡਾਟਾ ਟਾਈਪਿੰਗ ਨੂੰ ਵੀ ਜੋੜਦਾ ਹੈ, ਪਰ ਇੱਕ ਵੱਖਰੇ .ੰਗ ਨਾਲ. ਫੇਸਬੁੱਕ ਦੁਆਰਾ ਵਿਕਸਤ ਕੀਤਾ.
+- [ਡਾਰਟ] (https://www.dartlang.org/) ਇੱਕ ਵੱਖਰੀ ਭਾਸ਼ਾ ਹੈ ਜਿਸਦਾ ਆਪਣਾ ਇੰਜਣ ਹੈ ਜੋ ਗੈਰ-ਬ੍ਰਾਜ਼ਰ ਵਾਤਾਵਰਣ ਵਿੱਚ ਚਲਦਾ ਹੈ (ਜਿਵੇਂ ਮੋਬਾਈਲ ਐਪਸ), ਪਰ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਵੀ ਤਬਦੀਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ. ਗੂਗਲ ਦੁਆਰਾ ਵਿਕਸਤ ਕੀਤਾ ਗਿਆ.
 
-There are more. Of course, even if we use one of transpiled languages, we should also know JavaScript to really understand what we're doing.
+ਹੋਰ ਵੀ ਹਨ. ਬੇਸ਼ਕ, ਭਾਵੇਂ ਅਸੀਂ ਟਰਾਂਸਪੋਲਡ ਹੋਈਆਂ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚੋਂ ਇੱਕ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਾਂ, ਸਾਨੂੰ ਜਾਵਾਸਕ੍ਰਿਪਟ ਨੂੰ ਅਸਲ ਵਿੱਚ ਇਹ ਸਮਝਣ ਲਈ ਵੀ ਪਤਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਕਿ ਅਸੀਂ ਕੀ ਕਰ ਰਹੇ ਹਾਂ.
 
-## Summary
+## ਸੰਖੇਪ
 
-- JavaScript was initially created as a browser-only language, but is now used in many other environments as well.
-- Today, JavaScript has a unique position as the most widely-adopted browser language with full integration with HTML/CSS.
-- There are many languages that get "transpiled" to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.
+- ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਸ਼ੁਰੂਆਤ ਵਿੱਚ ਸਿਰਫ ਇੱਕ ਬ੍ਰਾਜ਼ਰ ਦੀ ਭਾਸ਼ਾ ਵਜੋਂ ਬਣਾਈ ਗਈ ਸੀ, ਪਰ ਹੁਣ ਹੋਰ ਕਈ ਵਾਤਾਵਰਣਾਂ ਵਿੱਚ ਵੀ ਵਰਤੀ ਜਾਂਦੀ ਹੈ.
+- ਅੱਜ, ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੀ HTML / CSS ਦੇ ਨਾਲ ਪੂਰੀ ਏਕੀਕਰਣ ਦੇ ਨਾਲ ਸਭ ਤੋਂ ਵੱਧ ਵਿਆਪਕ ਰੂਪ ਵਿੱਚ ਅਪਣਾਈ ਗਈ ਬ੍ਰਾਜ਼ਰ ਭਾਸ਼ਾ ਦੀ ਵਿਲੱਖਣ ਸਥਿਤੀ ਹੈ.
+- ਇੱਥੇ ਬਹੁਤ ਸਾਰੀਆਂ ਭਾਸ਼ਾਵਾਂ ਹਨ ਜੋ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਤੇ "ਟਰਾਂਸਪੇਲ" ਹੋ ਜਾਂਦੀਆਂ ਹਨ ਅਤੇ ਕੁਝ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਪ੍ਰਦਾਨ ਕਰਦੀਆਂ ਹਨ. ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਨੂੰ ਮੁਹਾਰਤ ਤੋਂ ਬਾਅਦ, ਉਹਨਾਂ ਨੂੰ ਘੱਟੋ ਘੱਟ ਸੰਖੇਪ ਵਿੱਚ ਵੇਖਣ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ.
