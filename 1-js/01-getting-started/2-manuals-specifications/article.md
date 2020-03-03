@@ -1,42 +1,41 @@
+# ਮੈਨੂਅਲ ਅਤੇ ਨਿਰਧਾਰਨ
 
-# Manuals and specifications
+ਇਹ ਕਿਤਾਬ ਇਕ * ਟਿਟੋਰਿਯਲ * ਹੈ. ਇਸਦਾ ਉਦੇਸ਼ ਤੁਹਾਨੂੰ ਹੌਲੀ ਹੌਲੀ ਭਾਸ਼ਾ ਸਿੱਖਣ ਵਿਚ ਸਹਾਇਤਾ ਕਰਨਾ ਹੈ. ਪਰ ਇਕ ਵਾਰ ਜਦੋਂ ਤੁਸੀਂ ਮੁਢਲੀਆਂ ਗੱਲਾਂ ਤੋਂ ਜਾਣੂ ਹੋਵੋਗੇ, ਤੁਹਾਨੂੰ ਹੋਰ ਸਰੋਤਾਂ ਦੀ ਜ਼ਰੂਰਤ ਹੋਏਗੀ.
 
-This book is a *tutorial*. It aims to help you gradually learn the language. But once you're familiar with the basics, you'll need other sources.
+## ਨਿਰਧਾਰਨ
 
-## Specification
+[ECMA-262 ਨਿਰਧਾਰਨ] (https://www.ecma-international.org/publications/standards/Ecma-262.htm) ਵਿੱਚ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਬਾਰੇ ਸਭ ਤੋਂ ਡੂੰਘਾਈ, ਵਿਸਥਾਰ ਅਤੇ ਰਸਮੀ ਜਾਣਕਾਰੀ ਹੈ. ਇਹ ਭਾਸ਼ਾ ਨੂੰ ਪਰਿਭਾਸ਼ਤ ਕਰਦਾ ਹੈ.
 
-[The ECMA-262 specification](https://www.ecma-international.org/publications/standards/Ecma-262.htm) contains the most in-depth, detailed and formalized information about JavaScript. It defines the language.
+ਪਰ ਉਹ ਰਸਮੀ ਹੋਣ ਕਰਕੇ, ਪਹਿਲਾਂ ਸਮਝਣਾ ਮੁਸ਼ਕਲ ਹੈ. ਇਸ ਲਈ ਜੇ ਤੁਹਾਨੂੰ ਭਾਸ਼ਾ ਦੇ ਵੇਰਵਿਆਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦੇ ਸਭ ਤੋਂ ਭਰੋਸੇਮੰਦ ਸਰੋਤ ਦੀ ਜ਼ਰੂਰਤ ਹੈ, ਤਾਂ ਨਿਰਧਾਰਨ ਸਹੀ ਜਗ੍ਹਾ ਹੈ. ਪਰ ਇਹ ਰੋਜ਼ਾਨਾ ਵਰਤੋਂ ਲਈ ਨਹੀਂ ਹੈ.
 
-But being that formalized, it's difficult to understand at first. So if you need the most trustworthy source of information about the language details, the specification is the right place. But it's not for everyday use.
+ਇੱਕ ਨਵਾਂ ਸਪੈਸੀਫਿਕੇਸ਼ਨ ਵਰਜ਼ਨ ਹਰ ਸਾਲ ਜਾਰੀ ਕੀਤਾ ਜਾਂਦਾ ਹੈ. ਇਨ੍ਹਾਂ ਰੀਲੀਜ਼ਾਂ ਦੇ ਵਿਚਕਾਰ, ਤਾਜ਼ਾ ਨਿਰਧਾਰਣ ਖਰੜਾ <https://tc39.es/ecma262/> 'ਤੇ ਹੈ.
 
-A new specification version is released every year. In-between these releases, the latest specification draft is at <https://tc39.es/ecma262/>.
+ਨਵੀਆਂ ਨਕੋਰ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਬਾਰੇ ਪੜ੍ਹਨ ਲਈ,  ਜੋ "ਲਗਭਗ ਸਟੈਂਡਰਡ" (ਅਖੌਤੀ "ਪੜਾਅ 3") ਹਨ, <https://github.com/tc39/proposals> ਤੇ ਪ੍ਰਸਤਾਵ ਵੇਖੋ.
 
-To read about new bleeding-edge features, including those that are "almost standard" (so-called "stage 3"), see proposals at <https://github.com/tc39/proposals>.
+ਨਾਲ ਹੀ, ਜੇ ਤੁਸੀਂ ਬ੍ਰਾਜ਼ਰ ਲਈ ਡਵੈਲਪ ਕਰ ਰਹੇ ਹੋ, ਤਾਂ ਟਿਯੂਟੋਰਿਅਲ ਦੇ [ਦੂਜੇ ਭਾਗ] (ਜਾਣਕਾਰੀ: ਬਰਾਜ਼ਰ-ਵਾਤਾਵਰਣ) ਵਿਚ ਕਵਰ ਕੀਤੇ ਗਈ ਹੋਰ ਵੀ ਕਿਸਮਾਂ ਹਨ.
 
-Also, if you're in developing for the browser, then there are other specs covered in the [second part](info:browser-environment) of the tutorial.
+## ਮੈਨੂਅਲ
 
-## Manuals
+- ** ਐਮਡੀਐਨ (ਮੋਜ਼ੀਲਾ) ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਹਵਾਲਾ ** ਇੱਕ ਮੈਨੂਅਲ ਹੈ ਜੋ ਉਦਾਹਰਣਾਂ ਅਤੇ ਹੋਰ ਜਾਣਕਾਰੀ ਵਾਲਾ ਹੈ. ਵਿਅਕਤੀਗਤ ਭਾਸ਼ਾ ਦੇ ਕਾਰਜਾਂ, ਤਰੀਕਿਆਂ ਆਦਿ ਬਾਰੇ ਡੂੰਘਾਈ ਨਾਲ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰਨਾ ਬਹੁਤ ਵਧੀਆ ਹੈ.
 
-- **MDN (Mozilla) JavaScript Reference** is a manual with examples and other information. It's great to get in-depth information about individual language functions, methods etc.
+    ਕੋਈ ਇਸ ਨੂੰ <https://developer.mozilla.org/en-US/docs/Web/JavaScript/References> 'ਤੇ ਲੱਭ ਸਕਦਾ ਹੈ.
 
-    One can find it at <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
-
-    Although, it's often best to use an internet search instead. Just use "MDN [term]" in the query, e.g. <https://google.com/search?q=MDN+parseInt> to search for `parseInt` function.
+    ਹਾਲਾਂਕਿ, ਇਸ ਦੀ ਬਜਾਏ ਇੰਟਰਨੈਟ ਦੀ ਵਰਤੋਂ ਕਰਨਾ ਅਕਸਰ ਵਧੀਆ ਹੁੰਦਾ ਹੈ. ਸਰਚ ਵਿੱਚ ਸਿਰਫ "ਐਮਡੀਐਨ + [ਸ਼ਬਦ]" ਦੀ ਵਰਤੋਂ ਕਰੋ, ਉਦਾ. <https://google.com/search?q=MDN+parseInt> `parseInt` ਫੰਕਸ਼ਨ ਦੀ ਭਾਲ ਕਰਨ ਲਈ.
 
 
-- **MSDN** – Microsoft manual with a lot of information, including JavaScript (often referred to as JScript). If one needs something specific to Internet Explorer, better go there: <http://msdn.microsoft.com/>.
+- ** ਐਮਐਸਡੀਐਨ ** - ਬਹੁਤ ਸਾਰੀ ਜਾਣਕਾਰੀ ਵਾਲਾ ਮਾਈਕ੍ਰੋਸਾੱਫਟ ਮੈਨੂਅਲ, ਜਿਸ ਵਿੱਚ ਜਾਵਾ ਸਕ੍ਰਿਪਟ (ਅਕਸਰ JScript ਵਜੋਂ ਜਾਣਿਆ ਜਾਂਦਾ ਹੈ) ਵੀ ਸ਼ਾਮਲ ਹੈ. ਜੇ ਕਿਸੇ ਨੂੰ ਇੰਟਰਨੈਟ ਐਕਸਪਲੋਰਰ ਲਈ ਕੁਝ ਖਾਸ ਦੀ ਜ਼ਰੂਰਤ ਹੈ, ਤਾਂ ਬਿਹਤਰ ਉਥੇ ਜਾਓ: <http://msdn.microsoft.com/>.
 
-    Also, we can use an internet search with phrases such as "RegExp MSDN" or "RegExp MSDN jscript".
+    ਇਸ ਦੇ ਨਾਲ, ਅਸੀਂ "ਰੇਜੀਐਕਸਐਕਸ ਐਮਐਸਡੀਐਨ" ਜਾਂ "ਰੈਗੈਕਸ ਐਕਸਪ੍ਰੈਸ ਐਮਐਸਡੀਐਨ js ਸਕ੍ਰਿਪਟ" ਵਰਗੇ ਵਾਕਾਂ ਨਾਲ ਇੱਕ ਇੰਟਰਨੈਟ ਖੋਜ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹਾਂ.
 
-## Compatibility tables
+## ਅਨੁਕੂਲਤਾ ਟੇਬਲ
 
-JavaScript is a developing language, new features get added regularly.
+ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਇੱਕ ਵਿਕਾਸਸ਼ੀਲ ਭਾਸ਼ਾ ਹੈ, ਨਵੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਨਿਯਮਿਤ ਤੌਰ ਤੇ ਸ਼ਾਮਲ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ.
 
-To see their support among browser-based and other engines, see:
+ਬ੍ਰਾਜ਼ਰ-ਅਧਾਰਿਤ ਅਤੇ ਹੋਰ ਇੰਜਣਾਂ ਵਿਚਕਾਰ ਉਨ੍ਹਾਂ ਦਾ ਸਮਰਥਨ ਦੇਖਣ ਲਈ, ਵੇਖੋ:
 
-- <http://caniuse.com> - per-feature tables of support, e.g. to see which engines support modern cryptography functions: <http://caniuse.com/#feat=cryptography>.
-- <https://kangax.github.io/compat-table> - a table with language features and engines that support those or don't support.
+- <http://caniuse.com> - ਸਮਰਥਨ ਦੀਆਂ ਪ੍ਰਤੀ-ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਟੇਬਲ, ਉਦਾ. ਇਹ ਵੇਖਣ ਲਈ ਕਿ ਕਿਹੜਾ ਇੰਜਣ ਆਧੁਨਿਕ ਕ੍ਰਿਪਟੋਗ੍ਰਾਫੀ ਫੰਕਸ਼ਨਾਂ ਦਾ ਸਮਰਥਨ ਕਰਦੇ ਹਨ: <http://caniuse.com/#feat=cryptography>.
+- <https://kangax.github.io/compat-table> - ਭਾਸ਼ਾ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਇੰਜਣਾਂ ਵਾਲਾ ਇੱਕ ਟੇਬਲ ਜੋ ਉਹਨਾਂ ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ ਜਾਂ ਸਮਰਥਨ ਨਹੀਂ ਕਰਦਾ.
 
-All these resources are useful in real-life development, as they contain valuable information about language details, their support etc.
+ਇਹ ਸਾਰੇ ਸਰੋਤ ਅਸਲ-ਜੀਵਨ ਦੇ ਵਿਕਾਸ ਵਿੱਚ ਲਾਭਦਾਇਕ ਹਨ, ਕਿਉਂਕਿ ਉਨ੍ਹਾਂ ਵਿੱਚ ਭਾਸ਼ਾ ਦੇ ਵੇਰਵੇ, ਉਹਨਾਂ ਦੀ ਸਹਾਇਤਾ ਆਦਿ ਬਾਰੇ ਮਹੱਤਵਪੂਰਣ ਜਾਣਕਾਰੀ ਹੈ.
 
-Please remember them (or this page) for the cases when you need in-depth information about a particular feature.
+ਕ੍ਰਿਪਾ ਕਰਕੇ ਉਨ੍ਹਾਂ (ਜਾਂ ਇਸ ਪੰਨੇ) ਨੂੰ ਉਨ੍ਹਾਂ ਮਾਮਲਿਆਂ ਲਈ ਯਾਦ ਰੱਖੋ ਜਦੋਂ ਤੁਹਾਨੂੰ ਕਿਸੇ ਵਿਸ਼ੇਸ਼ ਵਿਸ਼ੇਸ਼ਤਾ ਬਾਰੇ ਡੂੰਘਾਈ ਨਾਲ ਜਾਣਕਾਰੀ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ.
