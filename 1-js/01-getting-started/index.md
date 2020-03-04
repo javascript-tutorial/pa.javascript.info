@@ -1,3 +1,3 @@
-# An introduction
+# ਇੱਕ ਜਾਣ ਪਛਾਣ
 
-About the JavaScript language and the environment to develop with it.
+ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਭਾਸ਼ਾ ਅਤੇ ਇਸਦੇ ਨਾਲ ਵਿਕਾਸ ਲਈ ਵਾਤਾਵਰਣ ਬਾਰੇ.
