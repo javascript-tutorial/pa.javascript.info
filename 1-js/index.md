@@ -1,6 +1,5 @@
-# The JavaScript language
+# ਜਾਵਾਸਕ੍ਰਿਪਟ ਭਾਸ਼ਾ
 
-Here we learn JavaScript, starting from scratch and go on to advanced concepts like OOP.
+ਇੱਥੇ ਅਸੀਂ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਸਿੱਖਦੇ ਹਾਂ, ਸ਼ੁਰੂ ਤੋਂ ਸ਼ੁਰੂ ਕਰਦੇ ਹੋਏ ਅਤੇ ਏਪੀ ਵਰਗੇ ਤਕਨੀਕੀ ਸੰਕਲਪਾਂ ਵੱਲ ਵਧਦੇ ਹੋਏ।
 
-We concentrate on the language itself here, with the minimum of environment-specific notes.
-
+ਅਸੀਂ ਵਾਤਾਵਰਣ ਦੇ ਘੱਟੋ ਘੱਟ ਨੋਟਾਂ ਨਾਲ ਇੱਥੇ ਆਪਣੀ ਭਾਸ਼ਾ ਤੇ ਧਿਆਨ ਕੇਂਦ੍ਰਤ ਕਰਦੇ ਹਾਂ।
