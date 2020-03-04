@@ -1,46 +1,46 @@
-# Code editors
+# ਕੋਡ ਸੰਪਾਦਕ
 
-A code editor is the place where programmers spend most of their time.
+ਇੱਕ ਕੋਡ ਸੰਪਾਦਕ ਉਹ ਜਗ੍ਹਾ ਹੁੰਦੀ ਹੈ ਜਿਥੇ ਪ੍ਰੋਗਰਾਮਰ ਆਪਣਾ ਜ਼ਿਆਦਾਤਰ ਸਮਾਂ ਬਿਤਾਉਂਦੇ ਹਨ.
 
-There are two main types of code editors: IDEs and lightweight editors. Many people use one tool of each type.
+ਇੱਥੇ ਦੋ ਮੁੱਖ ਕਿਸਮਾਂ ਦੇ ਕੋਡ ਸੰਪਾਦਕ ਹਨ: ਆਈ ਡੀ ਈ ਅਤੇ ਲਾਇਟ-ਵੇਟ ਸੰਪਾਦਕ. ਬਹੁਤ ਸਾਰੇ ਲੋਕ ਹਰ ਕਿਸਮ ਦੇ ਇੱਕ ਸਾਧਨ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਨ.
 
 ## IDE
 
-The term [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (Integrated Development Environment) refers to a powerful editor with many features that usually operates on a "whole project." As the name suggests, it's not just an editor, but a full-scale "development environment."
+ਸ਼ਬਦ [IDE] (https://en.wikedia.org/wiki/Integrated_development_en वातावरण) (ਏਕੀਕ੍ਰਿਤ ਵਿਕਾਸ ਵਾਤਾਵਰਣ) ਇੱਕ ਸ਼ਕਤੀਸ਼ਾਲੀ ਸੰਪਾਦਕ ਦਾ ਹਵਾਲਾ ਦਿੰਦਾ ਹੈ ਜਿਸ ਵਿੱਚ ਬਹੁਤ ਸਾਰੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਹੁੰਦੀਆਂ ਹਨ ਜੋ ਆਮ ਤੌਰ 'ਤੇ "ਪੂਰੇ ਪ੍ਰੋਜੈਕਟ" ਤੇ ਕੰਮ ਕਰਦੀਆਂ ਹਨ. ਜਿਵੇਂ ਕਿ ਨਾਮ ਸੁਝਾਅ ਦਿੰਦਾ ਹੈ, ਇਹ ਸਿਰਫ ਇੱਕ ਸੰਪਾਦਕ ਨਹੀਂ, ਬਲਕਿ ਇੱਕ "ਪੂਰੇ ਵਾਤਾਵਰਣ ਦਾ ਵਿਕਾਸ" ਹੈ.
 
-An IDE loads the project (which can be many files), allows navigation between files, provides autocompletion based on the whole project (not just the open file), and integrates with a version management system (like [git](https://git-scm.com/)), a testing environment, and other "project-level" stuff.
+ਇੱਕ ਆਈਡੀਈ ਪ੍ਰੋਜੈਕਟ ਨੂੰ ਲੋਡ ਕਰਦਾ ਹੈ (ਜੋ ਕਿ ਬਹੁਤ ਸਾਰੀਆਂ ਫਾਈਲਾਂ ਹੋ ਸਕਦਾ ਹੈ), ਫਾਈਲਾਂ ਵਿਚਕਾਰ ਨੈਵੀਗੇਸ਼ਨ ਦੀ ਕਾਰਜਸ਼ੀਲਤਾ ਦਿੰਦਾ ਹੈ, ਪੂਰੇ ਪ੍ਰੋਜੈਕਟ ਦੇ ਅਧਾਰ ਤੇ ਆਟੋ-ਕੰਪਲੀਟ ਵੀ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ (ਸਿਰਫ ਖੁੱਲੀ ਫਾਈਲ ਨਹੀਂ), ਅਤੇ ਵਰਜ਼ਨ ਪ੍ਰਬੰਧਨ ਪ੍ਰਣਾਲੀ ਨਾਲ ਜੁੜਦਾ ਹੈ (ਜਿਵੇਂ [git] (https: // git-scm.com/)), ਇੱਕ ਟੈਸਟਿੰਗ ਵਾਤਾਵਰਣ, ਅਤੇ ਹੋਰ "ਪ੍ਰੋਜੈਕਟ-ਪੱਧਰ" ਸਮਗਰੀ.
 
-If you haven't selected an IDE yet, consider the following options:
+ਜੇ ਤੁਸੀਂ ਅਜੇ ਤੱਕ ਕੋਈ ਆਈਡੀਈ ਨਹੀਂ ਚੁਣਿਆ ਹੈ, ਹੇਠ ਦਿੱਤੇ ਵਿਕਲਪਾਂ 'ਤੇ ਗੌਰ ਕਰੋ:
 
-- [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
-- [WebStorm](http://www.jetbrains.com/webstorm/) (cross-platform, paid).
+- [ਵਿਜ਼ੂਅਲ ਸਟੂਡੀਓ ਕੋਡ] (https://code.visualstudio.com/) (ਕਰਾਸ ਪਲੇਟਫਾਰਮ, ਮੁਫਤ).
+- [ਵੈਬਸਟਰਮ] (http://www.jetbrains.com/webstorm/) (ਕਰਾਸ ਪਲੇਟਫਾਰਮ, ਮੁਫਤ ਨਹੀਂ ਹੈ).
 
-For Windows, there's also "Visual Studio", not to be confused with "Visual Studio Code". "Visual Studio" is a paid and mighty Windows-only editor, well-suited for the .NET platform. It's also good at JavaScript. There's also a free version [Visual Studio Community](https://www.visualstudio.com/vs/community/).
+ਵਿੰਡੋਜ਼ ਲਈ, ਇੱਥੇ "ਵਿਜ਼ੂਅਲ ਸਟੂਡੀਓ" ਵੀ ਹੈ, "ਵਿਜ਼ੂਅਲ ਸਟੂਡੀਓ ਕੋਡ" ਨਾਲ ਕੰਫਯੁਜ ਨਾ ਹੋਣਾ. "ਵਿਜ਼ੂਅਲ ਸਟੂਡੀਓ" ਇੱਕ ਪੇਡ ਅਤੇ ਸ਼ਕਤੀਸ਼ਾਲੀ ਵਿੰਡੋਜ਼-ਕੇਵਲ ਸੰਪਾਦਕ ਹੈ, ਜੋ ਕਿ ਡੋਟ ਨੈਟ ਲਈ ਅਨੁਕੂਲ ਹੈ। ਇਹ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਲਈ ਵੀ ਵਧੀਆ ਹੈ। ਇੱਥੇ ਇੱਕ ਮੁਫਤ ਸੰਸਕਰਣ [ਵਿਜ਼ੂਅਲ ਸਟੂਡੀਓ ਕਮਿਨਿਟੀ] (https://www.visualstudio.com/vs/commune/) ਵੀ ਹੈ.
 
-Many IDEs are paid, but have a trial period. Their cost is usually negligible compared to a qualified developer's salary, so just choose the best one for you.
+ਬਹੁਤ ਸਾਰੇ IDEs ਪੇਡ ਹਨ, ਪਰ ਇੱਕ ਅਜ਼ਮਾਇਸ਼ ਅਵਧੀ ਹੁੰਦੀ ਹੈ. ਉਨ੍ਹਾਂ ਦੀ ਕੀਮਤ ਆਮ ਤੌਰ 'ਤੇ ਕਿਸੇ ਯੋਗਤਾ ਪ੍ਰਾਪਤ ਡਿਵੈਲਪਰ ਦੀ ਤਨਖਾਹ ਦੇ ਮੁਕਾਬਲੇ ਘੱਟ ਹੁੰਦੀ ਹੈ, ਇਸ ਲਈ ਤੁਹਾਡੇ ਲਈ ਸਭ ਤੋਂ ਉੱਤਮ ਦੀ ਚੋਣ ਕਰੋ.
 
-## Lightweight editors
+## ਲਾਈਟ ਵੇਟ ਸੰਪਾਦਕ
 
-"Lightweight editors" are not as powerful as IDEs, but they're fast, elegant and simple.
+"ਲਾਈਟਵੇਟ ਸੰਪਾਦਕ" ਆਈਡੀਈ ਜਿੰਨੇ ਸ਼ਕਤੀਸ਼ਾਲੀ ਨਹੀਂ ਹਨ, ਪਰ ਇਹ ਤੇਜ਼, ਸ਼ਾਨਦਾਰ ਅਤੇ ਸਧਾਰਨ ਹਨ.
 
-They are mainly used to open and edit a file instantly.
+ਉਹ ਮੁੱਖ ਤੌਰ ਤੇ ਤੁਰੰਤ ਇੱਕ ਫਾਈਲ ਖੋਲ੍ਹਣ ਅਤੇ ਸੋਧਣ ਲਈ ਵਰਤੇ ਜਾਂਦੇ ਹਨ.
 
-The main difference between a "lightweight editor" and an "IDE" is that an IDE works on a project-level, so it loads much more data on start, analyzes the project structure if needed and so on. A lightweight editor is much faster if we need only one file.
+ਇੱਕ "ਲਾਈਟਵੇਟ ਐਡੀਟਰ" ਅਤੇ "ਆਈਡੀਈ" ਵਿਚਕਾਰ ਮੁੱਖ ਅੰਤਰ ਇਹ ਹੈ ਕਿ ਇੱਕ ਆਈਡੀਈ ਇੱਕ ਪ੍ਰੋਜੈਕਟ-ਪੱਧਰ 'ਤੇ ਕੰਮ ਕਰਦਾ ਹੈ, ਇਸ ਲਈ ਇਹ ਸ਼ੁਰੂਆਤ' ਤੇ ਬਹੁਤ ਜ਼ਿਆਦਾ ਡੇਟਾ ਲੋਡ ਕਰਦਾ ਹੈ, ਪ੍ਰੋਜੈਕਟ ਡਾਂਚੇ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਦਾ ਹੈ ਜੇ ਜਰੂਰੀ ਹੈ ਅਤੇ ਇਸ ਤਰਾਂ ਹੋਰ. ਇੱਕ ਹਲਕੇ ਭਾਰ ਵਾਲਾ ਸੰਪਾਦਕ ਬਹੁਤ ਤੇਜ਼ ਹੁੰਦਾ ਹੈ ਜੇ ਸਾਨੂੰ ਸਿਰਫ ਇੱਕ ਫਾਈਲ ਦੀ ਜਰੂਰਤ ਹੈ.
 
-In practice, lightweight editors may have a lot of plugins including directory-level syntax analyzers and autocompleters, so there's no strict border between a lightweight editor and an IDE.
+ਅਭਿਆਸ ਵਿੱਚ, ਹਲਕੇ ਭਾਰ ਵਾਲੇ ਸੰਪਾਦਕਾਂ ਵਿੱਚ ਬਹੁਤ ਸਾਰੇ ਪਲੱਗਇਨ ਹੋ ਸਕਦੇ ਹਨ ਜਿਸ ਵਿੱਚ ਡਾਇਰੈਕਟਰੀ-ਪੱਧਰ ਦੇ ਸੰਟੈਕਸ ਵਿਸ਼ਲੇਸ਼ਕ ਅਤੇ ਆਟੋਮੈਟਿਕ ਪੂਰਨ ਸ਼ਾਮਲ ਹੁੰਦੇ ਹਨ, ਇਸ ਲਈ ਇੱਕ ਹਲਕੇ ਸੰਪਾਦਕ ਅਤੇ ਇੱਕ ਆਈਡੀਈ ਵਿੱਚ ਕੋਈ ਜਿਆਦਾ ਫਰਕ ਨਹੀਂ ਹੁੰਦਾ।
 
-The following options deserve your attention:
+ਹੇਠ ਲਿਖੀਆਂ ਚੋਣਾਂ ਤੁਹਾਡੇ ਧਿਆਨ ਦੇ ਹੱਕਦਾਰ ਹਨ:
 
-- [Atom](https://atom.io/) (cross-platform, free).
-- [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
-- [Sublime Text](http://www.sublimetext.com) (cross-platform, shareware).
-- [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
-- [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
+- [ਐਟਮ] (https://atom.io/) (ਕਰਾਸ ਪਲੇਟਫਾਰਮ, ਮੁਫਤ).
+- [ਵਿਜ਼ੂਅਲ ਸਟੂਡੀਓ ਕੋਡ] (https://code.visualstudio.com/) (ਕਰਾਸ ਪਲੇਟਫਾਰਮ, ਮੁਫਤ).
+- [ਸ੍ਰੇਸ਼ਟ ਪਾਠ] (http://www.sublimetext.com) (ਕਰਾਸ ਪਲੇਟਫਾਰਮ, ਸ਼ੇਅਰਵੇਅਰ).
+- [ਨੋਟਪੈਡ ++] (https://notepad-plus-plus.org/) (ਵਿੰਡੋਜ਼, ਮੁਫਤ)
+- [ਵਿਮ] (http://www.vim.org/) ਅਤੇ [ਈਮੈਕਸ] (https://www.gnu.org/software/emacs/) ਵੀ ਸ਼ਾਨਦਾਰ ਹਨ ਜੇ ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਦੀ ਵਰਤੋਂ ਕਰਨਾ ਜਾਣਦੇ ਹੋ.
 
-## Let's not argue
+## ਆਓ ਬਹਿਸ ਨਾ ਕਰੀਏ
 
-The editors in the lists above are those that either I or my friends whom I consider good developers have been using for a long time and are happy with.
+ਉਪਰੋਕਤ ਸੂਚੀਆਂ ਵਿਚ ਸੰਪਾਦਕ ਉਹ ਹਨ ਜੋ ਜਾਂ ਤਾਂ ਮੈਂ ਜਾਂ ਮੇਰੇ ਦੋਸਤ ਜਿਨ੍ਹਾਂ ਨੂੰ ਮੈਂ ਚੰਗੇ ਡਿਵੈਲਪਰ ਮੰਨਦਾ ਹਾਂ ਲੰਬੇ ਸਮੇਂ ਤੋਂ ਇਸਤੇਮਾਲ ਕਰ ਰਹੇ ਹਨ ਅਤੇ ਖੁਸ਼ ਹਨ।
 
-There are other great editors in our big world. Please choose the one you like the most.
+ਸਾਡੀ ਵੱਡੀ ਦੁਨੀਆ ਵਿਚ ਹੋਰ ਮਹਾਨ ਸੰਪਾਦਕ ਹਨ. ਕਿਰਪਾ ਕਰਕੇ ਉਸ ਨੂੰ ਚੁਣੋ ਜਿਸ ਨੂੰ ਤੁਸੀਂ ਸਭ ਤੋਂ ਵੱਧ ਪਸੰਦ ਕਰਦੇ ਹੋ.
 
-The choice of an editor, like any other tool, is individual and depends on your projects, habits, and personal preferences.
+ਕਿਸੇ ਸੰਦ ਦੀ ਤਰ੍ਹਾਂ ਸੰਪਾਦਕ ਦੀ ਚੋਣ ਵਿਅਕਤੀਗਤ ਹੈ ਅਤੇ ਤੁਹਾਡੇ ਪ੍ਰੋਜੈਕਟਾਂ, ਆਦਤਾਂ ਅਤੇ ਵਿਅਕਤੀਗਤ ਪਸੰਦਾਂ ਤੇ ਨਿਰਭਰ ਕਰਦੀ ਹੈ.
