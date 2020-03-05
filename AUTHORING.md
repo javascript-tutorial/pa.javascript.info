@@ -1,37 +1,36 @@
+# ਅਧਿਕਾਰ
 
-# Authoring
+ਇਹ ਟਿਟੋਰਿਅਲ ਦੇ ਨਵੇਂ ਲੇਖਾਂ ਨੂੰ ਲਿਖਣ ਬਾਰੇ ਮਹੱਤਵਪੂਰਣ ਚੀਜ਼ਾਂ ਦਾ ਵਰਣਨ ਕਰਦਾ ਹੈ।
 
-This describes important stuff about authoring new articles of the tutorial.
+## ਅੰਦਰੂਨੀ ਲਿੰਕ
 
-## Internal links
+ਸਾਰੇ ਟਿਟੋਰਿਅਲ ਲਿੰਕ ਰੂਟ ਤੋਂ ਅਰੰਭ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ, ਡੋਮੇਨ ਨੂੰ ਸ਼ਾਮਲ ਨਹੀਂ ਕਰਦੇ.
 
-All tutorial links should start from the root, not including the domain.
+✅ ਠੀਕ ਹੈ:
 
-✅ OK:
+`` `ਐਮਡੀ
+ਅਸੀਂ ਇਸਨੂੰ ਅਧਿਆਇ ਵਿਚ [ਫੰਕਸ਼ਨ ਬਾਰੇ] (/function-basics) ਕਵਰ ਕਰਾਂਗੇ.
+`` `
 
-```md
-We'll cover that in the chapter [about functions](/function-basics)
-```
+Ok ਠੀਕ ਨਹੀਂ:
 
-❌ Not ok:
+`` `ਐਮਡੀ
+ਅਸੀਂ ਇਸ ਨੂੰ ਅਧਿਆਇ ਵਿਚ [ਕਾਰਜਾਂ ਬਾਰੇ] ਕਵਰ ਕਰਾਂਗੇ (https://javascript.info/function-basics)
+`` `
 
-```md
-We'll cover that in the chapter [about functions](https://javascript.info/function-basics)
-```
+ਨਾਲ ਹੀ, ਇੱਕ ਅਧਿਆਏ ਦਾ ਹਵਾਲਾ ਦੇਣ ਲਈ, ਇੱਥੇ ਇੱਕ ਵਿਸ਼ੇਸ਼ "ਜਾਣਕਾਰੀ:" ਤਰੀਕਾ ਹੈ, ਜਿਵੇਂ ਕਿ:
 
-Also, to reference a chapter, there's a special "info:" scheme, like this:
+`` `ਐਮਡੀ
+ਅਸੀਂ ਇਸਨੂੰ ਅਧਿਆਇ <info:function-basics> ਵਿੱਚ ਕਵਰ ਕਰਾਂਗੇ.
+`` `
 
-```md
-We'll cover that in the chapter <info:function-basics>.
-```
+ਬਣ ਜਾਂਦਾ ਹੈ:
+`` `html
+ਅਸੀਂ ਇਸ ਨੂੰ ਅਧਿਆਇ <a href="/function-basics"> ਫੰਕਸ਼ਨ ਬੇਸਿਕਸ </a> ਵਿੱਚ ਸ਼ਾਮਲ ਕਰਾਂਗੇ.
+`` `
 
-Becomes:
-```html
-We'll cover that in the chapter <a href="/function-basics">Function basics</a>.
-```
+ਸਿਰਲੇਖ ਹਵਾਲੇ ਲੇਖ ਤੋਂ ਸਵੈ ਹੀ ਪੈ ਜਾਂਦਾ ਹੈ. ਇਸ ਦਾ ਫਾਇਦਾ ਸਹੀ ਸਿਰਲੇਖ ਰੱਖਣ ਤੇ ਹੈ ਜੇਕਰ ਲੇਖ ਦਾ ਨਾਮ ਬਦਲ ਜਾਵੇ।
 
-The title is auto-inserted from the referenced article. That has the benefit of keeping the right title if the article gets renamed.
+## ਕਰਨਾ
 
-## TODO
-
-Ask @iliakan to for more details.
+ਵਧੇਰੇ ਜਾਣਕਾਰੀ ਲਈ @iliakan ਨੂੰ ਪੁੱਛੋ.
