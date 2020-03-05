@@ -90,7 +90,7 @@ const text = 'ਹੋਲਾ ਮੁੰਡੋ';
 document.querySelector('.hello').innerHTML = text;
 `` `
 
-ਇੰਜ ਨਾ ਕਰੋ (ਅਨੁਵਾਦ ਕਲਾਸ):
+❌ ਇੰਜ ਨਾ ਕਰੋ (ਅਨੁਵਾਦ ਕਲਾਸ):
 
 `` `ਜੇਐਸ
 // ਉਦਾਹਰਣ
