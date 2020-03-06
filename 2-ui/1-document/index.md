@@ -1,3 +1,3 @@
-# Document
+# ਦਸਤਾਵੇਜ਼
 
-Here we'll learn to manipulate a web-page using JavaScript.
+ਇੱਥੇ ਅਸੀਂ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੀ ਵਰਤੋਂ ਕਰਦਿਆਂ ਇੱਕ ਵੈਬ ਪੇਜ ਨੂੰ ਮਨੁਪੁਲੇਟ ਕਰਨਾ ਸਿੱਖਾਂਗੇ.

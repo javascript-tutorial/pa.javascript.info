@@ -1,115 +1,114 @@
-# Browser environment, specs
+# ਬਰਾਜ਼ਰ ਵਾਤਾਵਰਣ, ਸਪੇਸੀਫੀਕੇਸਨ
 
-The JavaScript language was initially created for web browsers. Since then it has evolved and become a language with many uses and platforms.
+ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਭਾਸ਼ਾ ਸ਼ੁਰੂ ਵਿੱਚ ਵੈਬ ਬ੍ਰਾਜ਼ਰਾਂ ਲਈ ਬਣਾਈ ਗਈ ਸੀ. ਉਦੋਂ ਤੋਂ ਇਹ ਵਿਕਸਤ ਹੋਈ ਹੈ ਅਤੇ ਬਹੁਤ ਸਾਰੀਆਂ ਵਰਤੋਂ ਅਤੇ ਪਲੇਟਫਾਰਮਾਂ ਵਾਲੀ ਇੱਕ ਭਾਸ਼ਾ ਬਣ ਗਈ ਹੈ।
 
-A platform may be a browser, or a web-server or another *host*, even a coffee machine. Each of them provides platform-specific functionality. The JavaScript specification calls that a *host environment*.
+ਇਸ਼ਦਾ ਪਲੇਟਫਾਰਮ ਇੱਕ ਬ੍ਰਾਉਜ਼ਰ, ਜਾਂ ਇੱਕ ਵੈੱਬ-ਸਰਵਰ ਜਾਂ ਕੋਈ ਹੋਰ * ਹੋਸਟ * ਹੋ ਸਕਦਾ ਹੈ, ਇੱਕ ਕਾਫੀ ਮਸ਼ੀਨ ਵੀ ਹੋ ਸਕਦੀ ਹੈ. ਉਨ੍ਹਾਂ ਵਿਚੋਂ ਹਰੇਕ ਪਲੇਟਫਾਰਮ-ਵਿਸ਼ੇਸ਼ ਲਈ ਕਾਰਜਕੁਸ਼ਲਤਾ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ. ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਨਿਰਧਾਰਨ ਇੱਕ * ਹੋਸਟ ਵਾਤਾਵਰਣ * ਨੂੰ ਲੋਚਦਾ ਹੈ.
 
-A host environment provides own objects and functions additional to the language core. Web browsers give a means to control web pages. Node.js provides server-side features, and so on.
+ਇੱਕ ਮੇਜ਼ਬਾਨ ਵਾਤਾਵਰਣ ਆਪਣੀ ਖੁਦ ਦੀਆਂ ਵਸਤੂਆਂ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ ਅਤੇ ਮੇਨ ਭਾਸ਼ਾ ਲਈ ਵਾਧੂ ਕਾਰਜ ਕਰਦਾ ਹੈ. ਵੈੱਬ ਬਰਾਜ਼ਰ ਵੈਬ ਪੇਜਾਂ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਨ ਦਾ ਜ਼ਰੀਆ ਦਿੰਦੇ ਹਨ. Node।js ਸਰਵਰ-ਸਾਈਡ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ, ਅਤੇ ਹੋਰ ਖ਼ਾਸ ਵਿਸ਼ੇਸਤਾਵਾਂ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ.
 
-Here's a bird's-eye view of what we have when JavaScript runs in a web-browser:
+ਜਦੋਂ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਇੱਕ ਵੈੱਬ-ਬ੍ਰਾਜ਼ਰ ਵਿੱਚ ਚਲਦੀ ਹੈ ਤਾਂ ਇੱਥੇ ਸਾਡੇ ਕੋਲ ਇੱਕ ਪੰਛੀ ਦਾ ਨਜ਼ਰੀਆ ਦਰਸਾਉਂਦਾ ਹੈ:
 
 ![](windowObjects.svg)
 
-There's a "root" object called `window`. It has two roles:
+ਇੱਥੇ ਇੱਕ "ਰੂਟ" ਆਬਜੈਕਟ ਹੈ ਜਿਸ ਨੂੰ `ਵਿੰਡੋ` ਕਹਿੰਦੇ ਹਨ. ਇਸ ਦੀਆਂ ਦੋ ਭੂਮਿਕਾਵਾਂ ਹਨ:
 
-1. First, it is a global object for JavaScript code, as described in the chapter <info:global-object>.
-2. Second, it represents the "browser window" and provides methods to control it.
+1. ਪਹਿਲਾਂ, ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਕੋਡ ਲਈ ਇਹ ਇਕ ਗਲੋਬਲ ਆਬਜੈਕਟ ਹੈ, ਜਿਵੇਂ ਕਿ ਇਸ ਚੈਪਟਰ ਵਿਚ ਦੱਸਿਆ ਗਿਆ ਹੈ <info:global-object>.
+2. ਦੂਜਾ, ਇਹ "ਬ੍ਰਾਜ਼ਰ ਵਿੰਡੋ" ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ ਅਤੇ ਇਸਨੂੰ ਨਿਯੰਤਰਣ ਕਰਨ ਲਈ methods ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ.
 
-For instance, here we use it as a global object:
+ਉਦਾਹਰਣ ਦੇ ਲਈ, ਇੱਥੇ ਅਸੀਂ ਇਸਨੂੰ ਇੱਕ ਗਲੋਬਲ ਆਬਜੈਕਟ ਦੇ ਤੌਰ ਤੇ ਵਰਤਦੇ ਹਾਂ:
 
 ```js run
 function sayHi() {
   alert("Hello");
 }
 
-// global functions are methods of the global object:
+// ਗਲੋਬਲ ਫੰਕਸ਼ਨ ਗਲੋਬਲ ਆਬਜੈਕਟ ਦੇ methods ਹਨ:
 window.sayHi();
 ```
 
-And here we use it as a browser window, to see the window height:
+ਅਤੇ ਇੱਥੇ ਅਸੀਂ ਇਸਨੂੰ ਇੱਕ ਵਿੰਡੋ ਦੇ ਤੌਰ ਤੇ ਵਰਤਦੇ ਹਾਂ, ਵਿੰਡੋ ਦੀ ਉਚਾਈ ਵੇਖਣ ਲਈ:
 
 ```js run
-alert(window.innerHeight); // inner window height
+alert(window.innerHeight); // ਅੰਦਰੂਨੀ ਵਿੰਡੋ ਦੀ ਉਚਾਈ
 ```
 
-There are more window-specific methods and properties, we'll cover them later.
-
+ਇੱਥੇ ਹੋਰ ਵਿੰਡੋ-ਵਿਸ਼ੇਸ਼ methods ਅਤੇ properties ਹਨ, ਅਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਬਾਅਦ ਵਿੱਚ ਕਵਰ ਕਰਾਂਗੇ.
 ## DOM (Document Object Model)
 
-Document Object Model, or DOM for short, represents all page content as objects that can be modified.
+Document Object Model, ਜਾਂ DOM ਸੰਖੇਪ ਲਈ, ਸਾਰੇ ਪੰਨੇ ਦੀ ਸਮਗਰੀ ਨੂੰ ਇਕਾਈ ਦੇ ਤੌਰ ਤੇ ਦਰਸਾਉਂਦਾ ਹੈ ਜਿਸ ਨੂੰ ਸੋਧਿਆ ਜਾ ਸਕਦਾ ਹੈ.
 
-The `document` object is the main "entry point" to the page. We can change or create anything on the page using it.
+ `document` ਪੇਜ 'ਤੇ ਇਕਾਈ ਦਾ ਮੁੱਖ "ਦਾਖਲਾ ਬਿੰਦੂ" ਹੈ. ਅਸੀਂ ਇਸ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਪੇਜ 'ਤੇ ਕੁਝ ਵੀ ਬਦਲ ਸਕਦੇ ਹਾਂ ਜਾਂ ਬਣਾ ਸਕਦੇ ਹਾਂ.
 
-For instance:
+ਉਦਾਹਰਣ ਦੇ ਲਈ:
 ```js run
-// change the background color to red
+// ਬੈਕਗ੍ਰਾਉਂਡ ਦੇ ਰੰਗ ਨੂੰ ਲਾਲ ਵਿੱਚ ਬਦਲੋ
 document.body.style.background = "red";
 
-// change it back after 1 second
+// ਇਸਨੂੰ 1 ਸਕਿੰਟ ਬਾਅਦ ਵਾਪਸ ਬਦਲੋ
 setTimeout(() => document.body.style.background = "", 1000);
 ```
 
-Here we used `document.body.style`, but there's much, much more. Properties and methods are described in the specification:
+ਇੱਥੇ ਅੱਸੀ ਵਰਤਿਆ`document.body.style`, ਪਰ ਉਥੇ ਬਹੁਤ ਕੁਝ ਹੈ, ਹੋਰ ਵੀ ਬਹੁਤ ਕੁਝ. Properties ਅਤੇ methods ਨਿਰਧਾਰਨ ਵਿੱਚ ਦੱਸਿਆ ਗਿਆ ਹੈ:
 
 - **DOM Living Standard** at <https://dom.spec.whatwg.org>
 
-```smart header="DOM is not only for browsers"
-The DOM specification explains the structure of a document and provides objects to manipulate it. There are non-browser instruments that use DOM too.
+```smart header="DOM ਸਿਰਫ ਬ੍ਰਾਜ਼ਰਾਂ ਲਈ ਨਹੀਂ ਹੈ"
+DOM ਨਿਰਧਾਰਨ ਦਸਤਾਵੇਜ਼ ਦੇ ਢਾਂਚੇ ਬਾਰੇ ਦੱਸਦਾ ਹੈ ਅਤੇ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ objects ਇਸ ਨੂੰ ਫੇਰਬਦਲ ਕਰਨ ਲਈ. ਇੱਥੇ ਗੈਰ ਬ੍ਰਾਜ਼ਰ ਉਪਕਰਣ ਹਨ ਜੋ DOM ਦੀ ਵਰਤੋਂ ਵੀ ਕਰਦੇ ਹਨ.
 
-For instance, server-side scripts that download HTML pages and process them can also use DOM. They may support only a part of the specification though.
+ਉਦਾਹਰਣ ਦੇ ਲਈ, ਸਰਵਰ-ਸਾਈਡ ਸਕ੍ਰਿਪਟ ਜੋ HTML ਪੇਜਾਂ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰਦੀਆਂ ਹਨ ਅਤੇ ਉਹਨਾਂ ਤੇ ਪ੍ਰਕਿਰਿਆ ਕਰਦਿਆਂ ਹਨ ਵੀ DOM ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੀਆਂ ਹਨ. ਉਹ ਹਾਲਾਂਕਿ ਨਿਰਧਾਰਨ ਦੇ ਸਿਰਫ ਇੱਕ ਹਿੱਸੇ ਦਾ ਸਮਰਥਨ ਕਰ ਸਕਦੇ ਹਨ.
 ```
 
 ```smart header="CSSOM for styling"
-CSS rules and stylesheets are structured in a different way than HTML. There's a separate specification, [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/), that explains how they are represented as objects, and how to read and write them.
+CSS ਨਿਯਮ ਅਤੇ ਸਟਾਈਲਸ਼ੀਟ HTML ਤੋਂ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਬਣੀਆਂ ਹੋਈਆਂ ਹਨ. ਇਸ ਲਈ ਇੱਕ ਵੱਖਰਾ ਨਿਰਧਾਰਨ ਹੈ, [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/), ਇਹ ਦੱਸਦਾ ਹੈ ਕਿ ਉਹਨਾਂ ਨੂੰ ਕਿਵੇਂ ਇਕਾਈ ਵਜੋਂ ਦਰਸਾਇਆ ਜਾਂਦਾ ਹੈ, ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਕਿਵੇਂ ਪੜ੍ਹਨਾ ਅਤੇ ਲਿਖਣਾ ਹੈ.
 
-CSSOM is used together with DOM when we modify style rules for the document. In practice though, CSSOM is rarely required, because usually CSS rules are static. We rarely need to add/remove CSS rules from JavaScript, but that's also possible.
+CSSOM ਜਦੋਂ ਅਸੀਂ ਦਸਤਾਵੇਜ਼ ਲਈ ਸ਼ੈਲੀ ਦੇ ਨਿਯਮਾਂ ਨੂੰ ਸੰਸ਼ੋਧਿਤ ਕਰਦੇ ਹਾਂ ਤਾਂ DOM ਦੇ ਨਾਲ ਮਿਲ ਕੇ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ.ਅਭਿਆਸ ਵਿੱਚ ਹਾਲਾਂਕਿ, CSSOM ਦੀ ਬਹੁਤ ਘੱਟ ਲੋੜ ਹੁੰਦੀ ਹੈ, ਕਿਉਂਕਿ ਆਮ ਤੌਰ ਤੇ CSS ਨਿਯਮ ਸਥਿਰ ਹੁੰਦੇ ਹਨ. ਸਾਨੂੰ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਤੋਂ ਸੀ ਐੱਸ ਐੱਸ ਦੇ ਨਿਯਮਾਂ ਨੂੰ ਜੋੜਨ / ਹਟਾਉਣ ਦੀ ਬਹੁਤ ਘੱਟ ਲੋੜ ਹੈ, ਪਰ ਇਹ ਵੀ ਸੰਭਵ ਹੈ.
 ```
 
-## BOM (Browser Object Model)
+## BOM (ਬਰਾਜ਼ਰ ਆਬਜੈਕਟ ਮਾਡਲ)
 
-The Browser Object Model (BOM) represents additional objects provided by the browser (host environment) for working with everything except the document.
+ਬ੍ਰਾਜ਼ਰ ਆਬਜੈਕਟ ਮਾਡਲ (ਬੀਓਐਮ) ਦਸਤਾਵੇਜ਼ ਨੂੰ ਛੱਡ ਕੇ ਸਭ ਕੁਝ ਦੇ ਨਾਲ ਕੰਮ ਕਰਨ ਲਈ ਬ੍ਰਾਜ਼ਰ (ਮੇਜ਼ਬਾਨ ਵਾਤਾਵਰਣ) ਦੁਆਰਾ ਪ੍ਰਦਾਨ ਕੀਤੇ ਵਾਧੂ ਆਬਜੈਕਟ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ.
 
-For instance:
+ਉਦਾਹਰਣ ਦੇ ਲਈ:
 
-- The [navigator](mdn:api/Window/navigator) object provides background information about the browser and the operating system. There are many properties, but the two most widely known are: `navigator.userAgent` -- about the current browser, and `navigator.platform` -- about the platform (can help to differ between Windows/Linux/Mac etc).
-- The [location](mdn:api/Window/location) object allows us to read the current URL and can redirect the browser to a new one.
+- [navigator](mdn:api/Window/navigator) ਆਬਜੈਕਟ ਬ੍ਰਾਜ਼ਰ ਅਤੇ ਓਪਰੇਟਿੰਗ ਸਿਸਟਮ ਬਾਰੇ ਬੈਕਗ੍ਰਾਉਂਡ ਦੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ.ਇਸ ਦੀਆਂ ਬਹੁਤ ਸਾਰੀਆਂ properties ਹਨ, ਪਰ ਦੋ ਸਭ ਤੋਂ ਵੱਧ ਜਾਣੇ ਜਾਂਦੇ ਹਨ: `navigator.userAgent` -- ਮੌਜੂਦਾ ਬ੍ਰਾਜ਼ਰ ਬਾਰੇ, ਅਤੇ `navigator.platform` -- ਪਲੇਟਫਾਰਮ ਬਾਰੇ (ਵਿੰਡੋਜ਼ / ਲੀਨਕਸ / ਮੈਕ ਆਦਿ ਵਿੱਚ ਅੰਤਰ ਕਰਨ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰ ਸਕਦਾ ਹੈ).
+- [location](mdn:api/Window/location) ਆਬਜੈਕਟ ਸਾਨੂੰ ਮੌਜੂਦਾ ਯੂਆਰਐਲ ਨੂੰ ਪੜ੍ਹਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ ਅਤੇ ਬ੍ਰਾਜ਼ਰ ਨੂੰ ਨਵੇਂ 'ਤੇ ਭੇਜ ਸਕਦਾ ਹੈ.
 
-Here's how we can use the `location` object:
+ਇੱਥੇ ਅਸੀਂ ਕਿਵੇਂ `location` object ਹੇਠ ਲਿਖੇ ਅਨੁਸਾਰ ਇਸਤੇਮਾਲ ਕਰ ਸਕਦੇ  ਹਾਂ :
 
 ```js run
-alert(location.href); // shows current URL
+alert(location.href); // ਮੌਜੂਦਾ URL ਵੇਖਾਉਦਾ ਹੈ
 if (confirm("Go to Wikipedia?")) {
-  location.href = "https://wikipedia.org"; // redirect the browser to another URL
+  location.href = "https://wikipedia.org"; // ਬਰਾਜ਼ਰ ਨੂੰ ਯੂਆਰਐਲ ਤੇ ਭੇਜੋ
 }
 ```
 
-Functions `alert/confirm/prompt` are also a part of BOM: they are directly not related to the document, but represent pure browser methods of communicating with the user.
+ਫੰਕਸ਼ਨ `alert/confirm/prompt` ਵੀ BOM ਇੱਕ ਹਿੱਸਾ ਹਨ : ਉਹ ਸਿੱਧੇ ਦਸਤਾਵੇਜ਼ ਨਾਲ ਸਬੰਧਤ ਨਹੀਂ ਹਨ, ਪਰ ਉਪਭੋਗਤਾ ਨਾਲ ਸੰਚਾਰ ਕਰਨ ਦੇ ਸ਼ੁੱਧ ਬ੍ਰਾਜ਼ਰ ਤਰੀਕਿਆਂ ਨੂੰ ਦਰਸਾਉਂਦੇ ਹਨ.
 
 ```smart header="Specifications"
-BOM is the part of the general [HTML specification](https://html.spec.whatwg.org).
+BOM ਜਨਰਲ ਦਾ ਹਿੱਸਾ ਹੈ [HTML specification](https://html.spec.whatwg.org).
 
-Yes, you heard that right. The HTML spec at <https://html.spec.whatwg.org> is not only about the "HTML language" (tags, attributes), but also covers a bunch of objects, methods and browser-specific DOM extensions. That's "HTML in broad terms". Also, some parts have additional specs listed at <https://spec.whatwg.org>.
+ਹਾਂ, ਤੁਸੀਂ ਇਹ ਸਹੀ ਸੁਣਿਆ ਹੈ. ਤੇ HTML ਐਕਸਚੇਜ਼<https://html.spec.whatwg.org> ਸਿਰਫ "HTML ਭਾਸ਼ਾ" ਬਾਰੇ ਨਹੀਂ(tags, attributes), ਪਰ ਇਹ ਇੱਕ ਸਮੂਹ ਨੂੰ ਕਵਰ ਕਰਦਾ ਹੈ objects, methods ਅਤੇ ਬ੍ਰਾਜ਼ਰ-ਸੰਬੰਧੀ DOM ਐਕਸਟੈਂਸ਼ਨਾਂ. ਇਹ "ਵਿਆਪਕ ਸ਼ਬਦਾਂ ਵਿੱਚ HTML" ਹੈ.ਨਾਲ ਹੀ, ਕੁਝ ਹਿੱਸਿਆਂ 'ਤੇ ਸੂਚੀਬੱਧ ਵਾਧੂ specifications ਹਨ <https://spec.whatwg.org>.
 ```
 
-## Summary
+## ਸਾਰ
 
-Talking about standards, we have:
+ਮਾਪਦੰਡਾਂ ਬਾਰੇ ਗੱਲ ਕਰਦਿਆਂ, ਸਾਡੇ ਕੋਲ ਹੈ:
 
-DOM specification
-: Describes the document structure, manipulations and events, see <https://dom.spec.whatwg.org>.
+DOM ਨਿਰਧਾਰਨ
+: ਦਸਤਾਵੇਜ਼ ਦੇ ਢਾਂਚੇ, ਹੇਰਾਫੇਰ ਅਤੇ ਘਟਨਾਵਾਂ ਬਾਰੇ ਦੱਸਦਾ ਹੈ, ਵੇਖੋ <https://dom.spec.whatwg.org>.
 
-CSSOM specification
-: Describes stylesheets and style rules, manipulations with them and their binding to documents, see <https://www.w3.org/TR/cssom-1/>.
+CSSOM ਨਿਰਧਾਰਨ
+: ਸਟਾਈਲਸ਼ੀਟ ਅਤੇ ਸ਼ੈਲੀ ਦੇ ਨਿਯਮਾਂ, ਉਹਨਾਂ ਨਾਲ ਹੇਰਾਫੇਰ ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਦਸਤਾਵੇਜ਼ਾਂ ਨਾਲ ਜੋੜਨ ਬਾਰੇ ਦੱਸਦਾ ਹੈ, ਵੇਖੋ <https://www.w3.org/TR/cssom-1/>.
 
-HTML specification
-: Describes the HTML language (e.g. tags) and also the BOM (browser object model) -- various browser functions: `setTimeout`, `alert`, `location` and so on, see <https://html.spec.whatwg.org>. It takes the DOM specification and extends it with many additional properties and methods.
+HTML ਨਿਰਧਾਰਨ
+: HTML ਭਾਸ਼ਾ (ਉਦਾ. ਟੈਗਸ) ਅਤੇ ਬੀਓਐਮ (ਬ੍ਰਾਜ਼ਰ ਆਬਜੈਕਟ ਮਾਡਲ) ਦਾ ਵਰਣਨ ਕਰਦਾ ਹੈ --ਵੱਖ ਵੱਖ ਬਰਾਜ਼ਰ ਫੰਕਸ਼ਨ: `setTimeout`, `alert`, `location` ਅਤੇ ਇਸ ਤਰਾਂ ਹੋਰ, ਦੇਖੋ <https://html.spec.whatwg.org>. ਇਹ DOM ਨਿਰਧਾਰਨ ਲੈਂਦਾ ਹੈ ਅਤੇ ਇਸਨੂੰ ਬਹੁਤ ਸਾਰੀਆਂ ਵਾਧੂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਵਿਧੀਆਂ ਨਾਲ ਵਧਾਉਂਦਾ ਹੈ.
 
-Additionally, some classes are described separately at <https://spec.whatwg.org/>.
+ਇਸ ਤੋਂ ਇਲਾਵਾ, ਕੁਝ ਕਲਾਸਾਂ ਦਾ ਵੱਖਰੇ ਤੌਰ ਤੇ ਵਰਣਨ ਕੀਤਾ ਜਾਂਦਾ ਹੈ <https://spec.whatwg.org/>.
 
-Please note these links, as there's so much stuff to learn it's impossible to cover and remember everything.
+ਕਿਰਪਾ ਕਰਕੇ ਇਨ੍ਹਾਂ ਲਿੰਕਾਂ ਨੂੰ ਨੋਟ ਕਰੋ, ਕਿਉਂਕਿ ਇੱਥੇ ਸਿੱਖਣ ਲਈ ਬਹੁਤ ਸਾਰੀਆਂ ਚੀਜ਼ਾਂ ਇਸ ਨੂੰ ਚੇਕ ਕਰਨਾ ਅਤੇ ਸਭ ਕੁਝ ਯਾਦ ਰੱਖਣਾ ਅਸੰਭਵ ਹੈ.
 
-When you'd like to read about a property or a method, the Mozilla manual at <https://developer.mozilla.org/en-US/search> is also a nice resource, but the corresponding spec may be better: it's more complex and longer to read, but will make your fundamental knowledge sound and complete.
+ਜਦੋਂ ਤੁਸੀਂ ਕਿਸੇ property ਜਾਂ ਕਿਸੇ method ਬਾਰੇ ਪੜ੍ਹਨਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਮੋਜ਼ੀਲਾ ਮੈਨੂਅਲ ਐੱਨ <https://developer.mozilla.org/en-US/search> ਇਹ ਇਕ ਵਧੀਆ ਸਰੋਤ ਵੀ ਹੈ, ਪਰ ਅਨੁਸਾਰੀ ਵਿਸ਼ੇਸ਼ ਬਿਹਤਰ ਹੋ ਸਕਦੀ ਹੈ: ਇਹ ਵਧੇਰੇ ਗੁੰਝਲਦਾਰ ਅਤੇ ਪੜ੍ਹਨ ਲਈ ਲੰਮੀ ਹੈ, ਪਰ ਇਹ ਤੁਹਾਡੇ ਬੁਨਿਆਦੀ ਗਿਆਨ ਨੂੰ ਵਧੀਆ ਅਤੇ ਸੰਪੂਰਨ ਬਣਾ ਦੇਵੇਗਾ..
 
-To find something, it's often convenient to use an internet search "WHATWG [term]" or "MDN [term]", e.g <https://google.com?q=whatwg+localstorage>, <https://google.com?q=mdn+localstorage>.
+ਕੁਝ ਲੱਭਣ ਲਈ, ਇੰਟਰਨੈਟ ਦੀ ਵਰਤੋਂ ਕਰਨਾ ਅਕਸਰ ਟੁਕਵਾ ਹੁੰਦਾ ਹੈ "WHATWG [term]" or "MDN [term]", e.g <https://google.com?q=whatwg+localstorage>, <https://google.com?q=mdn+localstorage>.
 
-Now we'll get down to learning DOM, because the document plays the central role in the UI.
+ਹੁਣ ਅਸੀਂ DOM ਸਿੱਖਣ ਲਈ ਉਤਰਾਂਗੇ, ਕਿਉਂਕਿ ਏਹ ਦਸਤਾਵੇਜ਼ UI ਵਿਚ ਕੇਂਦਰੀ ਭੂਮਿਕਾ ਅਦਾ ਕਰਦਾ ਹੈ.
