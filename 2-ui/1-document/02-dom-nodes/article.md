@@ -6,47 +6,47 @@ libs:
 
 # DOM tree
 
-The backbone of an HTML document is tags.
+ਇੱਕ HTML ਦਸਤਾਵੇਜ਼ ਦਾ ਖ਼ਾਸ ਹਿੱਸਾ ਟੈਗ ਹਨ.
 
-According to the Document Object Model (DOM), every HTML tag is an object. Nested tags are  "children" of the enclosing one. The text inside a tag is an object as well.
+ਦਸਤਾਵੇਜ਼ ਆਬਜੈਕਟ ਮਾਡਲ ਦੇ ਅਨੁਸਾਰ(DOM), ਹਰ HTML ਟੈਗ ਇਕ ਆਬਜੈਕਟ ਹੁੰਦਾ ਹੈ. ਨੇਸਟਡ ਟੈਗਸ ਉਸ ਟੈਗ ਦੇ "ਬੱਚੇ" ਹਨ. ਟੈਗ ਦੇ ਅੰਦਰ ਦਾ ਪਾਠ ਵੀ ਇਕ ਔਬਜੈਕਟ ਹੈ.
 
-All these objects are accessible using JavaScript, and we can use them to modify the page.
+ਇਹ ਸਾਰੇ ਆਬਜੈਕਟ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਪਹੁੰਚਯੋਗ ਹਨ, ਅਤੇ ਅਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਪੇਜ ਨੂੰ ਸੋਧਣ ਲਈ ਇਸਤੇਮਾਲ ਕਰ ਸਕਦੇ ਹਾਂ.
 
-For example, `document.body` is the object representing the `<body>` tag.
+ਉਦਾਹਰਣ ਲਈ, `document.body` ਇੱਕ ਔਬਜੈਕਟ ਹੈ ਜੋ `<body>` ਟੈਗ ਨੂੰ ਦਰਸ਼ੌਂਦੀ ਹੈ।
 
-Running this code will make the `<body>` red for 3 seconds:
+ਇਸ ਕੋਡ ਨੂੰ ਚਲਾਉਣ ਨਾਲ`<body>` 3 ਸਕਿੰਟ ਲਈ ਲਾਲ ਹੋ ਜਾਏਗੀ:
 
 ```js run
-document.body.style.background = 'red'; // make the background red
+document.body.style.background = 'red'; // ਬੈਕਗ੍ਰਾਉਂਡ ਨੂੰ ਲਾਲ ਬਣਾਉ
 
-setTimeout(() => document.body.style.background = '', 3000); // return back
+setTimeout(() => document.body.style.background = '', 3000); // ਵਾਪਸ ਪਰਤੋ
 ```
 
-Here we used `style.background` to change the background color of `document.body`, but there are many other properties, such as:
+ਇੱਥੇ ਅੱਸੀਂ ਵਰਤਿਆ `style.background` ਇਸ `document.body` ਦੇ ਪਿਛੋਕੜ ਦਾ ਰੰਗ ਬਦਲਣ ਲਈ , ਪਰ ਇਥੇ ਹੋਰ ਬਹੁਤ ਸਾਰੀਆਂ ਪ੍ਰੋਪਰਟੀਸ ਹਨ, ਜਿਵੇਂ ਕਿ:
 
-- `innerHTML` -- HTML contents of the node.
-- `offsetWidth` -- the node width (in pixels)
-- ...and so on.
+- `innerHTML` -- ਨੋਡ ਦੇ HTML ਭਾਗ ਨੂੰ ਬਦਲਣ ਵਾਸਤੇ.
+- `offsetWidth` -- ਨੋਡ ਚੌੜਾਈ (ਪਿਕਸਲ ਵਿੱਚ)
+- ...ਇਤਆਦਿ.
 
-Soon we'll learn more ways to manipulate the DOM, but first we need to know about its structure.
+ਜਲਦੀ ਹੀ ਅਸੀਂ ਡੀਓਐਮ ਨੂੰ ਹੇਰਾਫੇਰੀ ਲਈ ਹੋਰ ਤਰੀਕੇ ਸਿੱਖਾਂਗੇ, ਪਰ ਪਹਿਲਾਂ ਸਾਨੂੰ ਇਸਦੇ ਢਾਂਚੇ ਬਾਰੇ ਜਾਣਨ ਦੀ ਜ਼ਰੂਰਤ ਹੈ.
 
-## An example of the DOM
+## ਡੋਮ ਦੀ ਇੱਕ ਉਦਾਹਰਣ
 
-Let's start with the following simple document:
+ਆਓ ਹੇਠਾਂ ਦਿੱਤੇ ਸਧਾਰਨ ਦਸਤਾਵੇਜ਼ ਨਾਲ ਅਰੰਭ ਕਰੀਏ:
 
 ```html run no-beautify
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>About elk</title>
+  <title>ਸਿੱਧੂ ਬਾਰੇ</title>
 </head>
 <body>
-  The truth about elk.
+  ਸਿੱਧੂ ਬਾਰੇ ਸੱਚਾਈ.
 </body>
 </html>
 ```
 
-The DOM represents HTML as a tree structure of tags. Here's how it looks:
+DOM ਟੈਗਾਂ ਦੇ ਰੁੱਖ ਦੀ ਬਣਤਰ ਦੇ ਰੂਪ ਵਿੱਚ HTML ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ. ਇਹ ਕੁਝ ਇਸ ਤਰਾਂ ਦਿਖਦਾ ਹੈ:
 
 <div class="domtree"></div>
 
@@ -57,35 +57,35 @@ drawHtmlTree(node1, 'div.domtree', 690, 320);
 </script>
 
 ```online
-On the picture above, you can click on element nodes and their children will open/collapse.
+ਉਪਰੋਕਤ ਤਸਵੀਰ 'ਤੇ, ਤੁਸੀਂ ਐਲੀਮੈਂਟ ਨੋਡਜ਼' ਤੇ ਕਲਿਕ ਕਰ ਸਕਦੇ ਹੋ ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਬੱਚੇ ਖੁੱਲ੍ਹਣ / ਹਿਲ਼ਣਗੇ.
 ```
 
-Every tree node is an object.
+ਹਰ ਰੁੱਖ ਨੋਡ ਇਕ ਵਸਤੂ ਹੈ.
 
-Tags are *element nodes* (or just elements) and form the tree structure: `<html>` is at the root, then `<head>` and `<body>` are its children, etc.
+ਟੈਗਸ ਹਨ *element nodes* (ਜਾਂ ਬਸ elements) ਅਤੇ ਰੁੱਖ ਦਾ ਢਾਂਚਾ ਬਣਾਉਦੇ ਹਨ: `<html>` ਜੜ੍ਹ 'ਤੇ ਹੈ, ਫਿਰ `<head>` ਅਤੇ `<body>`  ਇਸ ਦੇ ਬੱਚੇ ਹਨ, ਆਦਿ
 
-The text inside elements forms *text nodes*, labelled as `#text`. A text node contains only a string. It may not have children and is always a leaf of the tree.
+ਅੰਦਰਲੇ ਤੱਤ ਬਣਦੇ ਹਨ *text nodes*,  `#text` ਦੇ ਤੌਰ ਤੇ ਲੇਬਲ ਕੀਤੇ ਗਏ ਹਨ. ਇੱਕ text ਨੋਡ ਵਿੱਚ ਸਿਰਫ ਇੱਕ ਸਤਰ ਹੁੰਦੀ ਹੈ. ਇਸ ਦੇ ਬੱਚੇ ਨਹੀਂ ਹੋ ਸਕਦੇ ਅਤੇ ਹਮੇਸ਼ਾਂ ਰੁੱਖ ਦਾ ਪੱਤਾ ਹੁੰਦਾ ਹੈ.
 
-For instance, the `<title>` tag has the text `"About elk"`.
+ਉਦਾਹਰਣ ਲਈ, `<title>`ਟੈਗ ਵਿੱਚ "About elk"   ਟੈਕਸਟ ਹੈ ``.
 
-Please note the special characters in text nodes:
+ਕਿਰਪਾ ਕਰਕੇ ਟੈਕਸਟ ਨੋਡਾਂ ਵਿੱਚ ਵਿਸ਼ੇਸ਼ ਅੱਖਰਾਂ ਨੂੰ ਨੋਟ ਕਰੋ:
 
-- a newline: `↵` (in JavaScript known as `\n`)
-- a space: `␣`
+- ਇੱਕ ਨਵੀਂ ਲਾਈਨ: `↵` (ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਵਿੱਚ `\n`)
+- ਇੱਕ ਸਪੇਸ:: `␣`
 
-Spaces and newlines are totally valid characters, like letters and digits. They form text nodes and become a part of the DOM. So, for instance, in the example above the `<head>` tag contains some spaces before `<title>`, and that text becomes a `#text` node (it contains a newline and some spaces only).
+ਸਪੇਸ ਅਤੇ ਨਵੀਂ ਲਾਈਨ ਪੂਰੀ ਤਰ੍ਹਾਂ ਯੋਗ ਅੱਖਰ ਹਨ, ਅੱਖਰ ਅਤੇ ਅੰਕ ਵਾਂਗ. ਉਹ ਟੈਕਸਟ ਨੋਡ ਬਣਾਉਂਦੇ ਹਨ ਅਤੇ DOM ਦਾ ਹਿੱਸਾ ਬਣ ਜਾਂਦੇ ਹਨ. ਇਸ ਲਈ, ਉਦਾਹਰਣ ਵਜੋਂ, ਉਪਰੋਕਤ ਉਦਾਹਰਣ ਵਿੱਚ`<head>` ਟੈਗ ਵਿਚ <title>` ਤੋਂ ਪਹਿਲਾਂ ਕੁਝ ਖਾਲੀ ਥਾਵਾਂ  ਹਨ`, ਅਤੇ ਉਹ ਟੈਕਸਟ ਇੱਕ `# ਟੈਕਸਟ` ਨੋਡ ਬਣ ਜਾਂਦਾ ਹੈ (ਇਸ ਵਿੱਚ ਇੱਕ ਨਵੀਂ ਲਾਈਨ ਹੈ ਅਤੇ ਕੁਝ ਖਾਲੀ ਥਾਂਵਾਂ ਹਨ).
 
-There are only two top-level exclusions:
-1. Spaces and newlines before `<head>` are ignored for historical reasons.
-2. If we put something after `</body>`, then that is automatically moved inside the `body`, at the end, as the HTML spec requires that all content must be inside `<body>`. So there can't be any spaces after `</body>`.
+ਇੱਥੇ ਸਿਰਫ ਦੋ ਉੱਚ-ਪੱਧਰ ਦੀਆਂ ਅਲਹਿਦਗੀਆਂ ਹਨ:
+1. `<head>` ਤੋਂ ਪਹਿਲਾਂ ਖਾਲੀ ਥਾਂਵਾਂ ਅਤੇ ਨਵੀਂਆਂ ਲਾਈਨਾਂ ਨੂੰ ਇਤਿਹਾਸਕ ਕਾਰਨਾਂ ਕਰਕੇ ਨਜ਼ਰ ਅੰਦਾਜ਼ ਕੀਤਾ ਜਾਂਦਾ ਹੈ.
+2.ਜੇ ਅਸੀਂ `</body> ਤੋਂ ਬਾਅਦ ਕੁਝ ਪਾਉਂਦੇ ਹਾਂ,ਤਦ ਉਹ ਆਪਣੇ ਆਪ ਹੀ `body` ਦੇ ਅੰਦਰ ਚਲੀ ਜਾਂਦੀ ਹੈ, ਅੰਤ ਵਿੱਚ, ਕਿਉਂਕਿ HTML ਸਪੇਕਿਫਿਕੇਸ਼ਨਾਂ ਦੀ ਜ਼ਰੂਰਤ ਹੈ ਕਿ ਸਾਰੀ ਸਮਗਰੀ `<body>` ਦੇ ਅੰਦਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ. ਇਸ ਲਈ `</body> ਤੋਂ ਬਾਅਦ ਕੋਈ ਥਾਂ ਨਹੀਂ ਹੋ ਸਕਦੀ.
 
-In other cases everything's straightforward -- if there are spaces (just like any character) in the document, then they become text nodes in the DOM, and if we remove them, then there won't be any.
+ਹੋਰ ਮਾਮਲਿਆਂ ਵਿੱਚ ਸਭ ਕੁਝ ਸਿੱਧਾ ਹੁੰਦਾ ਹੈ-- ਜੇ ਦਸਤਾਵੇਜ਼ ਵਿਚ ਖਾਲੀ ਥਾਂਵਾਂ ਹਨ (ਬਿਲਕੁਲ ਕਿਸੇ ਕੈਰੇਕਟਰ ਵਾਂਗ), ਫਿਰ ਉਹ DOM ਵਿੱਚ ਟੈਕਸਟ ਨੋਡ ਬਣ ਜਾਂਦੇ ਹਨ, ਅਤੇ ਜੇ ਅਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਹਟਾ ਦਿੰਦੇ ਹਾਂ, ਤਾਂ ਕੋਈ ਵੀ ਨਹੀਂ।
 
-Here are no space-only text nodes:
+ਇੱਥੇ ਕੋਈ ਸਪੇਸ-ਸਿਰਫ ਟੈਕਸਟ ਨੋਡ ਨਹੀਂ ਹਨ:
 
 ```html no-beautify
 <!DOCTYPE HTML>
-<html><head><title>About elk</title></head><body>The truth about elk.</body></html>
+<html><head><title>ਭਗਵੰਤ ਬਾਰੇ</title></head><body>ਭਗਵੰਤ ਬਾਰੇ ਸੱਚਾਈ.</body></html>
 ```
 
 <div class="domtree"></div>
@@ -96,21 +96,21 @@ let node2 = {"name":"HTML","nodeType":1,"children":[{"name":"HEAD","nodeType":1,
 drawHtmlTree(node2, 'div.domtree', 690, 210);
 </script>
 
-```smart header="Spaces at string start/end and space-only text nodes are usually hidden in tools"
-Browser tools (to be covered soon) that work with DOM usually do not show spaces at the start/end of the text and empty text nodes (line-breaks) between tags.
+```smart header="ਸਤਰ ਦੇ ਸ਼ੁਰੂ / ਅੰਤ ਅਤੇ ਖਾਲੀ ਥਾਵਾਂ ਤੇ ਖਾਲੀ ਥਾਂਵਾਂ ਅਕਸਰ ਟੂਲਸ ਵਿੱਚ ਲੁਕੀਆਂ ਹੁੰਦੀਆਂ ਹਨ"
+ਬ੍ਰਾਜ਼ਰ ਟੂਲ (ਜਲਦੀ ਹੀ ਦੇਖਾਂਗੇ) ਜੋ ਕਿ ਡੋਮ ਨਾਲ ਕੰਮ ਕਰਦੇ ਹਨ ਆਮ ਤੌਰ ਤੇ ਟੈਕਸਟ ਦੇ ਸ਼ੁਰੂ / ਅੰਤ ਵਿਚ ਅਤੇ ਟੈਗਾਂ ਵਿਚਕਾਰ ਖਾਲੀ ਟੈਕਸਟ ਨੋਡ (ਲਾਈਨ-ਬਰੇਕਸ) ਨਹੀਂ ਦਿਖਾਉਂਦੇ..
 
-Developer tools save screen space this way.
+ਡਿਵੈਲਪਰ ਟੂਲਸ ਇਸ ਤਰ੍ਹਾਂ ਸਕ੍ਰੀਨ ਸਪੇਸ ਨੂੰ ਸੇਵ ਕਰਦੇ ਹਨ.
 
-On further DOM pictures we'll sometimes omit them when they are irrelevant. Such spaces usually do not affect how the document is displayed.
+ਹੋਰ DOM ਤਸਵੀਰਾਂ 'ਤੇ ਅਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਕਦੇ ਕਦੇ ਛੱਡ ਦਿੰਦੇ ਹਾਂ ਜਦੋਂ ਉਹ ਠੁਕਵੇ ਨਹੀਂ ਹੁੰਦੇ. ਅਜਿਹੀਆਂ ਖਾਲੀ ਥਾਵਾਂ ਆਮ ਤੌਰ ਤੇ ਇਹ ਪ੍ਰਭਾਵਤ ਨਹੀਂ ਕਰਦੀਆਂ ਕਿ ਦਸਤਾਵੇਜ਼ ਕਿਵੇਂ ਪ੍ਰਦਰਸ਼ਤ ਕੀਤਾ ਜਾਂਦਾ ਹੈ.
 ```
 
-## Autocorrection
+## ਸਵੈ-ਸੁਧਾਰ
 
-If the browser encounters malformed HTML, it automatically corrects it when making the DOM.
+ਜੇ ਬ੍ਰਾਜ਼ਰ ਖਰਾਬ ਐਚਟੀਐਮਐਲ ਦਾ ਸਾਹਮਣਾ ਕਰਦਾ ਹੈ, ਤਾਂ ਇਹ DOM ਬਣਾਉਣ ਵੇਲੇ ਆਪਣੇ ਆਪ ਇਸ ਨੂੰ ਸਹੀ ਕਰ ਦਿੰਦਾ ਹੈ.
 
-For instance, the top tag is always `<html>`. Even if it doesn't exist in the document, it will exist in the DOM, because the browser will create it. The same goes for `<body>`.
+ਉਦਾਹਰਣ ਦੇ ਲਈ, ਚੋਟੀ ਦਾ ਟੈਗ ਹਮੇਸ਼ਾਂ `<html> is ਹੁੰਦਾ ਹੈ. ਅਗਰ ਇਹ ਦਸਤਾਵੇਜ਼ ਵਿੱਚ ਮੌਜੂਦ ਨਹੀਂ ਹੈ, ਇਹ DOM ਵਿੱਚ ਮੌਜੂਦ ਹੋਵੇਗਾ, ਕਿਉਂਕਿ ਬ੍ਰਾਜ਼ਰ ਇਸਨੂੰ ਸ੍ਵਾ ਪ੍ਰਕਾਸ਼ਿਤ ਕਰੇਗਾ. ਇਹ ਹੀ <body> ਟੈਗ ਲਈ ਵੀ ਲਾਗੂ ਹੈ.
 
-As an example, if the HTML file is the single word `"Hello"`, the browser will wrap it into `<html>` and `<body>`, and add the required `<head>`, and the DOM will be:
+ਇੱਕ ਉਦਾਹਰਣ ਦੇ ਤੌਰ ਤੇ, ਜੇ HTML ਫਾਈਲ ਇੱਕ ਸਿੰਗਲ ਸ਼ਬਦ "ਹੈਲੋ" ਹੈ, ਤਾਂ ਬ੍ਰਾਜ਼ਰ ਇਸ ਨੂੰ `<html>` ਅਤੇ `<body> ਵਿੱਚ ਲਪੇਟ ਦੇਵੇਗਾ, ਅਤੇ ਲੋੜੀਂਦਾ` <title> ਜੋੜ ਦੇਵੇਗਾ, ਅਤੇ ਏਹ DOM ਕਰੇਗਾ:
 
 
 <div class="domtree"></div>
@@ -121,9 +121,9 @@ let node3 = {"name":"HTML","nodeType":1,"children":[{"name":"HEAD","nodeType":1,
 drawHtmlTree(node3, 'div.domtree', 690, 150);
 </script>
 
-While generating the DOM, browsers automatically process errors in the document, close tags and so on.
+ਡੀਓਐਮ ਬਣਾਉਣ ਵੇਲੇ, ਬਰਾਜ਼ਰ ਆਟੋਮੈਟਿਕਲੀ ਡੌਕੂਮੈਂਟ ਵਿਚ ਗਲਤੀਆਂ, ਟੈਗਸ ਬੰਦ ਕਰਨ ਤੇ ਹੋਰ ਇਸ ਤਰਾਂ ਆਪਣੇ ਆਪ ਸੁਧੀਕਰਨ ਕਰਦੇ ਹਨ.
 
-A document with unclosed tags:
+ਬਿਨਾਂ ਬੰਦ ਟੈਗਾਂ ਵਾਲਾ ਇੱਕ ਦਸਤਾਵੇਜ਼:
 
 ```html no-beautify
 <p>Hello
@@ -132,7 +132,7 @@ A document with unclosed tags:
 <li>Dad
 ```
 
-...will become a normal DOM as the browser reads tags and restores the missing parts:
+...ਜਦੋਂ ਬ੍ਰਾਜ਼ਰ ਟੈਗਸ ਪੜ੍ਹਦਾ ਹੈ ਅਤੇ ਗੁੰਮਸ਼ੁਦਾ ਭਾਗਾਂ ਨੂੰ ਬਹਾਲ ਕਰਦਾ ਹੈ ਤਾਂ ਇਹ ਇੱਕ ਆਮ DOM ਬਣ ਜਾਵੇਗਾ.
 
 <div class="domtree"></div>
 
@@ -143,15 +143,15 @@ drawHtmlTree(node4, 'div.domtree', 690, 360);
 </script>
 
 ````warn header="Tables always have `<tbody>`"
-An interesting "special case" is tables. By the DOM specification they must have `<tbody>`, but HTML text may (officially) omit it. Then the browser creates `<tbody>` in the DOM automatically.
+ਇੱਕ ਦਿਲਚਸਪ "ਵਿਸ਼ੇਸ਼ ਕੇਸ" ਟੇਬਲ ਹੈ. DOM ਨਿਰਧਾਰਨ ਦੁਆਰਾ ਉਨ੍ਹਾਂ ਕੋਲ `<tbody>` ਹੋਣਾ ਲਾਜ਼ਮੀ ਹੈ, ਪਰ HTML ਟੈਕਸਟ (ਅਧਿਕਾਰਤ ਤੌਰ ਤੇ) ਇਸਨੂੰ ਛੱਡ ਸਕਦਾ ਹੈ. ਫੇਰ ਬਰਾਜ਼ਰ `<tbody>` ਨੂੰ ਆਪਣੇ-ਆਪ DOM ਵਿੱਚ  ਬਣਾਉਂਦਾ ਹੈ.
 
-For the HTML:
+HTML ਲਈ:
 
 ```html no-beautify
 <table id="table"><tr><td>1</td></tr></table>
 ```
 
-DOM-structure will be:
+DOM- ਬਣਤਰ ਹੋ ਜਾਵੇਗੀ:
 <div class="domtree"></div>
 
 <script>
@@ -160,26 +160,26 @@ let node5 = {"name":"TABLE","nodeType":1,"children":[{"name":"TBODY","nodeType":
 drawHtmlTree(node5,  'div.domtree', 600, 200);
 </script>
 
-You see? The `<tbody>` appeared out of nowhere. You should keep this in mind while working with tables to avoid surprises.
+ਤੁਸੀਂ ਵੇਖਿਆ? ਕਿਵੇ  <tbody>. ਪ੍ਰਗਟ ਹੋਇਆ. ਹੈਰਾਨੀ ਤੋਂ ਬਚਣ ਲਈ ਤੁਹਾਨੂੰ ਟੇਬਲਾਂ ਨਾਲ ਕੰਮ ਕਰਦੇ ਹੋਏ ਇਸ ਨੂੰ ਧਿਆਨ ਵਿੱਚ ਰੱਖਣਾ ਚਾਹੀਦਾ ਹੈ.
 ````
 
-## Other node types
+## ਹੋਰ ਨੋਡ ਕਿਸਮਾਂ
 
-There are some other node types besides elements and text nodes.
+ਐਲੀਮੈਂਟਸ ਅਤੇ ਟੈਕਸਟ ਨੋਡ ਤੋਂ ਇਲਾਵਾ ਕੁਝ ਹੋਰ ਨੋਡ ਕਿਸਮਾਂ ਹਨ.
 
-For example, comments:
+ਉਦਾਹਰਣ ਲਈ, ਕਮੈਂਟਸ:
 
 ```html
 <!DOCTYPE HTML>
 <html>
 <body>
-  The truth about elk.
+ .
   <ol>
-    <li>An elk is a smart</li>
+    <li>ਭਗਵੰਤ ਚੁਸਤ ਹੈ</li>
 *!*
-    <!-- comment -->
+    <!-- ਕਮੈਂਟ -->
 */!*
-    <li>...and cunning animal!</li>
+    <li>...ਅਤੇ ਚਲਾਕ ਬੰਦਾ!</li>
   </ol>
 </body>
 </html>
@@ -188,95 +188,94 @@ For example, comments:
 <div class="domtree"></div>
 
 <script>
-let node6 = {"name":"HTML","nodeType":1,"children":[{"name":"HEAD","nodeType":1,"children":[]},{"name":"BODY","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"\n  The truth about elk.\n    "},{"name":"OL","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"\n      "},{"name":"LI","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"An elk is a smart"}]},{"name":"#text","nodeType":3,"content":"\n      "},{"name":"#comment","nodeType":8,"content":"comment"},{"name":"#text","nodeType":3,"content":"\n      "},{"name":"LI","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"...and cunning animal!"}]},{"name":"#text","nodeType":3,"content":"\n    "}]},{"name":"#text","nodeType":3,"content":"\n  \n"}]}]};
+let node6 = {"name":"HTML","nodeType":1,"children":[{"name":"HEAD","nodeType":1,"children":[]},{"name":"BODY","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"\n   ਭਗਵੰਤ ਬਾਰੇ ਸੱਚਾਈ.\n    "},{"name":"OL","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"\n      "},{"name":"LI","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"ਭਗਵੰਤ ਚੁਸਤ ਹੈ"}]},{"name":"#text","nodeType":3,"content":"\n      "},{"name":"#comment","nodeType":8,"content":"comment"},{"name":"#text","nodeType":3,"content":"\n      "},{"name":"LI","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"...ਅਤੇ ਚਲਾਕ ਬੰਦਾ!"}]},{"name":"#text","nodeType":3,"content":"\n    "}]},{"name":"#text","nodeType":3,"content":"\n  \n"}]}]};
 
 drawHtmlTree(node6, 'div.domtree', 690, 500);
 </script>
 
-We can see here a new tree node type -- *comment node*, labeled as `#comment`, between two text nodes.
+ਅਸੀਂ ਇੱਥੇ ਇਕ ਨਵੀਂ ਟ੍ਰੀ ਨੋਡ ਟਾਈਪ ਵੇਖ ਸਕਦੇ ਹਾਂ -- *ਕਮੈਂਟ ਨੋਡ*, `#comment` ਦੇ ਤੌਰ ਤੇ ਲੇਬਲ , ਦੋ ਟੈਕਸਟ ਨੋਡਾਂ ਦੇ ਵਿਚਕਾਰ.
 
-We may think -- why is a comment added to the DOM? It doesn't affect the visual representation in any way. But there's a rule -- if something's in HTML, then it also must be in the DOM tree.
+ਅਸੀਂ ਸੋਚ ਸਕਦੇ ਹਾਂ -- ਕਿਉਂ ਇੱਕ ਟਿੱਪਣੀ ਡੀਓਐਮ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤੀ ਗਈ ਹੈ? ਇਹ ਕਿਸੇ ਵੀ ਤਰੀਕੇ ਨਾਲ ਦਰਸ਼ਨੀ ਪ੍ਰਤੀਨਿਧਤਾ ਨੂੰ ਪ੍ਰਭਾਵਤ ਨਹੀਂ ਕਰਦਾ. ਪਰ ਇੱਥੇ ਇੱਕ ਨਿਯਮ ਹੈ - ਜੇ ਕੁਝ HTML ਵਿੱਚ ਹੈ, ਤਾਂ ਇਹ DOM ਟ੍ਰੀ ਵਿੱਚ ਵੀ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ.
 
-**Everything in HTML, even comments, becomes a part of the DOM.**
+**ਐਚਟੀਐਮਐਲ ਵਿੱਚ ਹਰ ਚੀਜ਼, ਇੱਥੋਂ ਤੱਕ ਕਿ ਟਿੱਪਣੀਆਂ ਵੀ, ਡੋਮ ਦਾ ਇੱਕ ਹਿੱਸਾ ਬਣ ਜਾਂਦੀਆਂ ਹਨ.**
 
-Even the `<!DOCTYPE...>` directive at the very beginning of HTML is also a DOM node. It's in the DOM tree right before `<html>`. We are not going to touch that node, we even don't draw it on diagrams for that reason, but it's there.
+ਇਥੋਂ ਤਕ ਕਿ ਐਚਟੀਐਮਐਲ ਦੇ ਬਹੁਤ ਸ਼ੁਰੂ ਵਿਚ  `<!DOCTYPE...>` ਨਿਰਦੇਸ਼ ਵੀ ਇਕ ਡੋਮ ਨੋਡ ਹੈ. ਇਹ <html> ਤੋਂ ਬਿਲਕੁਲ ਪਹਿਲਾਂ ਡੋਮ ਟ੍ਰੀ ਵਿਚ ਹੈ. ਅਸੀਂ ਉਸ ਨੋਡ ਨੂੰ ਛੂਹਣ ਨਹੀਂ ਜਾ ਰਹੇ, ਅਸੀਂ ਇਸ ਕਾਰਨ ਕਰਕੇ ਇਸ ਨੂੰ ਚਿੱਤਰਾਂ 'ਤੇ ਨਹੀਂ ਵਖਾਉਂਦੇ, ਪਰ ਇਹ ਉਥੇ ਹੈ.
 
-The `document` object that represents the whole document is, formally, a DOM node as well.
+Document ਦਸਤਾਵੇਜ਼ `ਇਕਾਈ ਜੋ ਪੂਰੇ ਦਸਤਾਵੇਜ਼ ਨੂੰ ਦਰਸਾਉਂਦੀ ਹੈ, ਰਸਮੀ ਤੌਰ 'ਤੇ, ਇੱਕ ਡੋਮ ਨੋਡ ਵੀ ਹੈ.
 
-There are [12 node types](https://dom.spec.whatwg.org/#node). In practice we usually work with 4 of them:
+ਇੱਥੇ [12 ਨੋਡ ਕਿਸਮਾਂ] ਹਨ(https://dom.spec.whatwg.org/#node). ਅਭਿਆਸ ਵਿੱਚ ਅਸੀਂ ਆਮ ਤੌਰ ਤੇ ਉਨ੍ਹਾਂ ਵਿੱਚੋਂ 4 ਨਾਲ ਹੀ ਕੰਮ ਕਰਦੇ ਹਾਂ:
 
-1. `document` -- the "entry point" into DOM.
-2. element nodes -- HTML-tags, the tree building blocks.
-3. text nodes -- contain text.
-4. comments -- sometimes we can put information there, it won't be shown, but JS can read it from the DOM.
+1. `document` -- DOM ਵਿੱਚ "ਪ੍ਰਵੇਸ਼ ਬਿੰਦੂ".
+2. element nodes -- HTML- ਟੈਗਸ, ਰੁੱਖ ਦੇ ਬਣਤਰ ਤਰਾਂ.
+3. text nodes -- ਟੈਕਸਟ.
+4. comments -- ਕਈ ਵਾਰ ਅਸੀਂ ਉਥੇ ਜਾਣਕਾਰੀ ਪਾ ਸਕਦੇ ਹਾਂ, ਇਹ ਪ੍ਰਦਰਸ਼ਿਤ ਨਹੀਂ ਕੀਤੀ ਜਾਏਗੀ, ਪਰ ਜੇਐਸ ਇਸ ਨੂੰ ਡੋਮ ਤੋਂ ਪੜ੍ਹ ਸਕਦਾ ਹੈ.
 
-## See it for yourself
+## ਇਸ ਨੂੰ ਆਪਣੇ ਆਪ ਲਈ ਵੇਖੋ
 
-To see the DOM structure in real-time, try [Live DOM Viewer](http://software.hixie.ch/utilities/js/live-dom-viewer/). Just type in the document, and it will show up as a DOM at an instant.
+ਡੀਓਐਮ ਡੰਚੇ ਨੂੰ ਰੀਅਲ-ਟਾਈਮ ਵਿੱਚ ਵੇਖਣ ਲਈ, [ਲਾਈਵ ਡੋਮ ਵਿਉਅਰ] ਦੇਖੋ.(http://software.hixie.ch/utilities/js/live-dom-viewer/). ਸਿਰਫ ਦਸਤਾਵੇਜ਼ ਟਾਈਪ ਕਰੋ, ਅਤੇ ਇਹ ਇਕਦਮ DOM ਦੇ ਰੂਪ ਵਿਚ ਦਿਖਾਈ ਦੇਵੇਗਾ.
 
-Another way to explore the DOM is to use the browser developer tools. Actually, that's what we use when developing.
+DOM ਦੀ ਪੜਚੋਲ ਕਰਨ ਦਾ ਇਕ ਹੋਰ ਤਰੀਕਾ ਹੈ ਬ੍ਰਾਜ਼ਰ ਡਿਵੈਲਪਰ ਟੂਲਸ ਦੀ ਵਰਤੋਂ ਕਰਨਾ. ਦਰਅਸਲ, ਡਵੈਲਪਮੇਂਟ ਕਰਨ ਵੇਲੇ ਅਸੀਂ ਇਹੀ ਵਰਤਦੇ ਹਾਂ.
 
-To do so, open the web page [elk.html](elk.html), turn on the browser developer tools and switch to the Elements tab.
+ਅਜਿਹਾ ਕਰਨ ਲਈ, ਏਹ ਵੈੱਬ ਪੇਜ ਖੋਲ੍ਹੋ [elk.html] (elk.html), ਬ੍ਰਾਜ਼ਰ ਡਿਵੈਲਪਰ ਟੂਲ ਨੂੰ ਚਾਲੂ ਕਰੋ ਅਤੇ ਐਲੀਮੈਂਟਸ ਟੈਬ ਤੇ ਜਾਓ.
 
-It should look like this:
+ਇਹ ਇਸ ਤਰਾਂ ਦਿਖਣਾ ਚਾਹੀਦਾ ਹੈ:
 
 ![](elk.svg)
 
-You can see the DOM, click on elements, see their details and so on.
+ਤੁਸੀਂ ਡੋਮ ਦੇਖ ਸਕਦੇ ਹੋ, ਐਲੀਮੈਂਟਸ ਤੇ ਕਲਿਕ ਕਰ ਸਕਦੇ ਹੋ, ਉਹਨਾਂ ਦੇ ਵੇਰਵੇ ਵੇਖ ਸਕਦੇ ਹੋ ਆਦਿ.
+ਕਿਰਪਾ ਕਰਕੇ ਯਾਦ ਰੱਖੋ ਕਿ ਡਿਵੈਲਪਰ ਟੂਲਸ ਵਿੱਚ DOM ਬਣਤਰ ਸਰਲ ਬਣਾਈ ਗਈ ਹੈ.ਟੈਕਸਟ ਨੋਡਸ ਟੈਕਸਟ ਵਾਂਗ ਦਿਖਾਇਆ ਜਾਂਦਾ ਹੈ.ਅਤੇ ਇੱਥੇ ਕੋਈ ਵੀ "ਖਾਲੀ" (ਸਿਰਫ ਸਪੇਸ) ਟੈਕਸਟ ਨੋਡ ਨਹੀਂ ਹਨ. ਇਹ ਵਧੀਆ ਹੈ, ਕਿਉਂਕਿ ਜ਼ਿਆਦਾਤਰ ਸਮੇਂ ਅਸੀਂ ਐਲੀਮੈਂਟ ਨੋਡਸ ਵਿੱਚ ਦਿਲਚਸਪੀ ਲੈਂਦੇ ਹਾਂ.
 
-Please note that the DOM structure in developer tools is simplified. Text nodes are shown just as text. And there are no "blank" (space only) text nodes at all. That's fine, because most of the time we are interested in element nodes.
+ਕਲਿਕ ਕਰੋ <span class="devtools" style="background-position:-328px -124px"></span> ਖੱਬੇ-ਉੱਪਰਲੇ ਕੋਨੇ 'ਤੇ ਬਟਨ ਸਾਨੂੰ ਮਾਉਸ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਵੈਬਪੰਨੇ ਤੋਂ ਨੋਡ ਚੁਣਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ (ਜਾਂ ਹੋਰ ਪੁਆਇੰਟਰ ਉਪਕਰਣ) ਅਤੇ "ਜਾਂਚ" ਕਰੋ (ਅੱਤੇ ਐਲੀਮੈਂਟਸ ਟੈਬ ਵਿੱਚ ਸਕ੍ਰੌਲ ਕਰੋ). ਇਹ ਬਹੁਤ ਵਧੀਆ ਕੰਮ ਕਰਦਾ ਹੈ ਜਦੋਂ ਸਾਡੇ ਕੋਲ ਇੱਕ ਵਿਸ਼ਾਲ HTML ਪੇਜ (ਅਤੇ ਇਸ ਨਾਲ ਸੰਬੰਧਿਤ ਵਿਸ਼ਾਲ DOM) ਹੋਵੇ ਅਤੇ ਅਸੀਂ ਇਸ ਵਿੱਚ ਕਿਸੇ ਵਿਸ਼ੇਸ਼ ਤੱਤ ਦੀ ਜਗ੍ਹਾ ਨੂੰ ਵੇਖਣਾ ਚਾਹਾਂਗੇ..
 
-Clicking the <span class="devtools" style="background-position:-328px -124px"></span> button in the left-upper corner allows us to choose a node from the webpage using a mouse (or other pointer devices) and "inspect" it (scroll to it in the Elements tab). This works great when we have a huge HTML page (and corresponding huge DOM) and would like to see the place of a particular element in it.
-
-Another way to do it would be just right-clicking on a webpage and selecting "Inspect" in the context menu.
+ਅਜਿਹਾ ਕਰਨ ਦਾ ਇਕ ਹੋਰ ਤਰੀਕਾ ਵੈਬਪੰਨੇ ਤੇ ਸਿਰਫ ਸੱਜਾ ਕਲਿੱਕ ਕਰਨਾ ਅਤੇ ਪ੍ਰਸੰਗ ਮੀਨੂੰ ਵਿੱਚ "inspect" ਦੀ ਚੋਣ ਕਰਨਾ ਹੋਵੇਗਾ.
 
 ![](inspect.svg)
 
-At the right part of the tools there are the following subtabs:
-- **Styles** -- we can see CSS applied to the current element rule by rule, including built-in rules (gray). Almost everything can be edited in-place, including the dimensions/margins/paddings of the box below.
-- **Computed** -- to see CSS applied to the element by property: for each property we can see a rule that gives it (including CSS inheritance and such).
-- **Event Listeners** -- to see event listeners attached to DOM elements (we'll cover them in the next part of the tutorial).
-- ...and so on.
+ਟੂਲਜ਼ ਦੇ ਸੱਜੇ ਪਾਸੇ ਹੇਠਾਂ ਉਪ-ਟੈਬਾਂ ਹਨ:
+- **Styles** --ਅਸੀਂ ਨਿਯਮ ਦੁਆਰਾ ਮੌਜੂਦਾ ਐਲੀਮੈਂਟ ਨਿਯਮ ਤੇ CSS ਲਾਗੂ ਕੀਤੇ ਵੇਖ ਸਕਦੇ ਹਾਂ, ਬਿਲਟ-ਇਨ ਰੂਲਜ਼ ਸਮੇਤ (gray). ਲਗਭਗ ਹਰ ਚੀਜ ਨੂੰ ਅੰਦਰ-ਅੰਦਰ ਸੰਪਾਦਿਤ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ, ਹੇਠ ਦਿੱਤੇ ਬਕਸੇ ਦੇ ਮਾਪ / ਮਾਰਜਿਨ / ਪੈਡਿੰਗਸ ਸਮੇਤ.
+- **Computed** -- ਪਰੋਪੇਰਟੀਸ ਦੇ ਅਨੁਸਾਰ ਏਲੇਮੈਂਟ ਉੱਤੇ CSS ਲਾਗੂ ਕਰਨ ਲਈ: ਹਰੇਕ ਪਰੋਪੇਰਟੀਸ ਲਈ ਅਸੀਂ ਇੱਕ ਨਿਯਮ ਵੇਖ ਸਕਦੇ ਹਾਂ (CSS ਵਿਰਾਸਤ ਅਤੇ ਇਸ ਸਮੇਤ) ਨੂੰ.
+- **Event Listeners** -- DOM ਤੱਤ ਨਾਲ ਜੁੜੇ ਇਵੈਂਟ ਸਰੋਤਿਆਂ ਨੂੰ ਵੇਖਣ ਲਈ ਇਸ (ਈਸਨੂੰ ਟਿਟੋਰਿਅਲ ਦੇ ਅਗਲੇ ਹਿੱਸੇ ਵਿੱਚ ਕਵਰ ਕਰਾਂਗੇ).
+- ...ਇਤਆਦਿ.
 
-The best way to study them is to click around. Most values are editable in-place.
+ਉਨ੍ਹਾਂ ਦਾ ਅਧਿਐਨ ਕਰਨ ਦਾ ਸਭ ਤੋਂ ਵਧੀਆ ਤਰੀਕਾ ਹੈ ਇਧਰ ਉਧਰ ਕਲਿੱਕ ਕਰਨਾ. ਬਹੁਤੇ ਮੁੱਲ ਜਗ੍ਹਾ-ਜਗ੍ਹਾ ਸੰਪਾਦਿਤ ਕੀਤੇ ਜਾ ਸਕਦੇ ਹਨ.ਗ੍ਹਾ ਸੰਪਾਦਿਤ ਕੀਤੇ ਜਾ ਸਕਦੇ ਹਨ.
 
-## Interaction with console
+## ਕੰਸੋਲ ਨਾਲ ਗੱਲਬਾਤ
 
-As we work the DOM, we also may want to apply JavaScript to it. Like: get a node and run some code to modify it, to see the result. Here are few tips to travel between the Elements tab and the console.
+ਜਿਵੇਂ ਕਿ ਅਸੀਂ ਡੋਮ ਚ ਕੰਮ ਕਰਦੇ ਹਾਂ, ਅਸੀਂ ਇਸ ਵਿਚ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਵੀ ਲਾਗੂ ਕਰਨਾ ਚਾਹ ਸਕਦੇ ਹਾਂ. ਜਿਵੇ ਕੀ: ਨੋਡ ਪ੍ਰਾਪਤ ਕਰੋ ਅਤੇ ਇਸ ਨੂੰ ਸੋਧਣ ਲਈ ਕੁਝ ਕੋਡ ਚਲਾਓ, ਨਤੀਜਾ ਵੇਖਣ ਲਈ. ਐਲੀਮੈਂਟਸ ਟੈਬ ਅਤੇ ਕੰਸੋਲ ਦੇ ਵਿਚਕਾਰ ਸ੍ਵਿਚ ਕਰਨ ਲਈ ਇੱਥੇ ਕੁਝ ਸੁਝਾਅ ਹਨ.
 
-For the start:
+ਸ਼ੁਰੂਆਤ ਲਈ:
 
-1. Select the first `<li>` in the Elements tab.
-2. Press `key:Esc` -- it will open console right below the Elements tab.
+1. ਐਲੀਮੈਂਟਸ ਟੈਬ ਵਿੱਚ ਪਹਿਲਾਂ `<li>` ਦੀ ਚੋਣ ਕਰੋ.
+2. `ਕੁੰਜੀ: Esc` ਦਬਾਓ - ਇਹ ਐਲੀਮੈਂਟਸ ਟੈਬ ਦੇ ਬਿਲਕੁਲ ਹੇਠਾਂ ਕੰਸੋਲ ਖੋਲ੍ਹੇਗੀ.
 
-Now the last selected element is available as `$0`, the previously selected is `$1` etc.
+ਹੁਣ ਆਖਰੀ ਚੁਣਿਆ ਚੁਣਿਆ ਤੱਤ `$0` ਦੇ ਰੂਪ ਵਿੱਚ ਉਪਲਬਧ ਹੈ, ਪਹਿਲਾਂ ਚੁਣਿਆ  `$1` ਆਦਿ ਹੈ.
 
-We can run commands on them. For instance, `$0.style.background = 'red'` makes the selected list item red, like this:
+ਅਸੀਂ ਉਨ੍ਹਾਂ ਤੇ ਕਮਾਂਡਾਂ ਚਲਾ ਸਕਦੇ ਹਾਂ. ਉਦਾਹਰਣ ਦੇ ਲਈ, `$0.style.background = 'red'` ਚੁਣੀ ਸੂਚੀ ਆਈਟਮ ਨੂੰ ਲਾਲ ਬਣਾ ਦਿੰਦਾ ਹੈ:
 
 ![](domconsole0.svg)
 
-That's how to get a node from Elements in Console.
+ਕੰਸੋਲ ਵਿੱਚ ਐਲੀਮੈਂਟਸ ਤੋਂ ਨੋਡ ਇਸ ਤਰ੍ਹਾਂ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ.
 
-There's also a road back. If there's a variable referencing a DOM node, then we can use the command `inspect(node)` in Console to see it in the Elements pane.
+ਇਥੇ ਇਕ ਮੁੜਨ ਦਾ ਰਸਤਾ ਵੀ ਹੈ. ਜੇ ਇੱਕ DOM ਨੋਡ ਦਾ ਹਵਾਲਾ ਦੇਣ ਵਾਲਾ ਕੋਈ ਵੇਰੀਏਬਲ ਹੈ, ਤਾਂ ਅਸੀਂ ਕਮਾਂਡ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹਾਂ `inspect(node)` ਇਸ ਨੂੰ ਐਲੀਮੈਂਟਸ ਪੈਨ ਵਿੱਚ ਵੇਖਣ ਲਈ ਕਨਸੋਲ ਦਵਾਰਾ.
 
-Or we can just output the DOM node in the console and explore "in-place", like `document.body` below:
+ਜਾਂ ਅਸੀਂ ਕੰਸੋਲ ਵਿੱਚ DOM ਨੋਡ ਨੂੰ ਆਉਟਪੁੱਟ ਕਰ ਸਕਦੇ ਹਾਂ ਅਤੇ "ਇਨ-ਪਲੇਸ" ਜਿਵੇਂ, `document.body` ਦੀ ਪੜਚੋਲ ਕਰੋ ਹੇਠ ਅਨੁਸਾਰ:
 
 ![](domconsole1.svg)
 
-That's for debugging purposes of course. From the next chapter on we'll access and modify DOM using JavaScript.
+ਇਹ ਬੇਸ਼ਕ ਡੀਬੱਗਿੰਗ ਉਦੇਸ਼ਾਂ ਲਈ ਹੈ. ਅਗਲੇ ਅਧਿਆਇ ਤੋਂ ਅਸੀਂ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ DOM ਤੱਕ ਪਹੁੰਚ ਅਤੇ ਸੰਸ਼ੋਧਨ ਕਰਾਂਗੇ.
 
-The browser developer tools are a great help in development: we can explore the DOM, try things and see what goes wrong.
+ਬ੍ਰਾਜ਼ਰ ਡਿਵੈਲਪਰ ਟੂਲ ਵਿਕਾਸ ਵਿਚ ਵੱਡੀ ਸਹਾਇਤਾ ਹਨ: ਅਸੀਂ ਡੋਮ ਦੀ ਪੜਚੋਲ ਕਰ ਸਕਦੇ ਹਾਂ, ਚੀਜ਼ਾਂ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਸਕਦੇ ਹਾਂ ਅਤੇ ਦੇਖ ਸਕਦੇ ਹਾਂ ਕਿ ਕੀ ਗਲਤ ਹੋਇਆ ਹੈ.
 
-## Summary
+## ਸਾਰ
 
-An HTML/XML document is represented inside the browser as the DOM tree.
+ਇੱਕ HTML / XML ਦਸਤਾਵੇਜ਼ DOM ਟਰੀ ਦੇ ਰੂਪ ਵਿੱਚ ਬ੍ਰਾਜ਼ਰ ਦੇ ਅੰਦਰ ਪ੍ਰਸਤੁਤ ਕੀਤਾ ਜਾਂਦਾ ਹੈ.
 
-- Tags become element nodes and form the structure.
-- Text becomes text nodes.
-- ...etc, everything in HTML has its place in DOM, even comments.
+- ਟੈਗਸ ਐਲੀਮੈਂਟ ਨੋਡ ਬਣ ਜਾਂਦੇ ਹਨ ਅਤੇ ਬਣਤਰ ਦਾ ਨਿਰਮਾਣ ਕਰਦੇ ਹਨ.
+- ਟੈਕਸਟ ਟੈਕਸਟ ਨੋਡ ਬਣ ਜਾਂਦਾ ਹੈ.
+- ...ਆਦਿ, HTML ਵਿੱਚ ਹਰ ਚੀਜ ਦੀ ਡੋਮ ਵਿੱਚ ਆਪਣੀ ਜਗ੍ਹਾ ਹੁੰਦੀ ਹੈ, ਟਿੱਪਣੀਆਂ ਵੀ.
 
-We can use developer tools to inspect DOM and modify it manually.
+ਅਸੀਂ ਡੀਓਐਮ ਦਾ ਮੁਆਇਨਾ ਕਰਨ ਅਤੇ ਇਸ ਨੂੰ ਦਸਤੀ ਸੰਸ਼ੋਧਿਤ ਕਰਨ ਲਈ ਡਵੈਲਪਰ ਟੂਲਸ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹਾਂ.
 
-Here we covered the basics, the most used and important actions to start with. There's an extensive documentation about Chrome Developer Tools at <https://developers.google.com/web/tools/chrome-devtools>. The best way to learn the tools is to click here and there, read menus: most options are obvious. Later, when you know them in general, read the docs and pick up the rest.
+ਇੱਥੇ ਅਸੀਂ ਮੁਢਲੀਆਂ ਗੱਲਾਂ ਨੂੰ ਕਵਰ ਕੀਤਾ, ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਸਭ ਤੋਂ ਵੱਧ ਵਰਤੇ ਜਾਂਦੇ ਅਤੇ ਮਹੱਤਵਪੂਰਨ ਕੰਮ. ਤੇ ਕ੍ਰੋਮ ਡਿਵੈਲਪਰ ਟੂਲਸ ਬਾਰੇ ਇੱਕ ਵਿਆਪਕ ਦਸਤਾਵੇਜ਼ ਹੈ <https://developers.google.com/web/tools/chrome-devtools>. ਸਾਧਨਾਂ ਨੂੰ ਸਿੱਖਣ ਦਾ ਸਭ ਤੋਂ ਉੱਤਮ ਡੰਗ ਹੈ ਇਧਰ ਉਧਰ ਕਲਿੱਕ ਕਰਨਾ, ਅੱਤੇ ਮੀਨੂ ਪੜ੍ਹਨਾ: ਜ਼ਿਆਦਾਤਰ ਵਿਕਲਪ ਸਪੱਸ਼ਟ ਹਨ. ਬਾਅਦ ਵਿੱਚ, ਜਦੋਂ ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਜਾਣ ਲਓਗੇ , ਤਾਂ ਡੌਕਸ ਨੂੰ ਪੜ੍ਹੋ ਅਤੇ ਬਾਕੀ ਵਿਕਲਪਾਂ ਨੂੰ ਚੁਣੋ.
 
-DOM nodes have properties and methods that allow us to travel between them, modify them, move around the page, and more. We'll get down to them in the next chapters.
+ਡੋਮ ਨੋਡਾਂ ਵਿਚ ਪ੍ਰੋਪਰਟੀਸ ਅਤੇ ਮੇਥਡਸ ਹੁੰਦੇ ਹਨ ਜੋ ਸਾਨੂੰ ਉਨ੍ਹਾਂ ਵਿਚਕਾਰ ਯਾਤਰਾ ਕਰਨ ਦਿੰਦੇ ਹਨ, ਉਹਨਾਂ ਨੂੰ ਸੋਧੋ, ਪੇਜ ਦੇ ਦੁਆਲੇ ਘੁੰਮੋ, ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ. ਅਸੀਂ ਅਗਲੇ ਅਧਿਆਵਾਂ ਵਿਚ ਉਨ੍ਹਾਂ ਨੂੰ ਦੇਖਾਂਗੇ.
