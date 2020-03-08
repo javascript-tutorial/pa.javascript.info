@@ -1,17 +1,16 @@
-There are many ways, for instance:
+ਇੱਥੇ ਬਹੁਤ ਸਾਰੇ ਤਰੀਕੇ ਹਨ, ਉਦਾਹਰਣ ਵਜੋਂ:
 
-
-The `<div>` DOM node:
+`<div>` DOM ਨੋਡ:
 
 ```js
 document.body.firstElementChild
-// or
+// ਜਾਂ
 document.body.children[0]
-// or (the first node is space, so we take 2nd)
+// ਜਾਂ (ਪਹਿਲਾ ਨੋਡ ਸਪੇਸ ਹੈ, ਇਸਲਈ ਅਸੀਂ ਦੂਜਾ ਸਥਾਨ ਲੈਂਦੇ ਹਾਂ)
 document.body.childNodes[1]
 ```
 
-The `<ul>` DOM node:
+`<ul>`DOM ਨੋਡ:
 
 ```js
 document.body.lastElementChild
@@ -19,9 +18,9 @@ document.body.lastElementChild
 document.body.children[1]
 ```
 
-The second `<li>` (with Pete):
+ਦੂਜਾ`<li>` (ਪੀਟ ਨਾਲ):
 
 ```js
-// get <ul>, and then get its last element child
+// ਪ੍ਰਾਪਤ ਕਰੋ <ul>,ਅਤੇ ਫਿਰ ਇਸ ਦਾ ਆਖਰੀ ਏਲੇਮੈਂਟ ਵਾਲਾ ਬੱਚਾ ਪ੍ਰਾਪਤ ਕਰੋ
 document.body.lastElementChild.lastElementChild
 ```

@@ -1,6 +1,6 @@
-1. Yes, true. The element `elem.lastChild` is always the last one, it has no `nextSibling`.
-2. No, wrong, because `elem.children[0]` is the first child *among elements*. But there may exist non-element nodes before it. So `previousSibling` may be a text node.
+1. ਹਾਂ ਸਹੀ. ਏਲੇਮੈਂਟ `elem.lastChild` ਹਮੇਸ਼ਾਂ ਆਖਰੀ ਹੁੰਦਾ ਹੈ, ਇਸਦਾ ਕੋਈ ਸਮਕਸ਼ ਨਹੀਂ ਹੁੰਦਾ `nextSibling`.
+2. ਨਹੀਂ, ਗਲਤ, ਕਿਉਂਕਿ `elem.children[0]` ਪਹਿਲਾ ਬੱਚਾ ਹੈ *among elements*. ਪਰ ਇਸ ਤੋਂ ਪਹਿਲਾਂ ਗੈਰ-ਏਲੇਮੈਂਟ ਨੋਡ ਮੌਜੂਦ ਹੋ ਸਕਦੇ ਹਨ. ਇਸ ਲਈ`previousSibling` ਟੈਕਸਟ ਨੋਡ ਹੋ ਸਕਦਾ ਹੈ.
 
-Please note: for both cases if there are no children, then there will be an error.
+ਕਿਰਪਾ ਕਰਕੇ ਨੋਟ ਕਰੋ: ਦੋਵਾਂ ਮਾਮਲਿਆਂ ਲਈ ਜੇ ਕੋਈ ਬੱਚੇ ਨਹੀਂ ਹਨ, ਤਾਂ ਏਹ ਇੱਕ ਗਲਤੀ ਹੋਏਗੀ.
 
-If there are no children, `elem.lastChild` is `null`, so we can't access `elem.lastChild.nextSibling`. And the collection `elem.children` is empty (like an empty array `[]`).
+ਜੇ ਕੋਈ ਬੱਚੇ ਨਹੀਂ ਹਨ, `elem.lastChild` ਹੈ `null`, ਇਸ ਲਈ ਅਸੀਂ ਐਕਸੈਸ ਨਹੀਂ ਕਰ ਸਕਦੇ `elem.lastChild.nextSibling`. ਅਤੇ ਸੰਗ੍ਰਹਿ`elem.children` ਖਾਲੀ ਹੈ (ਖਾਲੀ ਐਰੇ ਵਾਂਗ `[]`).
