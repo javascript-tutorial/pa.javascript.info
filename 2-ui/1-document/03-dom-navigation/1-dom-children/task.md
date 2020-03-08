@@ -2,9 +2,9 @@ importance: 5
 
 ---
 
-# DOM children
+# DOM ਬੱਚੇ
 
-Look at this page:
+ਇਸ ਪੇਜ ਨੂੰ ਵੇਖੋ:
 
 ```html
 <html>
@@ -18,7 +18,7 @@ Look at this page:
 </html>
 ```
 
-For each of the following, give at least one way of how to access them:
-- The `<div>` DOM node?
-- The `<ul>` DOM node?
-- The second `<li>` (with Pete)?
+ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਹਰੇਕ ਲਈ, ਉਹਨਾਂ ਤੱਕ ਪਹੁੰਚਣ ਦੇ ਤਰੀਕੇ ਦਾ ਘੱਟੋ ਘੱਟ ਇੱਕ ਢੰਗ ਦਿਓ:
+-  `<div>`DOM ਨੋਡ?
+-  `<ul>` DOM ਨੋਡ?
+- ਦੂਜਾ `<li>` (ਪੀਟ ਨਾਲ)?
