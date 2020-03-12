@@ -5,37 +5,36 @@ libs:
 ---
 
 
-# Walking the DOM
+# ਡੋਮ ਨੂੰ ਤੁਰਨਾ
 
-The DOM allows us to do anything with elements and their contents, but first we need to reach the corresponding DOM object.
+DOM ਸਾਨੂੰ ਤੱਤ ਅਤੇ ਉਹਨਾਂ ਦੀ ਸਮੱਗਰੀ ਨਾਲ ਕੁਝ ਵੀ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ, ਪਰ ਪਹਿਲਾਂ ਸਾਨੂੰ ਸੰਬੰਧਿਤ DOM ਆਬਜੈਕਟ ਤੱਕ ਪਹੁੰਚਣ ਦੀ ਜ਼ਰੂਰਤ ਹੈ.
 
-All operations on the DOM start with the `document` object. That's the main "entry point" to DOM. From it we can access any node.
+DOM ਤੇ ਸਾਰੇ ਕਾਰਜ `document` ਇਕਾਈ ਨਾਲ ਸ਼ੁਰੂ ਹੁੰਦੇ ਹਨ. ਇਹ DOM ਦਾ ਮੁੱਖ "ਪ੍ਰਵੇਸ਼ ਬਿੰਦੂ" ਹੈ. ਇਸ ਤੋਂ ਅਸੀਂ ਕਿਸੇ ਵੀ ਨੋਡ ਤੱਕ ਪਹੁੰਚ ਸਕਦੇ ਹਾਂ.
 
-Here's a picture of links that allow for travel between DOM nodes:
-
+ਲਿੰਕ ਦੀ ਇੱਕ ਤਸਵੀਰ ਇਹ ਹੈ ਜੋ ਡੋਮ ਨੋਡਾਂ ਵਿਚਕਾਰ ਯਾਤਰਾ ਦੀ ਆਗਿਆ ਦਿੰਦੀ ਹੈ:
 ![](dom-links.svg)
 
-Let's discuss them in more detail.
+ਆਓ ਉਨ੍ਹਾਂ ਬਾਰੇ ਵਧੇਰੇ ਵਿਸਥਾਰ ਨਾਲ ਵਿਚਾਰ ਕਰੀਏ.
 
-## On top: documentElement and body
+## ਸਿਖਰ 'ਤੇ: documentElement ਅਤੇ body
 
-The topmost tree nodes are available directly as `document` properties:
+ਸਿਖਰ ਦੇ tree ਨੋਡ ਸਿੱਧੇ ਤੌਰ 'ਤੇ ਉਪਲਬਧ ਹਨ `document` ਪਰੋਪੇਰਟਿਸ ਦੇ ਰੂਪ ਵਿੱਚ::
 
 `<html>` = `document.documentElement`
-: The topmost document node is `document.documentElement`. That's the DOM node of the `<html>` tag.
+: ਸਭ ਤੋਂ ਪੈਹਲਾ ਦਸਤਾਵੇਜ਼ ਨੋਡ ਹੈ `document.documentElement`. ਉਹ `<html>` ਟੈਗ ਦਾ ਡੋਮ ਨੋਡ ਹੈ.
 
 `<body>` = `document.body`
-: Another widely used DOM node is the `<body>` element -- `document.body`.
+: ਇਕ ਹੋਰ ਵਿਆਪਕ ਤੌਰ ਤੇ ਵਰਤਿਆ ਜਾਂਦਾ ਡੋਮ ਨੋਡ `<body>>` ਐਲੀਮੈਂਟ ਹੈ -- `document.body`.
 
 `<head>` = `document.head`
-: The `<head>` tag is available as `document.head`.
+: `<head>` ਟੈਗ ਇਸ ਤਰਾਂ ਉਪਲੱਬਧ ਹੈ `document.head`.
 
-````warn header="There's a catch: `document.body` can be `null`"
-A script cannot access an element that doesn't exist at the moment of running.
+````warn header="ਇਕ ਕੈਚ ਹੈ: `document.body` ਹੋ ਸਕਦਾ ਹੈ`null`"
+ਸਕ੍ਰਿਪਟ ਉਸ ਐਲੀਮੈਂਟ ਤੱਕ ਨਹੀਂ ਪਹੁੰਚ ਸਕਦੀ ਜੋ ਚੱਲਣ ਦੇ ਸਮੇਂ ਮੌਜੂਦ ਨਹੀਂ ਹੈ.
 
-In particular, if a script is inside `<head>`, then `document.body` is unavailable, because the browser did not read it yet.
+ਖ਼ਾਸਕਰ, ਜੇ ਕੋਈ ਸਕ੍ਰਿਪਟ `<head>` ਦੇ ਅੰਦਰ ਹੈ, then `document.body` ਅਣਉਪਲਬਧ ਹੈ, ਕਿਉਂਕਿ ਬ੍ਰਾਜ਼ਰ ਨੇ ਹਾਲੇ ਇਸਨੂੰ ਨਹੀਂ ਪੜਿਆ.
 
-So, in the example below the first `alert` shows `null`:
+ਇਸ ਲਈ, ਪਹਿਲੇ ਹੇਠਾਂ ਦਿੱਤੀ ਉਦਾਹਰਣ ਵਿੱਚ `alert` ਦਿਖੇਗਾ `null`:
 
 ```html run
 <html>
@@ -43,7 +42,7 @@ So, in the example below the first `alert` shows `null`:
 <head>
   <script>
 *!*
-    alert( "From HEAD: " + document.body ); // null, there's no <body> yet
+    alert( "From HEAD: " + document.body ); // null, ਅਜੇ ਕੋਈ <body> ਨਹੀਂ ਹੈ
 */!*
   </script>
 </head>
@@ -51,7 +50,7 @@ So, in the example below the first `alert` shows `null`:
 <body>
 
   <script>
-    alert( "From BODY: " + document.body ); // HTMLBodyElement, now it exists
+    alert( "From BODY: " + document.body ); // HTMLBodyElement, ਹੁਣ ਇਹ ਮੌਜੂਦ ਹੈ
   </script>
 
 </body>
@@ -59,18 +58,18 @@ So, in the example below the first `alert` shows `null`:
 ```
 ````
 
-```smart header="In the DOM world `null` means \"doesn't exist\""
-In the DOM, the `null` value means "doesn't exist" or "no such node".
+```smart header="ਡੋਮ ਦੁਨੀਆ ਵਿਚ `null` ਦਾ ਮਤਲਬ ਹੈ \"ਮੌਜੂਦ ਨਹੀਂ ਹੈ\""
+ਡੋਮ ਵਿਚ, `null` ਦਾ ਅਰਥ ਹੈ "ਮੌਜੂਦ ਨਹੀਂ" ਜਾਂ "ਅਜਿਹਾ ਕੋਈ ਨੋਡ ਨਹੀਂ".
 ```
 
-## Children: childNodes, firstChild, lastChild
+## ਬੱਚੇ: ਚਾਈਲਡਨੋਡਜ਼, ਫਸਟ ਚਾਈਲਡ, ਆਖਰੀ ਚਾਈਲਡ
 
-There are two terms that we'll use from now on:
+ਇੱਥੇ ਦੋ ਸ਼ਬਦ ਹਨ ਜੋ ਅਸੀਂ ਹੁਣ ਤੋਂ ਇਸਤੇਮਾਲ ਕਰਾਂਗੇ:
 
-- **Child nodes (or children)** -- elements that are direct children. In other words, they are nested exactly in the given one. For instance, `<head>` and `<body>` are children of `<html>` element.
-- **Descendants** -- all elements that are nested in the given one, including children, their children and so on.
+- **ਚਾਈਲਡ ਨੋਡ (ਜਾਂ ਬੱਚੇ) ** - ਉਹ ਐਲਿਮੈਂਟ ਜੋ ਸਿੱਧੇ ਬੱਚੇ ਹੁੰਦੇ ਹਨ. ਦੂਜੇ ਸ਼ਬਦਾਂ ਵਿਚ, ਉਹ ਇਕ ਦਿੱਤੇ ਅੰਦਰ ਬਿਲਕੁਲ ਬਸੇ ਹੋਏ ਹਨ. ਉਦਾਹਰਣ ਦੇ ਲਈ, `<head>` ਅਤੇ `<body>` ਬੱਚੇ ਹਨ `<html>` ਐਲਿਮੈਂਟ ਦੇ .
+- **ਔਲਾਦ** -- ਉਹ ਸਾਰੇ ਏਲੇਲਮੈਂਟ ਜੋ ਦਿੱਤੇ ਗਏ ਹਨ ਇੱਕ ਦੂਜੇ ਵਿੱਚ ਬੱਝੇ ਹੋਏ ਹਨ, ਸਮੇਤ ਬੱਚੇ, ਉਨ੍ਹਾਂ ਦੇ ਬੱਚੇ ਅਤੇ ਹੋਰ
 
-For instance, here `<body>` has children `<div>` and `<ul>` (and few blank text nodes):
+ਉਦਾਹਰਣ ਲਈ, ਇਥੇ `<body>` ਬੱਚੇ ਹਨ `<div>` ਅਤੇ `<ul>` (ਅਤੇ ਕੁਝ ਖਾਲੀ ਟੈਕਸਟ ਨੋਡ):
 
 ```html run
 <html>
@@ -86,11 +85,11 @@ For instance, here `<body>` has children `<div>` and `<ul>` (and few blank text 
 </html>
 ```
 
-...And descendants of `<body>` are not only direct children `<div>`, `<ul>` but also more deeply nested elements, such as `<li>` (a child of `<ul>`) and `<b>` (a child of `<li>`) -- the entire subtree.
+...ਅਤੇ `<body>` ਦੇ ਵੰਸ਼ਜ `<div>`, `<ul>` ਹੀ ਸਿਰਫ ਸਿੱਧੇ ਬੱਚੇ ਨਹੀਂ ਹਨ  ਪਰ ਹੋਰ ਵੀ ਡੂੰਘੇ ਬਝੈ ਐਲਿਮੈਂਟ, ਜਿਵੇ ਕੀ `<li>` (ਦਾ ਇੱਕ ਬੱਚਾ`<ul>`) ਅਤੇ `<b>` (ਦਾ ਇੱਕ ਬੱਚਾ `<li>`) -- ਸਾਰੀ ਸਬਟ੍ਰੀ.
 
-**The `childNodes` collection lists all child nodes, including text nodes.**
+**`ਚਾਈਲਡ ਨੋਡਸ` ਸੰਗ੍ਰਹਿ ਟੈਕਸਟ ਨੋਡਾਂ ਸਮੇਤ, ਸਾਰੇ ਚਿਲਡ ਨੋਡਾਂ ਦੀ ਸੂਚੀ ਹੈ.**
 
-The example below shows children of `document.body`:
+ਹੇਠਾਂ ਦਿੱਤੀ ਉਦਾਹਰਣ `document.body` ਦੇ ਬੱਚਿਆਂ ਨੂੰ ਦਰਸਾਉਂਦੀ ਹੈ :
 
 ```html run
 <html>
@@ -110,67 +109,65 @@ The example below shows children of `document.body`:
     }
 */!*
   </script>
-  ...more stuff...
+  ... ਹੋਰ ਚੀਜ਼ਾਂ ...
 </body>
 </html>
 ```
 
-Please note an interesting detail here. If we run the example above, the last element shown is `<script>`. In fact, the document has more stuff below, but at the moment of the script execution the browser did not read it yet, so the script doesn't see it.
+ਕਿਰਪਾ ਕਰਕੇ ਇੱਥੇ ਇੱਕ ਦਿਲਚਸਪ ਵੇਰਵਾ ਨੋਟ ਕਰੋ. ਅਗਰ ਅਸੀਂ ਉਪਰੋਕਤ ਉਦਾਹਰਣ ਚਲਾਉਂਦੇ ਹਾਂ, ਦਿਖਾਇਆ ਗਿਆ ਆਖਰੀ ਤੱਤ `<script> ਹੈ. ਦਰਅਸਲ, ਦਸਤਾਵੇਜ਼ ਵਿੱਚ ਹੇਠਾਂ ਵਧੇਰੇ ਚੀਜ਼ਾਂ ਹਨ, ਪਰ ਸਕ੍ਰਿਪਟ ਲਾਗੂ ਹੋਣ ਦੇ ਸਮੇਂ ਬ੍ਰਾਜ਼ਰ ਨੇ ਅਜੇ ਇਸਨੂੰ ਨਹੀਂ ਪੜਿਆ, ਇਸਲਈ ਸਕ੍ਰਿਪਟ ਇਸਨੂੰ ਨਹੀਂ ਵੇਖਦੀ
 
-**Properties `firstChild` and `lastChild` give fast access to the first and last children.**
+**Properties `firstChild` ਅਤੇ `lastChild` ਪਹਿਲੇ ਅਤੇ ਆਖਰੀ ਬੱਚਿਆਂ ਨੂੰ ਤੇਜ਼ ਪਹੁੰਚ ਦੇਂਦੀ ਹੀ.**
 
-They are just shorthands. If there exist child nodes, then the following is always true:
+ਏਹ ਸਿਰਫ ਸ਼ੋਰਟਹੈਂਡ ਹਨ. ਜੇ ਇੱਥੇ ਬੱਚੇ ਦੇ ਨੋਡ ਮੌਜੂਦ ਹਨ, ਤਾਂ ਹੇਠਾਂ ਦਿੱਤਾ ਹਮੇਸ਼ਾਂ ਸਹੀ ਹੁੰਦਾ ਹੈ:
 ```js
 elem.childNodes[0] === elem.firstChild
 elem.childNodes[elem.childNodes.length - 1] === elem.lastChild
 ```
 
-There's also a special function `elem.hasChildNodes()` to check whether there are any child nodes.
+ਇਕ ਵਿਸ਼ੇਸ਼ ਫੰਕਸ਼ਨ ਵੀ ਹੈ `elem.hasChildNodes()` ਇਹ ਵੇਖਣ ਲਈ ਕਿ ਇੱਥੇ ਕੋਈ ਚਿਲਡ ਨੋਡਸ ਹਨ ਜਾਂ ਨਹੀਂ.
 
-### DOM collections
+### ਡੋਮ ਸੰਗ੍ਰਹਿ
 
-As we can see, `childNodes` looks like an array. But actually it's not an array, but rather a *collection* -- a special array-like iterable object.
+ਜਿਵੇਂ ਕਿ ਅਸੀਂ ਵੇਖ ਸਕਦੇ ਹਾਂ, `childNodes` ਇੱਕ ਐਰੇ ਵਰਗਾ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ. ਪਰ ਅਸਲ ਵਿੱਚ ਇਹ ਇੱਕ ਐਰੇ ਨਹੀਂ, ਬਲਕਿ ਇੱਕ * ਸੰਗ੍ਰਹਿ * - ਇੱਕ ਵਿਸ਼ੇਸ਼ ਐਰੇ-ਵਰਗੇ ਆਵਰਤੀ ਆਬਜੈਕਟ ਹੈ.
 
-There are two important consequences:
+ਇਸ ਦੇ ਦੋ ਮਹੱਤਵਪੂਰਨ ਨਤੀਜੇ ਹਨ:
 
-1. We can use `for..of` to iterate over it:
+1. ਅਸੀਂ ਇਸ ਨੂੰ ਦੁਹਰਾਉਣ ਲਈ `for..of` ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹਾਂ:
   ```js
   for (let node of document.body.childNodes) {
-    alert(node); // shows all nodes from the collection
+    alert(node); // ਸੰਗ੍ਰਹਿ ਦੇ ਸਾਰੇ ਨੋਡਾਂ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ
   }
   ```
-  That's because it's iterable (provides the `Symbol.iterator` property, as required).
+  ਅਜਿਹਾ ਇਸ ਲਈ ਕਿਉਂਕਿ ਇਹ ਦੁਹਰਾਉਣ ਯੋਗ ਹੈ (ਜ਼ਰੂਰਤ ਅਨੁਸਾਰ. Symbol.iterator` properties ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ).
 
-2. Array methods won't work, because it's not an array:
+2. ਐਰੇ methods ਕੰਮ ਨਹੀਂ ਕਰਨਗੇ, ਕਿਉਂਕਿ ਇਹ ਐਰੇ ਨਹੀਂ ਹੈ:
   ```js run
   alert(document.body.childNodes.filter); // undefined (there's no filter method!)
   ```
 
-The first thing is nice. The second is tolerable, because we can use `Array.from` to create a "real" array from the collection, if we want array methods:
+ਪਹਿਲੀ ਚੀਜ਼ ਚੰਗੀ ਹੈ. ਦੂਜਾ ਸਹਿਣਸ਼ੀਲ ਹੈ, ਕਿਉਂਕਿ ਅਸੀਂ `Array.from`ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹਾਂ  ਸੰਗ੍ਰਹਿ ਵਿਚੋਂ ਇਕ "ਅਸਲ" ਐਰੇ ਬਣਾਉਣ ਲਈ, ਜੇ ਅਸੀਂ ਐਰੇ methods ਨੂੰ ਚਾਹੁੰਦੇ ਹਾਂ:
 
   ```js run
   alert( Array.from(document.body.childNodes).filter ); // function
   ```
 
-```warn header="DOM collections are read-only"
-DOM collections, and even more -- *all* navigation properties listed in this chapter are read-only.
+```warn header="DOM ਸੰਗ੍ਰਹਿ ਸਿਰਫ-ਪੜ੍ਹਨ ਲਈ ਹਨ"
+ਡੋਮ ਸੰਗ੍ਰਹਿ ਅਤੇ ਹੋਰ ਵੀ ਬਹੁਤ ਕੁਝ -- *ਸਾਰੇ * ਨੇਵੀਗੇਸ਼ਨ properties ਜੋ ਇਸ ਅਧਿਆਇ ਵਿਚ ਸੂਚੀਬੱਧ ਹਨ ਰੀਡ-ਔਨਲੀ ਹਨ.
 
-We can't replace a child by something else by assigning `childNodes[i] = ...`.
+ਅਸੀਂ ਕਿਸੇ ਬੱਚੇ ਨੂੰ ਨਿਰਧਾਰਤ ਕਰਕੇ ਕਿਸੇ ਹੋਰ ਚੀਜ਼ ਨਾਲ ਨਹੀਂ ਬਦਲ ਸਕਦੇ ਜਿਵੇਂ ਕੀ `childNodes[i] = ...`.
 
-Changing DOM needs other methods. We will see them in the next chapter.
+DOM ਬਦਲਣ ਲਈ ਹੋਰ ਤਰੀਕਿਆਂ ਦੀ ਜਰੂਰਤ ਹੈ. ਅਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਅਗਲੇ ਅਧਿਆਇ ਵਿਚ ਦੇਖਾਂਗੇ.
 ```
 
-```warn header="DOM collections are live"
-Almost all DOM collections with minor exceptions are *live*. In other words, they reflect the current state of DOM.
+```warn header="ਡੋਮ ਸੰਗ੍ਰਹਿ ਲਾਈਵ ਹਨ"
+ਮਾਮੂਲੀ ਅਪਵਾਦਾਂ ਦੇ ਨਾਲ ਲਗਭਗ ਸਾਰੇ DOM ਸੰਗ੍ਰਹਿ * ਲਾਈਵ * ਹਨ. ਦੂਜੇ ਸ਼ਬਦਾਂ ਵਿਚ, ਉਹ DOM ਦੀ ਮੌਜੂਦਾ ਸਥਿਤੀ ਨੂੰ ਦਰਸਾਉਂਦੇ ਹਨ.
 
-If we keep a reference to `elem.childNodes`, and add/remove nodes into DOM, then they appear in the collection automatically.
+ਜੇ ਅਸੀਂ ਇਕ ਹਵਾਲਾ ਰੱਖਦੇ ਹਾਂ`elem.childNodes` ਵਲ, ਅਤੇ DOM ਵਿੱਚ ਨੋਡ ਸ਼ਾਮਲ / ਹਟਾਓ, ਤਦ ਉਹ ਆਪਣੇ ਆਪ ਹੀ ਸੰਗ੍ਰਹਿ ਵਿੱਚ ਪ੍ਰਗਟ ਹੋਣਗੇ.
 ```
 
-````warn header="Don't use `for..in` to loop over collections"
-Collections are iterable using `for..of`. Sometimes people try to use `for..in` for that.
-
-Please, don't. The `for..in` loop iterates over all enumerable properties. And collections have some "extra" rarely used properties that we usually do not want to get:
-
+````warn header="ਸੰਗ੍ਰਹਿ ਨੂੰ ਲੂਪ ਕਰਨ ਲਈ `for..in` ਦੀ ਵਰਤੋਂ ਨਾ ਕਰੋ"
+ਸੰਗ੍ਰਹਿ `for..of` ਦੀ ਵਰਤੋਂ ਨਾਲ ਦੁਹਰਾ ਸਕਦੇ ਹਨ. ਕਈ ਵਾਰ ਲੋਕ ਉਸ ਲਈ `for..in` ਦੀ ਵਰਤੋਂ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਹਨ.
+ਕਿਰਪਾ ਕਰਕੇ ਨਾ ਕਰੋ. `For..in` ਲੂਪ ਸਾਰੀਆਂ ਅਣਗਿਣਤ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਤੇ ਦੁਹਰਾਉਂਦਾ ਹੈ. ਅਤੇ ਸੰਗ੍ਰਹਿ ਦੀਆਂ ਕੁਝ "ਵਾਧੂ" ਬਹੁਤ ਘੱਟ ਵਰਤੋਂ ਵਾਲੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਹਨ ਜੋ ਅਸੀਂ ਆਮ ਤੌਰ 'ਤੇ ਪ੍ਰਾਪਤ ਨਹੀਂ ਕਰ ਸਕਦੇ:
 ```html run
 <body>
 <script>
@@ -180,11 +177,11 @@ Please, don't. The `for..in` loop iterates over all enumerable properties. And c
 </body>
 ````
 
-## Siblings and the parent
+## ਭੈਣ-ਭਰਾ ਅਤੇ ਮਾਪੇ
 
-*Siblings* are nodes that are children of the same parent.
+* ਭੈਣ-ਭਰਾ * ਇਕੋ ਇਕ ਮਾਪੇ ਦੇ ਬੱਚੇ ਹਨ.
 
-For instance, here `<head>` and `<body>` are siblings:
+ਉਦਾਹਰਣ ਦੇ ਲਈ, ਇੱਥੇ `<head>` ਅਤੇ `<body>` ਭੈਣ-ਭਰਾ ਹਨ:
 
 ```html
 <html>
@@ -192,64 +189,64 @@ For instance, here `<head>` and `<body>` are siblings:
 </html>
 ```
 
-- `<body>` is said to be the "next" or "right" sibling of `<head>`,
-- `<head>` is said to be the "previous" or "left" sibling of `<body>`.
+- `<body>` ਨੂੰ "ਅਗਲਾ" ਜਾਂ "ਸੱਜਾ" ਭੈਣ-ਭਰਾ ਕਿਹਾ ਜਾਂਦਾ ਹੈ `<head>` ਦਾ,
+- `<head>` ਨੂੰ "ਪਿਛਲੇ" ਜਾਂ "ਖੱਬਾ" ਭੈਣ-ਭਰਾ ਕਿਹਾ ਜਾਂਦਾ ਹੈ `<body>` ਦਾ.
 
-The next sibling is in `nextSibling` property, and the previous one - in `previousSibling`.
+ਅਗਲਾ ਭੈਣ-ਭਰਾ ਹੈ `nextSibling` property, ਅਤੇ ਇੱਕ ਪਿਛਲਾ- `previousSibling`.
 
-The parent is available as `parentNode`.
+ਮਾਪੇ ਦੇ ਤੌਰ ਤੇ ਉਪਲੱਬਧ ਹੈ `parentNode`.
 
 For example:
 
 ```js
-// parent of <body> is <html>
+// <body> ਦੇ ਮਾਪੇ <html> ਹੈ
 alert( document.body.parentNode === document.documentElement ); // true
 
-// after <head> goes <body>
+// <head> ਦੇ ਬਾਅਦ <body> ਹੈ
 alert( document.head.nextSibling ); // HTMLBodyElement
 
-// before <body> goes <head>
+// <body> ਜਾਣ ਤੋਂ ਪਹਿਲਾਂ <head>
 alert( document.body.previousSibling ); // HTMLHeadElement
 ```
 
-## Element-only navigation
+## ਐਲੀਮੈਂਟ-ਸਿਰਫ ਨੈਵੀਗੇਸ਼ਨ
 
-Navigation properties listed above refer to *all* nodes. For instance, in `childNodes` we can see both text nodes, element nodes, and even comment nodes if there exist.
+ਉੱਪਰ ਸੂਚੀਬੱਧ ਨੇਵੀਗੇਸ਼ਨ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ * ਸਾਰੇ * ਨੋਡਾਂ ਦਾ ਹਵਾਲਾ ਦਿੰਦੀਆਂ ਹਨ. ਉਦਾਹਰਣ ਲਈ, `childNodes` ਅਸੀਂ ਦੋਵੇਂ ਟੈਕਸਟ ਨੋਡਸ, ਐਲੀਮੈਂਟ ਨੋਡਸ, ਅਤੇ ਟਿੱਪਣੀ ਨੋਡਸ ਨੂੰ ਦੇਖ ਸਕਦੇ ਹਾਂ ਜੇ ਇੱਥੇ ਮੌਜੂਦ ਹੈ.
 
-But for many tasks we don't want text or comment nodes. We want to manipulate element nodes that represent tags and form the structure of the page.
+ਪਰ ਬਹੁਤ ਸਾਰੇ ਕੰਮਾਂ ਲਈ ਅਸੀਂ ਟੈਕਸਟ ਜਾਂ ਟਿੱਪਣੀ ਨੋਡ ਨਹੀਂ ਚਾਹੁੰਦੇ.ਅਸੀਂ ਐਲੀਮੈਂਟ ਨੋਡਾਂ ਵਿੱਚ ਹੇਰਾਫੇਰੀ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹਾਂ ਜੋ ਟੈਗਾਂ ਨੂੰ ਦਰਸਾਉਂਦੇ ਹਨ ਅਤੇ ਪੰਨੇ ਦੇ ਢਾਂਚੇ ਨੂੰ ਬਣਾਉਂਦੇ ਹਨ.
 
-So let's see more navigation links that only take *element nodes* into account:
+ਤਾਂ ਆਓ ਹੋਰ ਨੇਵੀਗੇਸ਼ਨ ਲਿੰਕ ਵੇਖੀਏ ਜੋ ਸਿਰਫ * ਐਲੀਮੈਂਟ ਨੋਡ * ਨੂੰ ਧਿਆਨ ਵਿੱਚ ਰੱਖਦੇ ਹਨ:
 
 ![](dom-links-elements.svg)
 
-The links are similar to those given above, just with `Element` word inside:
+ਲਿੰਕ ਉੱਪਰ ਦਿੱਤੇ ਸ਼ਬਦਾਂ ਦੇ ਸਮਾਨ ਹਨ, ਸਿਰਫ ਅੰਦਰ `ਐਲੀਮੈਂਟ` ਸ਼ਬਦ ਦੇ ਨਾਲ:
 
-- `children` -- only those children that are element nodes.
-- `firstElementChild`, `lastElementChild` -- first and last element children.
-- `previousElementSibling`, `nextElementSibling` -- neighbor elements.
-- `parentElement` -- parent element.
+- `children` -- ਸਿਰਫ ਉਹ ਬੱਚੇ ਜੋ ਐਲਿਮੈਂਟ ਨੋਡ ਹਨ.
+- `firstElementChild`, `lastElementChild` -- ਪਹਿਲੇ ਅਤੇ ਆਖਰੀ ਐਲਿਮੈਂਟ ਦੇ ਬੱਚੇ.
+- `previousElementSibling`, `nextElementSibling` -- ਗੁਆਂਢੀਂ ਐਲਿਮੈਂਟ.
+- `parentElement` -- ਮੁੱਢਲਾ ਐਲਿਮੈਂਟ.
 
-````smart header="Why `parentElement`? Can the parent be *not* an element?"
-The `parentElement` property returns the "element" parent, while `parentNode` returns "any node" parent. These properties are usually the same: they both get the parent.
+````smart header="ਕਿਉਂ `parentElement`? ਕੀ ਪੇਰੇਂਟ ਇਕ ਐਲਿਮੈਂਟ * ਨਹੀਂ * ਹੋ ਸਕਦੇ ਹਨ?"
+`parentElement` ਪ੍ਰੋਪਰਟੀ "ਐਲਿਮੈਂਟ" ਪੇਰੇਂਟ ਨੂੰ ਵਾਪਸ ਕਰਦੀ ਹੈ, ਜਦਕਿ `parentNode` "ਕੋਈ ਨੋਡ" ਕੋਈ ਵੀ ਮਾਪਾ ਵਾਪਸ ਕਰਦੀ ਹੈ. ਇਹ properties ਆਮ ਤੌਰ 'ਤੇ ਇਕੋ ਹੁੰਦੀਆਂ ਹਨ: ਉਹ ਦੋਵੇਂ ਤੋਂ ਪ੍ਰਾਪਤ ਹੁੰਦਾ ਹੈ parent.
 
-With the one exception of `document.documentElement`:
+`document.documentElement` ਇਕ ਅਪਵਾਦ ਹੈ:
 
 ```js run
 alert( document.documentElement.parentNode ); // document
 alert( document.documentElement.parentElement ); // null
 ```
 
-The reason is that the root node `document.documentElement` (`<html>`) has `document` as its parent. But `document` is not an element node, so `parentNode` returns it and `parentElement` does not.
+ਕਾਰਨ ਇਹ ਹੈ ਕਿ ਰੂਟ ਨੋਡ `document.documentElement` (`<html>`) ਹੈ `document` ਇਸ ਦੇ ਮਾਪੇ ਹਨ. ਪਰ `document` ਇਕ ਐਲੀਮੈਂਟ ਨੋਡ ਨਹੀਂ ਹੈ, ਇਸ ਲਈ `parentNode` ਇਸ ਨੂੰ ਵਾਪਸ ਕਰਦਾ ਹੈ ਅਤੇ `parentElement` ਨਹੀ ਕਰਦਾ.
 
-This detail may be useful when we want to travel up from an arbitrary element `elem` to `<html>`, but not to the `document`:
+ਇਹ ਵਿਸਥਾਰ ਲਾਭਦਾਇਕ ਹੋ ਸਕਦਾ ਹੈ ਜਦੋਂ ਅਸੀਂ ਇੱਕ ਲੋੜੀਂਦੇ `elem` ਤੋਂ  `<html>` ਤੱਕ ਜਾਣਾ ਚਾਹੁੰਦੇ ਹਾਂ, ਪਰ `document` ਤੱਕ ਨਹੀਂ:
 ```js
-while(elem = elem.parentElement) { // go up till <html>
+while(elem = elem.parentElement) { // <html> ਤਕ ਚਲੇ ਜਾਓ 
   alert( elem );
 }
 ```
 ````
 
-Let's modify one of the examples above: replace `childNodes` with `children`. Now it shows only elements:
+ਚਲੋ ਉਪਰੋਕਤ ਉਦਾਹਰਣਾਂ ਵਿੱਚੋਂ ਇੱਕ ਨੂੰ ਸੋਧੋ: ਬਦਲੋ `childNodes` ਦੇ ਨਾਲ `children`. ਹੁਣ ਇਹ ਸਿਰਫ ਐਲਿਮੈਂਟਸ ਦਿਖਾਉਂਦਾ ਹੈ:
 
 ```html run
 <html>
@@ -274,31 +271,31 @@ Let's modify one of the examples above: replace `childNodes` with `children`. No
 </html>
 ```
 
-## More links: tables [#dom-navigation-tables]
+## ਹੋਰ ਲਿੰਕ: ਟੇਬਲ [#dom-navigation-tables]
 
-Till now we described the basic navigation properties.
+ਹੁਣ ਤੱਕ ਅਸੀਂ ਮੁਢਲੀ ਨੇਵੀਗੇਸ਼ਨ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਦਾ ਵੇਰਵਾ ਦਿੱਤਾ ਹੈ.
 
-Certain types of DOM elements may provide additional properties, specific to their type, for convenience.
+ਕੁਝ ਕਿਸਮ ਦੇ DOM ਐਲਿਮੈਂਟਸ ਵਾਧੂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਪ੍ਰਦਾਨ ਕਰ ਸਕਦੇ ਹਨ, ਉਨ੍ਹਾਂ ਦੀ ਕਿਸਮ ਲਈ ਖਾਸ, ਸਹੂਲਤ ਲਈ.
 
-Tables are a great example of that, and represent a particularly important case:
+ਟੇਬਲ ਇਸ ਦੀ ਇੱਕ ਵਧੀਆ ਉਦਾਹਰਣ ਹਨ, ਅਤੇ ਇੱਕ ਵਿਸ਼ੇਸ਼ ਮਹੱਤਵਪੂਰਣ ਕੇਸ ਨੂੰ ਦਰਸਾਉਂਦੇ ਹਨ:
 
-**The `<table>`** element supports (in addition to the given above) these properties:
-- `table.rows` -- the collection of `<tr>` elements of the table.
-- `table.caption/tHead/tFoot` -- references to elements `<caption>`, `<thead>`, `<tfoot>`.
-- `table.tBodies` -- the collection of `<tbody>` elements (can be many according to the standard, but there will always be at least one -- even if it is not in the source HTML, the browser will put it in the DOM).
+**`<table>`** ਐਲਿਮੈਂਟ ਦੀ ਸਹਿਯੋਗੀ properties ਹੈ (ਉੱਪਰ ਦਿੱਤੇ ਤੋਂ ਇਲਾਵਾ) :
+- `table.rows` -- ਟੇਬਲ ਦੇ `<tr>` ਤੱਤਾਂ ਦਾ ਕਲਕਸ਼ਨ.
+- `table.caption/tHead/tFoot` -- ਐਲੀਮੈਂਟਸ <caption> `,` <thead> `,` <tfoot> `ਦਾ ਹਵਾਲਾ.
+- `table.tBodies` -- `<tbody>` ਐਲਿਮੈਂਟਸ ਦੀ ਕੱਲੈਕਸ਼ਨ (ਮਿਆਰ ਦੇ ਅਨੁਸਾਰ ਬਹੁਤ ਸਾਰੇ ਹੋ ਸਕਦੇ ਹਨ, ਪਰ ਇੱਥੇ ਹਮੇਸ਼ਾਂ ਘੱਟੋ ਘੱਟ ਇੱਕ ਹੋਵੇਗਾ - ਭਾਵੇਂ ਇਹ ਸਰੋਤ HTML ਵਿੱਚ ਨਹੀਂ ਹੈ, ਬ੍ਰਾਜ਼ਰ ਇਸਨੂੰ DOM ਵਿੱਚ ਪਾ ਦੇਵੇਗਾ).
 
-**`<thead>`, `<tfoot>`, `<tbody>`** elements provide the `rows` property:
-- `tbody.rows` -- the collection of `<tr>` inside.
+**`<thead>`, `<tfoot>`, `<tbody>`** ਐਲਿਮੈਂਟ `row` ਦੀ ਪ੍ਰੋਪਰਟੀ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਨ:
+- `tbody.rows` -- ਅੰਦਰ `<tr>. ਦਾ ਸੰਗ੍ਰਹਿ.
 
 **`<tr>`:**
-- `tr.cells` -- the collection of `<td>` and `<th>` cells inside the given `<tr>`.
-- `tr.sectionRowIndex` -- the position (index) of the given `<tr>` inside the enclosing `<thead>/<tbody>/<tfoot>`.
-- `tr.rowIndex` -- the number of the `<tr>` in the table as a whole (including all table rows).
+- `tr.cells` -- ਦਿੱਤੇ `<tr>` ਦੇ ਅੰਦਰ `<td>` ਅਤੇ `<th>` ਸੈੱਲਾਂ ਦਾ ਸੰਗ੍ਰਹਿ.
+- `tr.sectionRowIndex` -- ਦਿੱਤੀ ਗਈ ਸਥਿਤੀ (ਇੰਡੈਕਸ) `<tr>` inside the enclosing `<thead>/<tbody>/<tfoot>`.
+- `tr.rowIndex` -- ਸਮੁੱਚੇ ਤੌਰ ਤੇ ਵਿੱਚ all <tr> ਦੀ ਗਿਣਤੀ (ਸਾਰੀਆਂ ਸਾਰਣੀ ਦੀਆਂ ਕਤਾਰਾਂ ਸਮੇਤ).
 
 **`<td>` and `<th>`:**
-- `td.cellIndex` -- the number of the cell inside the enclosing `<tr>`.
+- `td.cellIndex` -- ਬੰਦ `<tr>` ਦੇ ਅੰਦਰ ਸੈੱਲ ਦੀ ਸੰਖਿਆ.
 
-An example of usage:
+ਵਰਤੋਂ ਦੀ ਇੱਕ ਉਦਾਹਰਣ:
 
 ```html run height=100
 <table id="table">
@@ -317,17 +314,17 @@ An example of usage:
 </script>
 ```
 
-The specification: [tabular data](https://html.spec.whatwg.org/multipage/tables.html).
+ਨਿਰਧਾਰਨ: [tabular data](https://html.spec.whatwg.org/multipage/tables.html).
 
-There are also additional navigation properties for HTML forms. We'll look at them later when we start working with forms.
+HTML ਫਾਰਮ ਲਈ ਅਤਿਰਿਕਤ ਨੇਵੀਗੇਸ਼ਨ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਹਨ. ਜਦੋਂ ਅਸੀਂ ਫਾਰਮਾਂ ਨਾਲ ਕੰਮ ਕਰਨਾ ਅਰੰਭ ਕਰਾਂਗੇ ਅਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਬਾਅਦ ਵਿੱਚ ਵੇਖਾਂਗੇ.
 
-## Summary
+## ਸਾਰ
 
-Given a DOM node, we can go to its immediate neighbors using navigation properties.
+ਇੱਕ ਡੋਮ ਨੋਡ ਦਿੱਤੇ ਜਾਣ ਤੇ, ਅਸੀਂ ਨੇਵੀਗੇਸ਼ਨ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇਸਦੇ ਨਜ਼ਦੀਕੀ ਗੁਆਂਡੀਆਂ ਕੋਲ ਜਾ ਸਕਦੇ ਹਾਂ.
 
-There are two main sets of them:
+ਉਨ੍ਹਾਂ ਦੇ ਦੋ ਮੁੱਖ ਸਮੂਹ ਹਨ
 
-- For all nodes: `parentNode`, `childNodes`, `firstChild`, `lastChild`, `previousSibling`, `nextSibling`.
-- For element nodes only: `parentElement`, `children`, `firstElementChild`, `lastElementChild`, `previousElementSibling`, `nextElementSibling`.
+- ਸਾਰੇ ਨੋਡਾਂ ਲਈ: `parentNode`, `childNodes`, `firstChild`, `lastChild`, `previousSibling`, `nextSibling`.
+- ਸਿਰਫ ਐਲੀਮੈਂਟ ਨੋਡਜ਼ ਲਈ: `parentElement`, `children`, `firstElementChild`, `lastElementChild`, `previousElementSibling`, `nextElementSibling`.
 
-Some types of DOM elements, e.g. tables, provide additional properties and collections to access their content.
+ਕੁਝ ਕਿਸਮ ਦੇ DOM ਐਲਿਮੈਂਟਸ ਉਧਾਰਣ, ਟੇਬਲ, ਉਨ੍ਹਾਂ ਦੀ ਸਮਗਰੀ ਨੂੰ ਐਕਸੈਸ ਕਰਨ ਲਈ ਵਾਧੂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਸੰਗ੍ਰਹਿ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਨ.
