@@ -2,17 +2,17 @@ importance: 5
 
 ---
 
-# Select all diagonal cells
+# ਸਾਰੇ ਵਿਕਰਣ ਸੈੱਲਾਂ ਦੀ ਚੋਣ ਕਰੋ
 
-Write the code to paint all diagonal table cells in red.
+ਸਾਰੇ ਡਿਗੋਨਲ ਟੇਬਲ ਸੈੱਲਸ ਨੂੰ ਲਾਲ ਰੰਗਣ ਲਈ ਕੋਡ ਲਿਖੋ.
 
-You'll need to get all diagonal `<td>` from the `<table>` and paint them using the code:
+ਤੁਹਾਨੂੰ ਸਾਰੇ ਡਿਗੋਨਲ ਪ੍ਰਾਪਤ ਕਰਨ ਦੀ ਜ਼ਰੂਰਤ ਹੋਏਗੀ `<td>` ਤੋਂ `<table>` ਤੱਕ ਅਤੇ ਕੋਡ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਉਨ੍ਹਾਂ ਨੂੰ ਪੇਂਟ ਕਰੋ:
 
 ```js
-// td should be the reference to the table cell
+// td ਟੇਬਲ ਸੈੱਲ ਦਾ ਹਵਾਲਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ
 td.style.backgroundColor = 'red';
 ```
 
-The result should be:
+ਨਤੀਜਾ ਇਹ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ:
 
 [iframe src="solution" height=180]

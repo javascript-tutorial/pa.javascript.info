@@ -1,1 +1,1 @@
-We'll be using `rows` and `cells` properties to access diagonal table cells.
+ਅਸੀਂ ਇਸਤੇਮਾਲ ਕਰਾਂਗੇ `rows` ਅਤੇ `cells` properties ਡੀਗੋਨਲ ਟੇਬਲ ਸੈੱਲਾਂ ਤਕ ਪਹੁੰਚਣ ਲਈ.
