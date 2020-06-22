@@ -198,8 +198,13 @@ DOM ਬਦਲਣ ਲਈ ਹੋਰ ਤਰੀਕਿਆਂ ਦੀ ਜਰੂਰਤ �
 
 For example:
 
+<<<<<<< HEAD
 ```js
 // <body> ਦੇ ਮਾਪੇ <html> ਹੈ
+=======
+```js run
+// parent of <body> is <html>
+>>>>>>> e4e6a50b5762dd5dc4c0f0c58f870c64be39dcfa
 alert( document.body.parentNode === document.documentElement ); // true
 
 // <head> ਦੇ ਬਾਅਦ <body> ਹੈ
