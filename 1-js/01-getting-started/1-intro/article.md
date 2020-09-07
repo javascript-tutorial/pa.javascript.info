@@ -4,7 +4,11 @@
 
 ## ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਕੀ ਹੈ?
 
+<<<<<<< HEAD
 * ਜਾਵਾ ਸਕ੍ਰਿਪਟ * ਸ਼ੁਰੂਆਤ ਵਿੱਚ * "ਵੈੱਬ ਪੇਜਾਂ ਨੂੰ ਜੀਵੰਤ" * ਬਣਾਉਣ ਲਈ ਬਣਾਈ ਗਈ ਸੀ।
+=======
+*JavaScript* was initially created to "make web pages alive".
+>>>>>>> 58f6599df71b8d50417bb0a52b1ebdc995614017
 
 ਇਸ ਭਾਸ਼ਾ ਦੇ ਪ੍ਰੋਗਰਾਮਾਂ ਨੂੰ * ਸਕ੍ਰਿਪਟਾਂ * ਕਿਹਾ ਜਾਂਦਾ ਹੈ. ਉਹ ਇਕ ਵੈੱਬ ਪੇਜ ਦੇ HTML ਵਿਚ ਸਹੀ ਤਰ੍ਹਾਂ ਲਿਖੇ ਜਾ ਸਕਦੇ ਹਨ ਅਤੇ ਪੰਨੇ ਦੇ ਲੋਡ ਹੋਣ ਦੇ ਨਾਲ ਆਪਣੇ ਆਪ ਚਲ ਸਕਦੇ ਹਨ।
 
@@ -105,10 +109,18 @@ HTML / CSS ਦੇ ਨਾਲ ਪੂਰਾ ਏਕੀਕਰਣ.
 
 ਅਜਿਹੀਆਂ ਭਾਸ਼ਾਵਾਂ ਦੀਆਂ ਉਦਾਹਰਣਾਂ:
 
+<<<<<<< HEAD
 - [ਕੌਫੀਸਕ੍ਰਿਪਟ] (http://coffeescript.org/) ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਲਈ ਇੱਕ "ਸਿੰਨੈਟਿਕ ਸ਼ੂਗਰ" ਹੈ. ਇਹ ਛੋਟਾ ਸੰਟੈਕਸ ਪੇਸ਼ ਕਰਦਾ ਹੈ, ਜਿਸ ਨਾਲ ਸਾਨੂੰ ਸਾਫ ਅਤੇ ਵਧੇਰੇ ਸਹੀ ਕੋਡ ਲਿਖਣ ਦੀ ਆਗਿਆ ਮਿਲਦੀ ਹੈ. ਆਮ ਤੌਰ 'ਤੇ, ਰੂਬੀ ਡੇਵਲੋਪਰ ਇਸਨੂੰ ਪਸੰਦ ਕਰਦੇ ਹਨ.
 - [ਟਾਈਪਸਕ੍ਰਿਪਟ] (http://www.typescriptlang.org.org) ਗੁੰਝਲਦਾਰ ਪ੍ਰਣਾਲੀਆਂ ਦੇ ਵਿਕਾਸ ਅਤੇ ਸਹਾਇਤਾ ਨੂੰ ਸੌਖਾ ਬਣਾਉਣ ਲਈ "ਸਖਤ ਡਾਟਾ ਟਾਈਪਿੰਗ" ਜੋੜਨ 'ਤੇ ਕੇਂਦ੍ਰਿਤ ਹੈ. ਇਹ ਮਾਈਕ੍ਰੋਸਾੱਫਟ ਦੁਆਰਾ ਵਿਕਸਤ ਕੀਤਾ ਗਿਆ ਹੈ.
 - [ਫਲੋ] (http://flow.org/) ਡਾਟਾ ਟਾਈਪਿੰਗ ਨੂੰ ਵੀ ਜੋੜਦਾ ਹੈ, ਪਰ ਇੱਕ ਵੱਖਰੇ .ੰਗ ਨਾਲ. ਫੇਸਬੁੱਕ ਦੁਆਰਾ ਵਿਕਸਤ ਕੀਤਾ.
 - [ਡਾਰਟ] (https://www.dartlang.org/) ਇੱਕ ਵੱਖਰੀ ਭਾਸ਼ਾ ਹੈ ਜਿਸਦਾ ਆਪਣਾ ਇੰਜਣ ਹੈ ਜੋ ਗੈਰ-ਬ੍ਰਾਜ਼ਰ ਵਾਤਾਵਰਣ ਵਿੱਚ ਚਲਦਾ ਹੈ (ਜਿਵੇਂ ਮੋਬਾਈਲ ਐਪਸ), ਪਰ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਵੀ ਤਬਦੀਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ. ਗੂਗਲ ਦੁਆਰਾ ਵਿਕਸਤ ਕੀਤਾ ਗਿਆ.
+=======
+- [CoffeeScript](http://coffeescript.org/) is a "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
+- [TypeScript](http://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
+- [Flow](http://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
+- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
+- [Brython](https://brython.info/) is a Python transpiler to JavaScript that allow to write application in pure Python without JavaScript.
+>>>>>>> 58f6599df71b8d50417bb0a52b1ebdc995614017
 
 ਹੋਰ ਵੀ ਹਨ. ਬੇਸ਼ਕ, ਭਾਵੇਂ ਅਸੀਂ ਟਰਾਂਸਪੋਲਡ ਹੋਈਆਂ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚੋਂ ਇੱਕ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਾਂ, ਸਾਨੂੰ ਜਾਵਾਸਕ੍ਰਿਪਟ ਨੂੰ ਅਸਲ ਵਿੱਚ ਇਹ ਸਮਝਣ ਲਈ ਵੀ ਪਤਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਕਿ ਅਸੀਂ ਕੀ ਕਰ ਰਹੇ ਹਾਂ.
 
