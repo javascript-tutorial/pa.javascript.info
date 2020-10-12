@@ -1,10 +1,18 @@
 # ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੀ ਜਾਣ ਪਛਾਣ।
 
+<<<<<<< HEAD
 ਆਓ ਵੇਖੀਏ ਕਿ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੇ ਬਾਰੇ ਕੀ ਵਿਸ਼ੇਸ਼ ਹੈ, ਅਸੀਂ ਇਸ ਨਾਲ ਕੀ ਪ੍ਰਾਪਤ ਕਰ ਸਕਦੇ ਹਾਂ, ਅਤੇ ਕਿਹੜੀਆਂ ਹੋਰ ਤਕਨਾਲੋਜੀਆਂ ਇਸ ਨਾਲ ਵਧੀਆ ਮੇਲ ਖਾਂਦੀਆਂ ਹਨ।
+=======
+Let's see what's so special about JavaScript, what we can achieve with it, and what other technologies play well with it.
+>>>>>>> 0599d07b3c13ee25f583fc091cead3c17a7e7779
 
 ## ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਕੀ ਹੈ?
 
+<<<<<<< HEAD
 * ਜਾਵਾ ਸਕ੍ਰਿਪਟ * ਸ਼ੁਰੂਆਤ ਵਿੱਚ * "ਵੈੱਬ ਪੇਜਾਂ ਨੂੰ ਜੀਵੰਤ" * ਬਣਾਉਣ ਲਈ ਬਣਾਈ ਗਈ ਸੀ।
+=======
+*JavaScript* was initially created to "make web pages alive".
+>>>>>>> 0599d07b3c13ee25f583fc091cead3c17a7e7779
 
 ਇਸ ਭਾਸ਼ਾ ਦੇ ਪ੍ਰੋਗਰਾਮਾਂ ਨੂੰ * ਸਕ੍ਰਿਪਟਾਂ * ਕਿਹਾ ਜਾਂਦਾ ਹੈ. ਉਹ ਇਕ ਵੈੱਬ ਪੇਜ ਦੇ HTML ਵਿਚ ਸਹੀ ਤਰ੍ਹਾਂ ਲਿਖੇ ਜਾ ਸਕਦੇ ਹਨ ਅਤੇ ਪੰਨੇ ਦੇ ਲੋਡ ਹੋਣ ਦੇ ਨਾਲ ਆਪਣੇ ਆਪ ਚਲ ਸਕਦੇ ਹਨ।
 
@@ -24,9 +32,15 @@
 
 ਵੱਖ ਵੱਖ ਇੰਜਣਾਂ ਦੇ ਵੱਖਰੇ "ਕੋਡਨੇਮ" ਹੁੰਦੇ ਹਨ. ਉਦਾਹਰਣ ਲਈ:
 
+<<<<<<< HEAD
 - [ਵੀ 8] (https://en.wikedia.org/wiki/V8_ (ਜਾਵਾ ਸਕ੍ਰਿਪਟ_ਜਿੰਕ)) - ਕਰੋਮ ਅਤੇ ਓਪੇਰਾ ਵਿੱਚ।
 - [ਸਪਾਈਡਰਮੋਨਕੀ] (https://en.wikedia.org/wiki/SpiderMonkey) - ਫਾਇਰਫਾਕਸ ਵਿੱਚ।
 - ... ਹੋਰ ਕੋਡਨੇਮ ਹਨ ਜਿਵੇਂ ਕਿ "ਟ੍ਰਿਡੈਂਟ" ਅਤੇ ਆਈ.ਈ. ਦੇ ਵੱਖ ਵੱਖ ਸੰਸਕਰਣਾਂ ਲਈ "ਚਕਰਾ", ਮਾਈਕਰੋਸੌਫਟ ਐਜ ਲਈ "ਚਕਰਾਕੋਰ", "ਨਾਈਟਰੋ" ਅਤੇ ਸਫਾਰੀ ਲਈ "ਸਕੁਅਰਲਫਿਸ਼", ਆਦਿ।
+=======
+- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- in Chrome and Opera.
+- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- in Firefox.
+- ...There are other codenames like "Chakra" for IE, "ChakraCore" for Microsoft Edge, "Nitro" and "SquirrelFish" for Safari, etc.
+>>>>>>> 0599d07b3c13ee25f583fc091cead3c17a7e7779
 
 ਉਪਰੋਕਤ ਨਿਯਮ ਯਾਦ ਰੱਖਣੇ ਚੰਗੇ ਹਨ ਕਿਉਂਕਿ ਉਹ ਇੰਟਰਨੈਟ ਤੇ ਡਿਵੈਲਪਰ ਲੇਖਾਂ ਵਿੱਚ ਵਰਤੇ ਜਾਂਦੇ ਹਨ. ਅਸੀਂ ਉਨ੍ਹਾਂ ਦੀ ਵਰਤੋਂ ਵੀ ਕਰਾਂਗੇ. ਉਦਾਹਰਣ ਦੇ ਲਈ, ਜੇ "ਇੱਕ ਫੀਚਰ ਐਕਸ ਵੀ 8 ਦੁਆਰਾ ਸਹਿਯੋਗੀ ਹੈ", ਤਾਂ ਇਹ ਸ਼ਾਇਦ ਕ੍ਰੋਮ ਅਤੇ ਓਪੇਰਾ ਵਿੱਚ ਕੰਮ ਕਰਦਾ ਹੈ।
 
@@ -68,7 +82,12 @@
     ਕੈਮਰੇ / ਮਾਈਕ੍ਰੋਫੋਨ ਅਤੇ ਹੋਰ ਡਿਵਾਈਸਾਂ ਨਾਲ ਗੱਲਬਾਤ ਕਰਨ ਦੇ ਤਰੀਕੇ ਹਨ, ਪਰ ਉਨ੍ਹਾਂ ਨੂੰ ਉਪਭੋਗਤਾ ਦੀ ਸਪਸ਼ਟ ਆਗਿਆ ਦੀ ਲੋੜ ਹੈ. ਇਸ ਲਈ ਜਾਵਾ ਸਕ੍ਰਿਪਟ-ਸਮਰਥਿਤ ਪੰਨਾ ਹੋ ਸਕਦਾ ਹੈ ਕਿ ਇੱਕ ਵੈੱਬ-ਕੈਮਰਾ ਨੂੰ ਏਨੇਬਲ ਨਾ ਕਰ ਸਕੇ, ਤਾਕੀ ਓਹ ਆਲੇ ਦੁਆਲੇ ਦਾ ਨਿਰੀਖਣ ਕਰਨ ਅਤੇ ਜਾਣਕਾਰੀ [ਐਨਐਸਏ] (https://en.wikedia.org/wiki/National_Security_Agency) ਨੂੰ ਭੇਜਣ ਵਿੱਚ ਸਮਰਥ ਹੋ ਜਾਵੇ।
 - ਵੱਖਰੀਆਂ ਟੈਬਾਂ / ਵਿੰਡੋਜ਼ ਆਮ ਤੌਰ 'ਤੇ ਇਕ ਦੂਜੇ ਬਾਰੇ ਨਹੀਂ ਜਾਣਦੀਆਂ. ਕਈ ਵਾਰ ਉਹ ਕਰ ਸਕਦੇ ਹਨ, ਉਦਾਹਰਣ ਵਜੋਂ ਜਦੋਂ ਇੱਕ ਵਿੰਡੋ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਨੂੰ ਦੂਜੀ ਨੂੰ ਖੋਲ੍ਹਣ ਲਈ ਵਰਤਦੀ ਹੈ। ਪਰ ਇਸ ਸਥਿਤੀ ਵਿਚ ਵੀ, ਇਕ ਪੰਨੇ ਤੋਂ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੂਜੇ ਨੂੰ ਐਕਸੈਸ ਨਹੀਂ ਕਰ ਸਕਦੀ ਜੇ ਉਹ ਵੱਖਰੀਆਂ ਸਾਈਟਾਂ ਤੋਂ ਆਉਂਦੇ ਹਨ। (ਵੱਖਰੇ ਡੋਮੇਨ, ਪ੍ਰੋਟੋਕੋਲ ਜਾਂ ਪੋਰਟ ਤੋਂ)
 
+<<<<<<< HEAD
 ਇਸ ਨੂੰ "ਸਮਾਨ ਮੂਲ ਨੀਤੀ" ਕਿਹਾ ਜਾਂਦਾ ਹੈ। ਇਸ ਦੇ ਦੁਆਲੇ ਕੰਮ ਕਰਨ ਲਈ, ਦੋਵੇਂ ਪੰਨੇ ਡੇਟਾ ਐਕਸਚੇਂਜ ਲਈ ਸਹਿਮਤ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ ਅਤੇ ਇਸ ਵਿੱਚ ਇੱਕ ਵਿਸ਼ੇਸ਼ ਜਾਵਾਸਕ੍ਰਿਪਟ ਕੋਡ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਜੋ ਇਸਨੂੰ ਸੰਭਾਲਦਾ ਹੈ. ਅਸੀਂ ਇਸਨੂੰ ਤੁਤੋਰਿਆਲ ਵਿੱਚ ਕਵਰ ਕਰਾਂਗੇ।
+=======
+    There are ways to interact with camera/microphone and other devices, but they require a user's explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the [NSA](https://en.wikipedia.org/wiki/National_Security_Agency).
+- Different tabs/windows generally do not know about each other. Sometimes they do; for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other if they come from different sites (from a different domain, protocol or port).
+>>>>>>> 0599d07b3c13ee25f583fc091cead3c17a7e7779
 
 ਇਹ ਸੀਮਾ ਉਪਭੋਗਤਾ ਦੀ ਸੁਰੱਖਿਆ ਲਈ ਹੈ। Http://anysite.com ਦਾ ਇੱਕ ਪੰਨਾ ਜਿਸ ਨੂੰ ਉਪਭੋਗਤਾ ਨੇ ਖੋਲ੍ਹਿਆ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਉਹ URL http://gmail.com ਦੇ ਨਾਲ ਇੱਕ ਹੋਰ ਬ੍ਰਾਜ਼ਰ ਟੈਬ ਤੱਕ ਪਹੁੰਚਣ ਦੇ ਯੋਗ ਨਹੀਂ ਹੋਣਾ ਚਾਹੀਦਾ ਜਿਸ ਤੋਂ ਓਹ ਜਾਣਕਾਰੀ ਚੋਰੀ ਕਰ ਸਕਦਾ ਹੈ।
 
@@ -105,15 +124,29 @@ HTML / CSS ਦੇ ਨਾਲ ਪੂਰਾ ਏਕੀਕਰਣ.
 
 ਅਜਿਹੀਆਂ ਭਾਸ਼ਾਵਾਂ ਦੀਆਂ ਉਦਾਹਰਣਾਂ:
 
+<<<<<<< HEAD
 - [ਕੌਫੀਸਕ੍ਰਿਪਟ] (http://coffeescript.org/) ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਲਈ ਇੱਕ "ਸਿੰਨੈਟਿਕ ਸ਼ੂਗਰ" ਹੈ. ਇਹ ਛੋਟਾ ਸੰਟੈਕਸ ਪੇਸ਼ ਕਰਦਾ ਹੈ, ਜਿਸ ਨਾਲ ਸਾਨੂੰ ਸਾਫ ਅਤੇ ਵਧੇਰੇ ਸਹੀ ਕੋਡ ਲਿਖਣ ਦੀ ਆਗਿਆ ਮਿਲਦੀ ਹੈ. ਆਮ ਤੌਰ 'ਤੇ, ਰੂਬੀ ਡੇਵਲੋਪਰ ਇਸਨੂੰ ਪਸੰਦ ਕਰਦੇ ਹਨ.
 - [ਟਾਈਪਸਕ੍ਰਿਪਟ] (http://www.typescriptlang.org.org) ਗੁੰਝਲਦਾਰ ਪ੍ਰਣਾਲੀਆਂ ਦੇ ਵਿਕਾਸ ਅਤੇ ਸਹਾਇਤਾ ਨੂੰ ਸੌਖਾ ਬਣਾਉਣ ਲਈ "ਸਖਤ ਡਾਟਾ ਟਾਈਪਿੰਗ" ਜੋੜਨ 'ਤੇ ਕੇਂਦ੍ਰਿਤ ਹੈ. ਇਹ ਮਾਈਕ੍ਰੋਸਾੱਫਟ ਦੁਆਰਾ ਵਿਕਸਤ ਕੀਤਾ ਗਿਆ ਹੈ.
 - [ਫਲੋ] (http://flow.org/) ਡਾਟਾ ਟਾਈਪਿੰਗ ਨੂੰ ਵੀ ਜੋੜਦਾ ਹੈ, ਪਰ ਇੱਕ ਵੱਖਰੇ .ੰਗ ਨਾਲ. ਫੇਸਬੁੱਕ ਦੁਆਰਾ ਵਿਕਸਤ ਕੀਤਾ.
 - [ਡਾਰਟ] (https://www.dartlang.org/) ਇੱਕ ਵੱਖਰੀ ਭਾਸ਼ਾ ਹੈ ਜਿਸਦਾ ਆਪਣਾ ਇੰਜਣ ਹੈ ਜੋ ਗੈਰ-ਬ੍ਰਾਜ਼ਰ ਵਾਤਾਵਰਣ ਵਿੱਚ ਚਲਦਾ ਹੈ (ਜਿਵੇਂ ਮੋਬਾਈਲ ਐਪਸ), ਪਰ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਵੀ ਤਬਦੀਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ. ਗੂਗਲ ਦੁਆਰਾ ਵਿਕਸਤ ਕੀਤਾ ਗਿਆ.
+=======
+- [CoffeeScript](http://coffeescript.org/) is a "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
+- [TypeScript](http://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
+- [Flow](http://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
+- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
+- [Brython](https://brython.info/) is a Python transpiler to JavaScript that allow to write application in pure Python without JavaScript.
+>>>>>>> 0599d07b3c13ee25f583fc091cead3c17a7e7779
 
 ਹੋਰ ਵੀ ਹਨ. ਬੇਸ਼ਕ, ਭਾਵੇਂ ਅਸੀਂ ਟਰਾਂਸਪੋਲਡ ਹੋਈਆਂ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚੋਂ ਇੱਕ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਾਂ, ਸਾਨੂੰ ਜਾਵਾਸਕ੍ਰਿਪਟ ਨੂੰ ਅਸਲ ਵਿੱਚ ਇਹ ਸਮਝਣ ਲਈ ਵੀ ਪਤਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਕਿ ਅਸੀਂ ਕੀ ਕਰ ਰਹੇ ਹਾਂ.
 
 ## ਸੰਖੇਪ
 
+<<<<<<< HEAD
 - ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਸ਼ੁਰੂਆਤ ਵਿੱਚ ਸਿਰਫ ਇੱਕ ਬ੍ਰਾਜ਼ਰ ਦੀ ਭਾਸ਼ਾ ਵਜੋਂ ਬਣਾਈ ਗਈ ਸੀ, ਪਰ ਹੁਣ ਹੋਰ ਕਈ ਵਾਤਾਵਰਣਾਂ ਵਿੱਚ ਵੀ ਵਰਤੀ ਜਾਂਦੀ ਹੈ.
 - ਅੱਜ, ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੀ HTML / CSS ਦੇ ਨਾਲ ਪੂਰੀ ਏਕੀਕਰਣ ਦੇ ਨਾਲ ਸਭ ਤੋਂ ਵੱਧ ਵਿਆਪਕ ਰੂਪ ਵਿੱਚ ਅਪਣਾਈ ਗਈ ਬ੍ਰਾਜ਼ਰ ਭਾਸ਼ਾ ਦੀ ਵਿਲੱਖਣ ਸਥਿਤੀ ਹੈ.
 - ਇੱਥੇ ਬਹੁਤ ਸਾਰੀਆਂ ਭਾਸ਼ਾਵਾਂ ਹਨ ਜੋ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਤੇ "ਟਰਾਂਸਪੇਲ" ਹੋ ਜਾਂਦੀਆਂ ਹਨ ਅਤੇ ਕੁਝ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਪ੍ਰਦਾਨ ਕਰਦੀਆਂ ਹਨ. ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਨੂੰ ਮੁਹਾਰਤ ਤੋਂ ਬਾਅਦ, ਉਹਨਾਂ ਨੂੰ ਘੱਟੋ ਘੱਟ ਸੰਖੇਪ ਵਿੱਚ ਵੇਖਣ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ.
+=======
+- JavaScript was initially created as a browser-only language, but it is now used in many other environments as well.
+- Today, JavaScript has a unique position as the most widely-adopted browser language with full integration in HTML/CSS.
+- There are many languages that get "transpiled" to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.
+>>>>>>> 0599d07b3c13ee25f583fc091cead3c17a7e7779
