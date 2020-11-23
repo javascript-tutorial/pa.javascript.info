@@ -1,6 +1,10 @@
 # ਪੰਜਾਬੀ ਵਿਚ ਮਾਡਰਨ ਜਾਵਾ ਸਕ੍ਰਿਪਟ
 
+<<<<<<< HEAD
 ਇਹ ਰਿਪੋਜ਼ਟਰੀ <https://javascript.info> ਦਾ ਪੰਜਾਬੀ ਵਿੱਚ ਅਨੁਵਾਦ ਕਰਦੀ ਹੈ।
+=======
+This repository hosts the English content of the Modern JavaScript Tutorial, published in [https://javascript.info](https://javascript.info).
+>>>>>>> 23da191b58643387783f38e999f5b05be87d3d93
 
 
 ** ਇਸ ਤਰ੍ਹਾਂ ਤੁਸੀਂ ਯੋਗਦਾਨ ਪਾ ਸਕਦੇ ਹੋ: **
@@ -37,7 +41,13 @@
 - ਇੱਕ ਲੇਖ ਲਈ. Article.md`,
 - ਟਾਸਕ ਬਣਾਉਣ ਲਈ `ਟਾਸਕ.ਐਮਡੀ` (+ ਕੋਈ ਹੱਲ ਹੈ ਤਾਂ ਹੱਲ ਟੈਕਸਟ ਦੇ ਨਾਲ.
 
+<<<<<<< HEAD
 ਇੱਕ ਫਾਈਲ ਸ਼ੁਰੂ  # Title header ਨਾਲ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ, ਅਤੇ ਫਿਰ ਮਾਰਕਡਾਉਨ ਵਰਗੇ ਫਾਰਮੈਟ ਵਿੱਚ ਟੈਕਸਟ, ਇੱਕ ਸਧਾਰਣ ਟੈਕਸਟ ਐਡੀਟਰ ਵਿੱਚ ਏਡਿਟ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ।
+=======
+  - `index.md` stands for a chapter
+  - `article.md` stands for an article
+  - `task.md` stands for a task (solution must be provided in `solution.md` file as well)
+>>>>>>> 23da191b58643387783f38e999f5b05be87d3d93
 
 ਲੇਖ ਜਾਂ ਕਾਰਜ ਲਈ ਅਤਿਰਿਕਤ ਸਰੋਤ ਅਤੇ ਉਦਾਹਰਣ ਵੀ ਉਸੇ ਫੋਲਡਰ ਵਿੱਚ ਹਨ.
 
