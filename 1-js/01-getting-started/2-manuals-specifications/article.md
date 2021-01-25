@@ -14,20 +14,32 @@
 
 ਨਾਲ ਹੀ, ਜੇ ਤੁਸੀਂ ਬ੍ਰਾਜ਼ਰ ਲਈ ਡਵੈਲਪ ਕਰ ਰਹੇ ਹੋ, ਤਾਂ ਟਿਯੂਟੋਰਿਅਲ ਦੇ [ਦੂਜੇ ਭਾਗ] (ਜਾਣਕਾਰੀ: ਬਰਾਜ਼ਰ-ਵਾਤਾਵਰਣ) ਵਿਚ ਕਵਰ ਕੀਤੇ ਗਈ ਹੋਰ ਵੀ ਕਿਸਮਾਂ ਹਨ.
 
+<<<<<<< HEAD
 ## ਮੈਨੂਅਲ
+=======
+Also, if you're in developing for the browser, then there are other specifications covered in the [second part](info:browser-environment) of the tutorial.
+>>>>>>> 97ef86242f9f236b13152e1baf52a55c4db8728a
 
 - ** ਐਮਡੀਐਨ (ਮੋਜ਼ੀਲਾ) ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਹਵਾਲਾ ** ਇੱਕ ਮੈਨੂਅਲ ਹੈ ਜੋ ਉਦਾਹਰਣਾਂ ਅਤੇ ਹੋਰ ਜਾਣਕਾਰੀ ਵਾਲਾ ਹੈ. ਵਿਅਕਤੀਗਤ ਭਾਸ਼ਾ ਦੇ ਕਾਰਜਾਂ, ਤਰੀਕਿਆਂ ਆਦਿ ਬਾਰੇ ਡੂੰਘਾਈ ਨਾਲ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰਨਾ ਬਹੁਤ ਵਧੀਆ ਹੈ.
 
+<<<<<<< HEAD
     ਕੋਈ ਇਸ ਨੂੰ <https://developer.mozilla.org/en-US/docs/Web/JavaScript/References> 'ਤੇ ਲੱਭ ਸਕਦਾ ਹੈ.
+=======
+- **MDN (Mozilla) JavaScript Reference** is the main manual with examples and other information. It's great to get in-depth information about individual language functions, methods etc.
+>>>>>>> 97ef86242f9f236b13152e1baf52a55c4db8728a
 
     ਹਾਲਾਂਕਿ, ਇਸ ਦੀ ਬਜਾਏ ਇੰਟਰਨੈਟ ਦੀ ਵਰਤੋਂ ਕਰਨਾ ਅਕਸਰ ਵਧੀਆ ਹੁੰਦਾ ਹੈ. ਸਰਚ ਵਿੱਚ ਸਿਰਫ "ਐਮਡੀਐਨ + [ਸ਼ਬਦ]" ਦੀ ਵਰਤੋਂ ਕਰੋ, ਉਦਾ. <https://google.com/search?q=MDN+parseInt> `parseInt` ਫੰਕਸ਼ਨ ਦੀ ਭਾਲ ਕਰਨ ਲਈ.
 
+<<<<<<< HEAD
 
 - ** ਐਮਐਸਡੀਐਨ ** - ਬਹੁਤ ਸਾਰੀ ਜਾਣਕਾਰੀ ਵਾਲਾ ਮਾਈਕ੍ਰੋਸਾੱਫਟ ਮੈਨੂਅਲ, ਜਿਸ ਵਿੱਚ ਜਾਵਾ ਸਕ੍ਰਿਪਟ (ਅਕਸਰ JScript ਵਜੋਂ ਜਾਣਿਆ ਜਾਂਦਾ ਹੈ) ਵੀ ਸ਼ਾਮਲ ਹੈ. ਜੇ ਕਿਸੇ ਨੂੰ ਇੰਟਰਨੈਟ ਐਕਸਪਲੋਰਰ ਲਈ ਕੁਝ ਖਾਸ ਦੀ ਜ਼ਰੂਰਤ ਹੈ, ਤਾਂ ਬਿਹਤਰ ਉਥੇ ਜਾਓ: <http://msdn.microsoft.com/>.
 
     ਇਸ ਦੇ ਨਾਲ, ਅਸੀਂ "ਰੇਜੀਐਕਸਐਕਸ ਐਮਐਸਡੀਐਨ" ਜਾਂ "ਰੈਗੈਕਸ ਐਕਸਪ੍ਰੈਸ ਐਮਐਸਡੀਐਨ js ਸਕ੍ਰਿਪਟ" ਵਰਗੇ ਵਾਕਾਂ ਨਾਲ ਇੱਕ ਇੰਟਰਨੈਟ ਖੋਜ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹਾਂ.
 
 ## ਅਨੁਕੂਲਤਾ ਟੇਬਲ
+=======
+Although, it's often best to use an internet search instead. Just use "MDN [term]" in the query, e.g. <https://google.com/search?q=MDN+parseInt> to search for `parseInt` function.
+>>>>>>> 97ef86242f9f236b13152e1baf52a55c4db8728a
 
 ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਇੱਕ ਵਿਕਾਸਸ਼ੀਲ ਭਾਸ਼ਾ ਹੈ, ਨਵੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਨਿਯਮਿਤ ਤੌਰ ਤੇ ਸ਼ਾਮਲ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ.
 
