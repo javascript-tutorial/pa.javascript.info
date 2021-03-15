@@ -1,10 +1,18 @@
 # ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੀ ਜਾਣ ਪਛਾਣ।
 
+<<<<<<< HEAD
 ਆਓ ਵੇਖੀਏ ਕਿ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੇ ਬਾਰੇ ਕੀ ਵਿਸ਼ੇਸ਼ ਹੈ, ਅਸੀਂ ਇਸ ਨਾਲ ਕੀ ਪ੍ਰਾਪਤ ਕਰ ਸਕਦੇ ਹਾਂ, ਅਤੇ ਕਿਹੜੀਆਂ ਹੋਰ ਤਕਨਾਲੋਜੀਆਂ ਇਸ ਨਾਲ ਵਧੀਆ ਮੇਲ ਖਾਂਦੀਆਂ ਹਨ।
+=======
+Let's see what's so special about JavaScript, what we can achieve with it, and what other technologies play well with it.
+>>>>>>> e01998baf8f85d9d6cef9f1add6c81b901f16d69
 
 ## ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਕੀ ਹੈ?
 
+<<<<<<< HEAD
 * ਜਾਵਾ ਸਕ੍ਰਿਪਟ * ਸ਼ੁਰੂਆਤ ਵਿੱਚ * "ਵੈੱਬ ਪੇਜਾਂ ਨੂੰ ਜੀਵੰਤ" * ਬਣਾਉਣ ਲਈ ਬਣਾਈ ਗਈ ਸੀ।
+=======
+*JavaScript* was initially created to "make web pages alive".
+>>>>>>> e01998baf8f85d9d6cef9f1add6c81b901f16d69
 
 ਇਸ ਭਾਸ਼ਾ ਦੇ ਪ੍ਰੋਗਰਾਮਾਂ ਨੂੰ * ਸਕ੍ਰਿਪਟਾਂ * ਕਿਹਾ ਜਾਂਦਾ ਹੈ. ਉਹ ਇਕ ਵੈੱਬ ਪੇਜ ਦੇ HTML ਵਿਚ ਸਹੀ ਤਰ੍ਹਾਂ ਲਿਖੇ ਜਾ ਸਕਦੇ ਹਨ ਅਤੇ ਪੰਨੇ ਦੇ ਲੋਡ ਹੋਣ ਦੇ ਨਾਲ ਆਪਣੇ ਆਪ ਚਲ ਸਕਦੇ ਹਨ।
 
@@ -24,9 +32,15 @@
 
 ਵੱਖ ਵੱਖ ਇੰਜਣਾਂ ਦੇ ਵੱਖਰੇ "ਕੋਡਨੇਮ" ਹੁੰਦੇ ਹਨ. ਉਦਾਹਰਣ ਲਈ:
 
+<<<<<<< HEAD
 - [ਵੀ 8] (https://en.wikedia.org/wiki/V8_ (ਜਾਵਾ ਸਕ੍ਰਿਪਟ_ਜਿੰਕ)) - ਕਰੋਮ ਅਤੇ ਓਪੇਰਾ ਵਿੱਚ।
 - [ਸਪਾਈਡਰਮੋਨਕੀ] (https://en.wikedia.org/wiki/SpiderMonkey) - ਫਾਇਰਫਾਕਸ ਵਿੱਚ।
 - ... ਹੋਰ ਕੋਡਨੇਮ ਹਨ ਜਿਵੇਂ ਕਿ "ਟ੍ਰਿਡੈਂਟ" ਅਤੇ ਆਈ.ਈ. ਦੇ ਵੱਖ ਵੱਖ ਸੰਸਕਰਣਾਂ ਲਈ "ਚਕਰਾ", ਮਾਈਕਰੋਸੌਫਟ ਐਜ ਲਈ "ਚਕਰਾਕੋਰ", "ਨਾਈਟਰੋ" ਅਤੇ ਸਫਾਰੀ ਲਈ "ਸਕੁਅਰਲਫਿਸ਼", ਆਦਿ।
+=======
+- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- in Chrome and Opera.
+- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- in Firefox.
+- ...There are other codenames like "Chakra" for IE, "ChakraCore" for Microsoft Edge, "Nitro" and "SquirrelFish" for Safari, etc.
+>>>>>>> e01998baf8f85d9d6cef9f1add6c81b901f16d69
 
 ਉਪਰੋਕਤ ਨਿਯਮ ਯਾਦ ਰੱਖਣੇ ਚੰਗੇ ਹਨ ਕਿਉਂਕਿ ਉਹ ਇੰਟਰਨੈਟ ਤੇ ਡਿਵੈਲਪਰ ਲੇਖਾਂ ਵਿੱਚ ਵਰਤੇ ਜਾਂਦੇ ਹਨ. ਅਸੀਂ ਉਨ੍ਹਾਂ ਦੀ ਵਰਤੋਂ ਵੀ ਕਰਾਂਗੇ. ਉਦਾਹਰਣ ਦੇ ਲਈ, ਜੇ "ਇੱਕ ਫੀਚਰ ਐਕਸ ਵੀ 8 ਦੁਆਰਾ ਸਹਿਯੋਗੀ ਹੈ", ਤਾਂ ਇਹ ਸ਼ਾਇਦ ਕ੍ਰੋਮ ਅਤੇ ਓਪੇਰਾ ਵਿੱਚ ਕੰਮ ਕਰਦਾ ਹੈ।
 
@@ -105,15 +119,30 @@ HTML / CSS ਦੇ ਨਾਲ ਪੂਰਾ ਏਕੀਕਰਣ.
 
 ਅਜਿਹੀਆਂ ਭਾਸ਼ਾਵਾਂ ਦੀਆਂ ਉਦਾਹਰਣਾਂ:
 
+<<<<<<< HEAD
 - [ਕੌਫੀਸਕ੍ਰਿਪਟ] (http://coffeescript.org/) ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਲਈ ਇੱਕ "ਸਿੰਨੈਟਿਕ ਸ਼ੂਗਰ" ਹੈ. ਇਹ ਛੋਟਾ ਸੰਟੈਕਸ ਪੇਸ਼ ਕਰਦਾ ਹੈ, ਜਿਸ ਨਾਲ ਸਾਨੂੰ ਸਾਫ ਅਤੇ ਵਧੇਰੇ ਸਹੀ ਕੋਡ ਲਿਖਣ ਦੀ ਆਗਿਆ ਮਿਲਦੀ ਹੈ. ਆਮ ਤੌਰ 'ਤੇ, ਰੂਬੀ ਡੇਵਲੋਪਰ ਇਸਨੂੰ ਪਸੰਦ ਕਰਦੇ ਹਨ.
 - [ਟਾਈਪਸਕ੍ਰਿਪਟ] (http://www.typescriptlang.org.org) ਗੁੰਝਲਦਾਰ ਪ੍ਰਣਾਲੀਆਂ ਦੇ ਵਿਕਾਸ ਅਤੇ ਸਹਾਇਤਾ ਨੂੰ ਸੌਖਾ ਬਣਾਉਣ ਲਈ "ਸਖਤ ਡਾਟਾ ਟਾਈਪਿੰਗ" ਜੋੜਨ 'ਤੇ ਕੇਂਦ੍ਰਿਤ ਹੈ. ਇਹ ਮਾਈਕ੍ਰੋਸਾੱਫਟ ਦੁਆਰਾ ਵਿਕਸਤ ਕੀਤਾ ਗਿਆ ਹੈ.
 - [ਫਲੋ] (http://flow.org/) ਡਾਟਾ ਟਾਈਪਿੰਗ ਨੂੰ ਵੀ ਜੋੜਦਾ ਹੈ, ਪਰ ਇੱਕ ਵੱਖਰੇ .ੰਗ ਨਾਲ. ਫੇਸਬੁੱਕ ਦੁਆਰਾ ਵਿਕਸਤ ਕੀਤਾ.
 - [ਡਾਰਟ] (https://www.dartlang.org/) ਇੱਕ ਵੱਖਰੀ ਭਾਸ਼ਾ ਹੈ ਜਿਸਦਾ ਆਪਣਾ ਇੰਜਣ ਹੈ ਜੋ ਗੈਰ-ਬ੍ਰਾਜ਼ਰ ਵਾਤਾਵਰਣ ਵਿੱਚ ਚਲਦਾ ਹੈ (ਜਿਵੇਂ ਮੋਬਾਈਲ ਐਪਸ), ਪਰ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਵੀ ਤਬਦੀਲ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ. ਗੂਗਲ ਦੁਆਰਾ ਵਿਕਸਤ ਕੀਤਾ ਗਿਆ.
+=======
+- [CoffeeScript](http://coffeescript.org/) is a "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
+- [TypeScript](http://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
+- [Flow](http://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
+- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
+- [Brython](https://brython.info/) is a Python transpiler to JavaScript that enables the writing of applications in pure Python without JavaScript.
+- [Kotlin](https://kotlinlang.org/docs/reference/js-overview.html) is a modern, concise and safe programming language that can target the browser or Node.
+>>>>>>> e01998baf8f85d9d6cef9f1add6c81b901f16d69
 
 ਹੋਰ ਵੀ ਹਨ. ਬੇਸ਼ਕ, ਭਾਵੇਂ ਅਸੀਂ ਟਰਾਂਸਪੋਲਡ ਹੋਈਆਂ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚੋਂ ਇੱਕ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਾਂ, ਸਾਨੂੰ ਜਾਵਾਸਕ੍ਰਿਪਟ ਨੂੰ ਅਸਲ ਵਿੱਚ ਇਹ ਸਮਝਣ ਲਈ ਵੀ ਪਤਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਕਿ ਅਸੀਂ ਕੀ ਕਰ ਰਹੇ ਹਾਂ.
 
 ## ਸੰਖੇਪ
 
+<<<<<<< HEAD
 - ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਸ਼ੁਰੂਆਤ ਵਿੱਚ ਸਿਰਫ ਇੱਕ ਬ੍ਰਾਜ਼ਰ ਦੀ ਭਾਸ਼ਾ ਵਜੋਂ ਬਣਾਈ ਗਈ ਸੀ, ਪਰ ਹੁਣ ਹੋਰ ਕਈ ਵਾਤਾਵਰਣਾਂ ਵਿੱਚ ਵੀ ਵਰਤੀ ਜਾਂਦੀ ਹੈ.
 - ਅੱਜ, ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਦੀ HTML / CSS ਦੇ ਨਾਲ ਪੂਰੀ ਏਕੀਕਰਣ ਦੇ ਨਾਲ ਸਭ ਤੋਂ ਵੱਧ ਵਿਆਪਕ ਰੂਪ ਵਿੱਚ ਅਪਣਾਈ ਗਈ ਬ੍ਰਾਜ਼ਰ ਭਾਸ਼ਾ ਦੀ ਵਿਲੱਖਣ ਸਥਿਤੀ ਹੈ.
 - ਇੱਥੇ ਬਹੁਤ ਸਾਰੀਆਂ ਭਾਸ਼ਾਵਾਂ ਹਨ ਜੋ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਤੇ "ਟਰਾਂਸਪੇਲ" ਹੋ ਜਾਂਦੀਆਂ ਹਨ ਅਤੇ ਕੁਝ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਪ੍ਰਦਾਨ ਕਰਦੀਆਂ ਹਨ. ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਨੂੰ ਮੁਹਾਰਤ ਤੋਂ ਬਾਅਦ, ਉਹਨਾਂ ਨੂੰ ਘੱਟੋ ਘੱਟ ਸੰਖੇਪ ਵਿੱਚ ਵੇਖਣ ਦੀ ਸਿਫਾਰਸ਼ ਕੀਤੀ ਜਾਂਦੀ ਹੈ.
+=======
+- JavaScript was initially created as a browser-only language, but it is now used in many other environments as well.
+- Today, JavaScript has a unique position as the most widely-adopted browser language with full integration in HTML/CSS.
+- There are many languages that get "transpiled" to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.
+>>>>>>> e01998baf8f85d9d6cef9f1add6c81b901f16d69
