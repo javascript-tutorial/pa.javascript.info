@@ -1,6 +1,10 @@
 # ਪੰਜਾਬੀ ਵਿਚ ਮਾਡਰਨ ਜਾਵਾ ਸਕ੍ਰਿਪਟ
 
+<<<<<<< HEAD
 ਇਹ ਰਿਪੋਜ਼ਟਰੀ <https://javascript.info> ਦਾ ਪੰਜਾਬੀ ਵਿੱਚ ਅਨੁਵਾਦ ਕਰਦੀ ਹੈ।
+=======
+This repository hosts the English content of the Modern JavaScript Tutorial, published in [https://javascript.info](https://javascript.info).
+>>>>>>> 4d01fc20d4d82358e61518a31efe80dec9bb2602
 
 
 ** ਇਸ ਤਰ੍ਹਾਂ ਤੁਸੀਂ ਯੋਗਦਾਨ ਪਾ ਸਕਦੇ ਹੋ: **
@@ -23,7 +27,11 @@
 
 ਜਦੋਂ ਤੁਹਾਡਾ ਅਨੁਵਾਦ ਪ੍ਰਕਾਸ਼ਤ ਹੁੰਦਾ ਹੈ ਤਾਂ ਤੁਹਾਡਾ ਨਾਮ ਅਤੇ ਯੋਗਦਾਨ ਦਾ "ਪ੍ਰੋਜੈਕਟ ਦੇ ਬਾਰੇ" ਪੰਨੇ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਨ ਹੁੰਦਾ ਹੈ.
 
+<<<<<<< HEAD
 ਜਰੂਰੀ ਬੇਨਤੀ:: ਭਾਸ਼ਾਵਾਂ ਦੀ ਪੂਰੀ ਸੂਚੀ <https://javascript.info/translate> 'ਤੇ ਪਾਈ ਜਾ ਸਕਦੀ ਹੈ.
+=======
+**You can edit the text in any editor.** The tutorial uses enhanced "markdown" format, easy to grasp. And if you want to see how it looks on-site, there's a server to run the tutorial locally at <https://github.com/javascript-tutorial/server>.
+>>>>>>> 4d01fc20d4d82358e61518a31efe80dec9bb2602
 
 ## ਡਾਂਚਾ
 
@@ -37,7 +45,13 @@
 - ਇੱਕ ਲੇਖ ਲਈ. Article.md`,
 - ਟਾਸਕ ਬਣਾਉਣ ਲਈ `ਟਾਸਕ.ਐਮਡੀ` (+ ਕੋਈ ਹੱਲ ਹੈ ਤਾਂ ਹੱਲ ਟੈਕਸਟ ਦੇ ਨਾਲ.
 
+<<<<<<< HEAD
 ਇੱਕ ਫਾਈਲ ਸ਼ੁਰੂ  # Title header ਨਾਲ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ, ਅਤੇ ਫਿਰ ਮਾਰਕਡਾਉਨ ਵਰਗੇ ਫਾਰਮੈਟ ਵਿੱਚ ਟੈਕਸਟ, ਇੱਕ ਸਧਾਰਣ ਟੈਕਸਟ ਐਡੀਟਰ ਵਿੱਚ ਏਡਿਟ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ।
+=======
+  - `index.md` stands for a chapter
+  - `article.md` stands for an article
+  - `task.md` stands for a task (solution must be provided in `solution.md` file as well)
+>>>>>>> 4d01fc20d4d82358e61518a31efe80dec9bb2602
 
 ਲੇਖ ਜਾਂ ਕਾਰਜ ਲਈ ਅਤਿਰਿਕਤ ਸਰੋਤ ਅਤੇ ਉਦਾਹਰਣ ਵੀ ਉਸੇ ਫੋਲਡਰ ਵਿੱਚ ਹਨ.
 
@@ -132,6 +146,7 @@ document.querySelector('. ਹੋਲਾ').innerHTML = text
 `` `ਐਮਡੀ
 ਮਹੱਤਤਾ: 5
 
+<<<<<<< HEAD
 ---
 ...
 `` `
@@ -168,3 +183,8 @@ image.svg:        # image file
 ਅਨੁਵਾਦ ਕਿਵੇਂ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ ਇਹ ਵੇਖਣ ਲਈ ਤੁਸੀਂ ਸਥਾਨਕ ਤੌਰ 'ਤੇ ਟਿਟੋਰਿਅਲ ਸਰਵਰ ਚਲਾ ਸਕਦੇ ਹੋ.
 
 ਸਰਵਰ ਅਤੇ ਸਥਾਪਨਾ ਨਿਰਦੇਸ਼ <https://github.com/javascript-tutorial/server> ਤੇ ਹਨ.
+=======
+---  
+♥  
+Ilya Kantor @iliakan
+>>>>>>> 4d01fc20d4d82358e61518a31efe80dec9bb2602
