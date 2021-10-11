@@ -31,11 +31,18 @@
 
 ਹੇਠ ਲਿਖੀਆਂ ਚੋਣਾਂ ਤੁਹਾਡੇ ਧਿਆਨ ਦੇ ਹੱਕਦਾਰ ਹਨ:
 
+<<<<<<< HEAD
 - [ਐਟਮ] (https://atom.io/) (ਕਰਾਸ ਪਲੇਟਫਾਰਮ, ਮੁਫਤ).
 - [ਵਿਜ਼ੂਅਲ ਸਟੂਡੀਓ ਕੋਡ] (https://code.visualstudio.com/) (ਕਰਾਸ ਪਲੇਟਫਾਰਮ, ਮੁਫਤ).
 - [ਸ੍ਰੇਸ਼ਟ ਪਾਠ] (http://www.sublimetext.com) (ਕਰਾਸ ਪਲੇਟਫਾਰਮ, ਸ਼ੇਅਰਵੇਅਰ).
 - [ਨੋਟਪੈਡ ++] (https://notepad-plus-plus.org/) (ਵਿੰਡੋਜ਼, ਮੁਫਤ)
 - [ਵਿਮ] (http://www.vim.org/) ਅਤੇ [ਈਮੈਕਸ] (https://www.gnu.org/software/emacs/) ਵੀ ਸ਼ਾਨਦਾਰ ਹਨ ਜੇ ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਦੀ ਵਰਤੋਂ ਕਰਨਾ ਜਾਣਦੇ ਹੋ.
+=======
+- [Atom](https://atom.io/) (cross-platform, free).
+- [Sublime Text](http://www.sublimetext.com) (cross-platform, shareware).
+- [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
+- [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
+>>>>>>> 193319c963b9ba86ac7d9590f7261a36ecdcc4d2
 
 ## ਆਓ ਬਹਿਸ ਨਾ ਕਰੀਏ
 

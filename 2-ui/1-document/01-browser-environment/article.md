@@ -2,11 +2,19 @@
 
 ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਭਾਸ਼ਾ ਸ਼ੁਰੂ ਵਿੱਚ ਵੈਬ ਬ੍ਰਾਜ਼ਰਾਂ ਲਈ ਬਣਾਈ ਗਈ ਸੀ. ਉਦੋਂ ਤੋਂ ਇਹ ਵਿਕਸਤ ਹੋਈ ਹੈ ਅਤੇ ਬਹੁਤ ਸਾਰੀਆਂ ਵਰਤੋਂ ਅਤੇ ਪਲੇਟਫਾਰਮਾਂ ਵਾਲੀ ਇੱਕ ਭਾਸ਼ਾ ਬਣ ਗਈ ਹੈ।
 
+<<<<<<< HEAD
 ਇਸ਼ਦਾ ਪਲੇਟਫਾਰਮ ਇੱਕ ਬ੍ਰਾਉਜ਼ਰ, ਜਾਂ ਇੱਕ ਵੈੱਬ-ਸਰਵਰ ਜਾਂ ਕੋਈ ਹੋਰ * ਹੋਸਟ * ਹੋ ਸਕਦਾ ਹੈ, ਇੱਕ ਕਾਫੀ ਮਸ਼ੀਨ ਵੀ ਹੋ ਸਕਦੀ ਹੈ. ਉਨ੍ਹਾਂ ਵਿਚੋਂ ਹਰੇਕ ਪਲੇਟਫਾਰਮ-ਵਿਸ਼ੇਸ਼ ਲਈ ਕਾਰਜਕੁਸ਼ਲਤਾ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ. ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਨਿਰਧਾਰਨ ਇੱਕ * ਹੋਸਟ ਵਾਤਾਵਰਣ * ਨੂੰ ਲੋਚਦਾ ਹੈ.
+=======
+A platform may be a browser, or a web-server or another *host*, even a "smart" coffee machine, if it can run JavaScript. Each of them provides platform-specific functionality. The JavaScript specification calls that a *host environment*.
+>>>>>>> 193319c963b9ba86ac7d9590f7261a36ecdcc4d2
 
 ਇੱਕ ਮੇਜ਼ਬਾਨ ਵਾਤਾਵਰਣ ਆਪਣੀ ਖੁਦ ਦੀਆਂ ਵਸਤੂਆਂ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ ਅਤੇ ਮੇਨ ਭਾਸ਼ਾ ਲਈ ਵਾਧੂ ਕਾਰਜ ਕਰਦਾ ਹੈ. ਵੈੱਬ ਬਰਾਜ਼ਰ ਵੈਬ ਪੇਜਾਂ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਨ ਦਾ ਜ਼ਰੀਆ ਦਿੰਦੇ ਹਨ. Node।js ਸਰਵਰ-ਸਾਈਡ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ, ਅਤੇ ਹੋਰ ਖ਼ਾਸ ਵਿਸ਼ੇਸਤਾਵਾਂ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ.
 
+<<<<<<< HEAD
 ਜਦੋਂ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਇੱਕ ਵੈੱਬ-ਬ੍ਰਾਜ਼ਰ ਵਿੱਚ ਚਲਦੀ ਹੈ ਤਾਂ ਇੱਥੇ ਸਾਡੇ ਕੋਲ ਇੱਕ ਪੰਛੀ ਦਾ ਨਜ਼ਰੀਆ ਦਰਸਾਉਂਦਾ ਹੈ:
+=======
+Here's a bird's-eye view of what we have when JavaScript runs in a web browser:
+>>>>>>> 193319c963b9ba86ac7d9590f7261a36ecdcc4d2
 
 ![](windowObjects.svg)
 
@@ -48,9 +56,13 @@ document.body.style.background = "red";
 setTimeout(() => document.body.style.background = "", 1000);
 ```
 
+<<<<<<< HEAD
 ਇੱਥੇ ਅੱਸੀ ਵਰਤਿਆ`document.body.style`, ਪਰ ਉਥੇ ਬਹੁਤ ਕੁਝ ਹੈ, ਹੋਰ ਵੀ ਬਹੁਤ ਕੁਝ. Properties ਅਤੇ methods ਨਿਰਧਾਰਨ ਵਿੱਚ ਦੱਸਿਆ ਗਿਆ ਹੈ:
 
 - **DOM Living Standard** at <https://dom.spec.whatwg.org>
+=======
+Here we used `document.body.style`, but there's much, much more. Properties and methods are described in the specification: [DOM Living Standard](https://dom.spec.whatwg.org).
+>>>>>>> 193319c963b9ba86ac7d9590f7261a36ecdcc4d2
 
 ```smart header="DOM ਸਿਰਫ ਬ੍ਰਾਜ਼ਰਾਂ ਲਈ ਨਹੀਂ ਹੈ"
 DOM ਨਿਰਧਾਰਨ ਦਸਤਾਵੇਜ਼ ਦੇ ਢਾਂਚੇ ਬਾਰੇ ਦੱਸਦਾ ਹੈ ਅਤੇ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ objects ਇਸ ਨੂੰ ਫੇਰਬਦਲ ਕਰਨ ਲਈ. ਇੱਥੇ ਗੈਰ ਬ੍ਰਾਜ਼ਰ ਉਪਕਰਣ ਹਨ ਜੋ DOM ਦੀ ਵਰਤੋਂ ਵੀ ਕਰਦੇ ਹਨ.
@@ -59,9 +71,15 @@ DOM ਨਿਰਧਾਰਨ ਦਸਤਾਵੇਜ਼ ਦੇ ਢਾਂਚੇ ਬਾ
 ```
 
 ```smart header="CSSOM for styling"
+<<<<<<< HEAD
 CSS ਨਿਯਮ ਅਤੇ ਸਟਾਈਲਸ਼ੀਟ HTML ਤੋਂ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਬਣੀਆਂ ਹੋਈਆਂ ਹਨ. ਇਸ ਲਈ ਇੱਕ ਵੱਖਰਾ ਨਿਰਧਾਰਨ ਹੈ, [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/), ਇਹ ਦੱਸਦਾ ਹੈ ਕਿ ਉਹਨਾਂ ਨੂੰ ਕਿਵੇਂ ਇਕਾਈ ਵਜੋਂ ਦਰਸਾਇਆ ਜਾਂਦਾ ਹੈ, ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਕਿਵੇਂ ਪੜ੍ਹਨਾ ਅਤੇ ਲਿਖਣਾ ਹੈ.
 
 CSSOM ਜਦੋਂ ਅਸੀਂ ਦਸਤਾਵੇਜ਼ ਲਈ ਸ਼ੈਲੀ ਦੇ ਨਿਯਮਾਂ ਨੂੰ ਸੰਸ਼ੋਧਿਤ ਕਰਦੇ ਹਾਂ ਤਾਂ DOM ਦੇ ਨਾਲ ਮਿਲ ਕੇ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ.ਅਭਿਆਸ ਵਿੱਚ ਹਾਲਾਂਕਿ, CSSOM ਦੀ ਬਹੁਤ ਘੱਟ ਲੋੜ ਹੁੰਦੀ ਹੈ, ਕਿਉਂਕਿ ਆਮ ਤੌਰ ਤੇ CSS ਨਿਯਮ ਸਥਿਰ ਹੁੰਦੇ ਹਨ. ਸਾਨੂੰ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਤੋਂ ਸੀ ਐੱਸ ਐੱਸ ਦੇ ਨਿਯਮਾਂ ਨੂੰ ਜੋੜਨ / ਹਟਾਉਣ ਦੀ ਬਹੁਤ ਘੱਟ ਲੋੜ ਹੈ, ਪਰ ਇਹ ਵੀ ਸੰਭਵ ਹੈ.
+=======
+There's also a separate specification, [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/) for CSS rules and stylesheets, that explains how they are represented as objects, and how to read and write them.
+
+CSSOM is used together with DOM when we modify style rules for the document. In practice though, CSSOM is rarely required, because we rarely need to modify CSS rules from JavaScript (usually we just add/remove CSS classes, not modify their CSS rules), but that's also possible.
+>>>>>>> 193319c963b9ba86ac7d9590f7261a36ecdcc4d2
 ```
 
 ## BOM (ਬਰਾਜ਼ਰ ਆਬਜੈਕਟ ਮਾਡਲ)
