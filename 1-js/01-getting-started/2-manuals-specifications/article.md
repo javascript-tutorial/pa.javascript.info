@@ -2,7 +2,11 @@
 
 ਇਹ ਕਿਤਾਬ ਇਕ * ਟਿਟੋਰਿਯਲ * ਹੈ. ਇਸਦਾ ਉਦੇਸ਼ ਤੁਹਾਨੂੰ ਹੌਲੀ ਹੌਲੀ ਭਾਸ਼ਾ ਸਿੱਖਣ ਵਿਚ ਸਹਾਇਤਾ ਕਰਨਾ ਹੈ. ਪਰ ਇਕ ਵਾਰ ਜਦੋਂ ਤੁਸੀਂ ਮੁਢਲੀਆਂ ਗੱਲਾਂ ਤੋਂ ਜਾਣੂ ਹੋਵੋਗੇ, ਤੁਹਾਨੂੰ ਹੋਰ ਸਰੋਤਾਂ ਦੀ ਜ਼ਰੂਰਤ ਹੋਏਗੀ.
 
+<<<<<<< HEAD
 ## ਨਿਰਧਾਰਨ
+=======
+This book is a *tutorial*. It aims to help you gradually learn the language. But once you're familiar with the basics, you'll need other resources.
+>>>>>>> 6236eb8c3cdde729dab761a1d0967a88a1a6197e
 
 [ECMA-262 ਨਿਰਧਾਰਨ] (https://www.ecma-international.org/publications/standards/Ecma-262.htm) ਵਿੱਚ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਬਾਰੇ ਸਭ ਤੋਂ ਡੂੰਘਾਈ, ਵਿਸਥਾਰ ਅਤੇ ਰਸਮੀ ਜਾਣਕਾਰੀ ਹੈ. ਇਹ ਭਾਸ਼ਾ ਨੂੰ ਪਰਿਭਾਸ਼ਤ ਕਰਦਾ ਹੈ.
 
@@ -10,14 +14,23 @@
 
 ਇੱਕ ਨਵਾਂ ਸਪੈਸੀਫਿਕੇਸ਼ਨ ਵਰਜ਼ਨ ਹਰ ਸਾਲ ਜਾਰੀ ਕੀਤਾ ਜਾਂਦਾ ਹੈ. ਇਨ੍ਹਾਂ ਰੀਲੀਜ਼ਾਂ ਦੇ ਵਿਚਕਾਰ, ਤਾਜ਼ਾ ਨਿਰਧਾਰਣ ਖਰੜਾ <https://tc39.es/ecma262/> 'ਤੇ ਹੈ.
 
+<<<<<<< HEAD
 ਨਵੀਆਂ ਨਕੋਰ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਬਾਰੇ ਪੜ੍ਹਨ ਲਈ,  ਜੋ "ਲਗਭਗ ਸਟੈਂਡਰਡ" (ਅਖੌਤੀ "ਪੜਾਅ 3") ਹਨ, <https://github.com/tc39/proposals> ਤੇ ਪ੍ਰਸਤਾਵ ਵੇਖੋ.
+=======
+A new specification version is released every year. Between these releases, the latest specification draft is at <https://tc39.es/ecma262/>.
+>>>>>>> 6236eb8c3cdde729dab761a1d0967a88a1a6197e
 
 ਨਾਲ ਹੀ, ਜੇ ਤੁਸੀਂ ਬ੍ਰਾਜ਼ਰ ਲਈ ਡਵੈਲਪ ਕਰ ਰਹੇ ਹੋ, ਤਾਂ ਟਿਯੂਟੋਰਿਅਲ ਦੇ [ਦੂਜੇ ਭਾਗ] (ਜਾਣਕਾਰੀ: ਬਰਾਜ਼ਰ-ਵਾਤਾਵਰਣ) ਵਿਚ ਕਵਰ ਕੀਤੇ ਗਈ ਹੋਰ ਵੀ ਕਿਸਮਾਂ ਹਨ.
 
+<<<<<<< HEAD
 ## ਮੈਨੂਅਲ
+=======
+Also, if you're developing for the browser, then there are other specifications covered in the [second part](info:browser-environment) of the tutorial.
+>>>>>>> 6236eb8c3cdde729dab761a1d0967a88a1a6197e
 
 - ** ਐਮਡੀਐਨ (ਮੋਜ਼ੀਲਾ) ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਹਵਾਲਾ ** ਇੱਕ ਮੈਨੂਅਲ ਹੈ ਜੋ ਉਦਾਹਰਣਾਂ ਅਤੇ ਹੋਰ ਜਾਣਕਾਰੀ ਵਾਲਾ ਹੈ. ਵਿਅਕਤੀਗਤ ਭਾਸ਼ਾ ਦੇ ਕਾਰਜਾਂ, ਤਰੀਕਿਆਂ ਆਦਿ ਬਾਰੇ ਡੂੰਘਾਈ ਨਾਲ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰਨਾ ਬਹੁਤ ਵਧੀਆ ਹੈ.
 
+<<<<<<< HEAD
     ਕੋਈ ਇਸ ਨੂੰ <https://developer.mozilla.org/en-US/docs/Web/JavaScript/References> 'ਤੇ ਲੱਭ ਸਕਦਾ ਹੈ.
 
     ਹਾਲਾਂਕਿ, ਇਸ ਦੀ ਬਜਾਏ ਇੰਟਰਨੈਟ ਦੀ ਵਰਤੋਂ ਕਰਨਾ ਅਕਸਰ ਵਧੀਆ ਹੁੰਦਾ ਹੈ. ਸਰਚ ਵਿੱਚ ਸਿਰਫ "ਐਮਡੀਐਨ + [ਸ਼ਬਦ]" ਦੀ ਵਰਤੋਂ ਕਰੋ, ਉਦਾ. <https://google.com/search?q=MDN+parseInt> `parseInt` ਫੰਕਸ਼ਨ ਦੀ ਭਾਲ ਕਰਨ ਲਈ.
@@ -26,6 +39,13 @@
 - ** ਐਮਐਸਡੀਐਨ ** - ਬਹੁਤ ਸਾਰੀ ਜਾਣਕਾਰੀ ਵਾਲਾ ਮਾਈਕ੍ਰੋਸਾੱਫਟ ਮੈਨੂਅਲ, ਜਿਸ ਵਿੱਚ ਜਾਵਾ ਸਕ੍ਰਿਪਟ (ਅਕਸਰ JScript ਵਜੋਂ ਜਾਣਿਆ ਜਾਂਦਾ ਹੈ) ਵੀ ਸ਼ਾਮਲ ਹੈ. ਜੇ ਕਿਸੇ ਨੂੰ ਇੰਟਰਨੈਟ ਐਕਸਪਲੋਰਰ ਲਈ ਕੁਝ ਖਾਸ ਦੀ ਜ਼ਰੂਰਤ ਹੈ, ਤਾਂ ਬਿਹਤਰ ਉਥੇ ਜਾਓ: <http://msdn.microsoft.com/>.
 
     ਇਸ ਦੇ ਨਾਲ, ਅਸੀਂ "ਰੇਜੀਐਕਸਐਕਸ ਐਮਐਸਡੀਐਨ" ਜਾਂ "ਰੈਗੈਕਸ ਐਕਸਪ੍ਰੈਸ ਐਮਐਸਡੀਐਨ js ਸਕ੍ਰਿਪਟ" ਵਰਗੇ ਵਾਕਾਂ ਨਾਲ ਇੱਕ ਇੰਟਰਨੈਟ ਖੋਜ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹਾਂ.
+=======
+- **MDN (Mozilla) JavaScript Reference** is the main manual with examples and other information. It's great to get in-depth information about individual language functions, methods etc.
+
+    You can find it at <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
+
+Although, it's often best to use an internet search instead. Just use "MDN [term]" in the query, e.g. <https://google.com/search?q=MDN+parseInt> to search for the `parseInt` function.
+>>>>>>> 6236eb8c3cdde729dab761a1d0967a88a1a6197e
 
 ## ਅਨੁਕੂਲਤਾ ਟੇਬਲ
 
@@ -33,9 +53,16 @@
 
 ਬ੍ਰਾਜ਼ਰ-ਅਧਾਰਿਤ ਅਤੇ ਹੋਰ ਇੰਜਣਾਂ ਵਿਚਕਾਰ ਉਨ੍ਹਾਂ ਦਾ ਸਮਰਥਨ ਦੇਖਣ ਲਈ, ਵੇਖੋ:
 
+<<<<<<< HEAD
 - <http://caniuse.com> - ਸਮਰਥਨ ਦੀਆਂ ਪ੍ਰਤੀ-ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਟੇਬਲ, ਉਦਾ. ਇਹ ਵੇਖਣ ਲਈ ਕਿ ਕਿਹੜਾ ਇੰਜਣ ਆਧੁਨਿਕ ਕ੍ਰਿਪਟੋਗ੍ਰਾਫੀ ਫੰਕਸ਼ਨਾਂ ਦਾ ਸਮਰਥਨ ਕਰਦੇ ਹਨ: <http://caniuse.com/#feat=cryptography>.
 - <https://kangax.github.io/compat-table> - ਭਾਸ਼ਾ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਇੰਜਣਾਂ ਵਾਲਾ ਇੱਕ ਟੇਬਲ ਜੋ ਉਹਨਾਂ ਦਾ ਸਮਰਥਨ ਕਰਦਾ ਹੈ ਜਾਂ ਸਮਰਥਨ ਨਹੀਂ ਕਰਦਾ.
 
 ਇਹ ਸਾਰੇ ਸਰੋਤ ਅਸਲ-ਜੀਵਨ ਦੇ ਵਿਕਾਸ ਵਿੱਚ ਲਾਭਦਾਇਕ ਹਨ, ਕਿਉਂਕਿ ਉਨ੍ਹਾਂ ਵਿੱਚ ਭਾਸ਼ਾ ਦੇ ਵੇਰਵੇ, ਉਹਨਾਂ ਦੀ ਸਹਾਇਤਾ ਆਦਿ ਬਾਰੇ ਮਹੱਤਵਪੂਰਣ ਜਾਣਕਾਰੀ ਹੈ.
+=======
+- <https://caniuse.com> - per-feature tables of support, e.g. to see which engines support modern cryptography functions: <https://caniuse.com/#feat=cryptography>.
+- <https://kangax.github.io/compat-table> - a table with language features and engines that support those or don't support.
+
+All these resources are useful in real-life development, as they contain valuable information about language details, their support, etc.
+>>>>>>> 6236eb8c3cdde729dab761a1d0967a88a1a6197e
 
 ਕ੍ਰਿਪਾ ਕਰਕੇ ਉਨ੍ਹਾਂ (ਜਾਂ ਇਸ ਪੰਨੇ) ਨੂੰ ਉਨ੍ਹਾਂ ਮਾਮਲਿਆਂ ਲਈ ਯਾਦ ਰੱਖੋ ਜਦੋਂ ਤੁਹਾਨੂੰ ਕਿਸੇ ਵਿਸ਼ੇਸ਼ ਵਿਸ਼ੇਸ਼ਤਾ ਬਾਰੇ ਡੂੰਘਾਈ ਨਾਲ ਜਾਣਕਾਰੀ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ.
