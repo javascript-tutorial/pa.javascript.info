@@ -198,8 +198,13 @@ DOM ਬਦਲਣ ਲਈ ਹੋਰ ਤਰੀਕਿਆਂ ਦੀ ਜਰੂਰਤ �
 
 For example:
 
+<<<<<<< HEAD
 ```js
 // <body> ਦੇ ਮਾਪੇ <html> ਹੈ
+=======
+```js run
+// parent of <body> is <html>
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 alert( document.body.parentNode === document.documentElement ); // true
 
 // <head> ਦੇ ਬਾਅਦ <body> ਹੈ
@@ -211,7 +216,11 @@ alert( document.body.previousSibling ); // HTMLHeadElement
 
 ## ਐਲੀਮੈਂਟ-ਸਿਰਫ ਨੈਵੀਗੇਸ਼ਨ
 
+<<<<<<< HEAD
 ਉੱਪਰ ਸੂਚੀਬੱਧ ਨੇਵੀਗੇਸ਼ਨ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ * ਸਾਰੇ * ਨੋਡਾਂ ਦਾ ਹਵਾਲਾ ਦਿੰਦੀਆਂ ਹਨ. ਉਦਾਹਰਣ ਲਈ, `childNodes` ਅਸੀਂ ਦੋਵੇਂ ਟੈਕਸਟ ਨੋਡਸ, ਐਲੀਮੈਂਟ ਨੋਡਸ, ਅਤੇ ਟਿੱਪਣੀ ਨੋਡਸ ਨੂੰ ਦੇਖ ਸਕਦੇ ਹਾਂ ਜੇ ਇੱਥੇ ਮੌਜੂਦ ਹੈ.
+=======
+Navigation properties listed above refer to *all* nodes. For instance, in `childNodes` we can see both text nodes, element nodes, and even comment nodes if they exist.
+>>>>>>> 1dce5b72b16288dad31b7b3febed4f38b7a5cd8a
 
 ਪਰ ਬਹੁਤ ਸਾਰੇ ਕੰਮਾਂ ਲਈ ਅਸੀਂ ਟੈਕਸਟ ਜਾਂ ਟਿੱਪਣੀ ਨੋਡ ਨਹੀਂ ਚਾਹੁੰਦੇ.ਅਸੀਂ ਐਲੀਮੈਂਟ ਨੋਡਾਂ ਵਿੱਚ ਹੇਰਾਫੇਰੀ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹਾਂ ਜੋ ਟੈਗਾਂ ਨੂੰ ਦਰਸਾਉਂਦੇ ਹਨ ਅਤੇ ਪੰਨੇ ਦੇ ਢਾਂਚੇ ਨੂੰ ਬਣਾਉਂਦੇ ਹਨ.
 
