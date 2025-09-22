@@ -21,23 +21,41 @@
 
 🎉 ਧੰਨਵਾਦ!
 
+<<<<<<< HEAD
 ਜਦੋਂ ਤੁਹਾਡਾ ਅਨੁਵਾਦ ਪ੍ਰਕਾਸ਼ਤ ਹੁੰਦਾ ਹੈ ਤਾਂ ਤੁਹਾਡਾ ਨਾਮ ਅਤੇ ਯੋਗਦਾਨ ਦਾ "ਪ੍ਰੋਜੈਕਟ ਦੇ ਬਾਰੇ" ਪੰਨੇ ਵਿੱਚ ਪ੍ਰਕਾਸ਼ਨ ਹੁੰਦਾ ਹੈ.
 
 ਜਰੂਰੀ ਬੇਨਤੀ:: ਭਾਸ਼ਾਵਾਂ ਦੀ ਪੂਰੀ ਸੂਚੀ <https://javascript.info/translate> 'ਤੇ ਪਾਈ ਜਾ ਸਕਦੀ ਹੈ.
+=======
+Something's wrong? A topic is missing? Explain it to people, add it as PR 👏
+
+**You can edit the text in any editor.** The tutorial uses an enhanced "markdown" format, easy to grasp. And if you want to see how it looks on-site, there's a server to run the tutorial locally at <https://github.com/javascript-tutorial/server>.
+>>>>>>> 540d753e90789205fc6e75c502f68382c87dea9b
 
 ## ਡਾਂਚਾ
 
 ਹਰ ਚੈਪਟਰ, ਇਕ ਲੇਖ ਜਾਂ ਕੋਈ ਕੰਮ ਆਪਣੇ ਫੋਲਡਰ ਵਿਚ ਰਹਿੰਦਾ ਹੈ.
 
+<<<<<<< HEAD
 ਫੋਲਡਰ ਦਾ ਨਾਮ `N-url` ਹੈ, ਜਿੱਥੇ` N` - ਲੜੀਬੱਧ ਕਰਨ ਲਈ ਨੰਬਰ ਹੈ (ਲੇਖ ਲੜੀਵਾਰ ਹਨ), ਅਤੇ `url` ਸਾਈਟ 'ਤੇ URL-slug ਹੈ.
 
 ਫੋਲਡਰ ਵਿੱਚ ਇੱਕ ਫਾਈਲ ਹੋਵੇਗੀ:
+=======
+Every chapter, article, or task has its folder.
+
+The folder is named like `N-url`, where `N` is a number for the sorting purposes and `URL` is the URL part with the title of the material.
+>>>>>>> 540d753e90789205fc6e75c502f68382c87dea9b
 
 - ਇੱਕ ਭਾਗ ਲਈ. index.md`,
 - ਇੱਕ ਲੇਖ ਲਈ. Article.md`,
 - ਟਾਸਕ ਬਣਾਉਣ ਲਈ `ਟਾਸਕ.ਐਮਡੀ` (+ ਕੋਈ ਹੱਲ ਹੈ ਤਾਂ ਹੱਲ ਟੈਕਸਟ ਦੇ ਨਾਲ.
 
+<<<<<<< HEAD
 ਇੱਕ ਫਾਈਲ ਸ਼ੁਰੂ  # Title header ਨਾਲ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ, ਅਤੇ ਫਿਰ ਮਾਰਕਡਾਉਨ ਵਰਗੇ ਫਾਰਮੈਟ ਵਿੱਚ ਟੈਕਸਟ, ਇੱਕ ਸਧਾਰਣ ਟੈਕਸਟ ਐਡੀਟਰ ਵਿੱਚ ਏਡਿਟ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ।
+=======
+  - `index.md` stands for a chapter
+  - `article.md` stands for an article
+  - `task.md` stands for a task (solution must be provided in `solution.md` file as well)
+>>>>>>> 540d753e90789205fc6e75c502f68382c87dea9b
 
 ਲੇਖ ਜਾਂ ਕਾਰਜ ਲਈ ਅਤਿਰਿਕਤ ਸਰੋਤ ਅਤੇ ਉਦਾਹਰਣ ਵੀ ਉਸੇ ਫੋਲਡਰ ਵਿੱਚ ਹਨ.
 
@@ -132,6 +150,7 @@ document.querySelector('. ਹੋਲਾ').innerHTML = text
 `` `ਐਮਡੀ
 ਮਹੱਤਤਾ: 5
 
+<<<<<<< HEAD
 ---
 ...
 `` `
@@ -168,3 +187,8 @@ image.svg:        # image file
 ਅਨੁਵਾਦ ਕਿਵੇਂ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ ਇਹ ਵੇਖਣ ਲਈ ਤੁਸੀਂ ਸਥਾਨਕ ਤੌਰ 'ਤੇ ਟਿਟੋਰਿਅਲ ਸਰਵਰ ਚਲਾ ਸਕਦੇ ਹੋ.
 
 ਸਰਵਰ ਅਤੇ ਸਥਾਪਨਾ ਨਿਰਦੇਸ਼ <https://github.com/javascript-tutorial/server> ਤੇ ਹਨ.
+=======
+---  
+♥  
+Ilya Kantor @iliakan
+>>>>>>> 540d753e90789205fc6e75c502f68382c87dea9b
