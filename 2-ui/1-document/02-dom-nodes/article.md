@@ -51,7 +51,7 @@ DOM ਟੈਗਾਂ ਦੇ ਰੁੱਖ ਦੀ ਬਣਤਰ ਦੇ ਰੂਪ ਵ
 <div class="domtree"></div>
 
 <script>
-let node1 = {"name":"HTML","nodeType":1,"children":[{"name":"HEAD","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"\n    "},{"name":"TITLE","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"About elk"}]},{"name":"#text","nodeType":3,"content":"\n  "}]},{"name":"#text","nodeType":3,"content":"\n  "},{"name":"BODY","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"\n  The truth about elk."}]}]}
+let node1 = {"name":"HTML","nodeType":1,"children":[{"name":"HEAD","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"\n  "},{"name":"TITLE","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"About elk"}]},{"name":"#text","nodeType":3,"content":"\n"}]},{"name":"#text","nodeType":3,"content":"\n"},{"name":"BODY","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"\n  The truth about elk.\n"}]}]}
 
 drawHtmlTree(node1, 'div.domtree', 690, 320);
 </script>
@@ -143,7 +143,11 @@ drawHtmlTree(node4, 'div.domtree', 690, 360);
 </script>
 
 ````warn header="Tables always have `<tbody>`"
+<<<<<<< HEAD
 ਇੱਕ ਦਿਲਚਸਪ "ਵਿਸ਼ੇਸ਼ ਕੇਸ" ਟੇਬਲ ਹੈ. DOM ਨਿਰਧਾਰਨ ਦੁਆਰਾ ਉਨ੍ਹਾਂ ਕੋਲ `<tbody>` ਹੋਣਾ ਲਾਜ਼ਮੀ ਹੈ, ਪਰ HTML ਟੈਕਸਟ (ਅਧਿਕਾਰਤ ਤੌਰ ਤੇ) ਇਸਨੂੰ ਛੱਡ ਸਕਦਾ ਹੈ. ਫੇਰ ਬਰਾਜ਼ਰ `<tbody>` ਨੂੰ ਆਪਣੇ-ਆਪ DOM ਵਿੱਚ  ਬਣਾਉਂਦਾ ਹੈ.
+=======
+An interesting "special case" is tables. By DOM specification they must have `<tbody>` tag, but HTML text may omit it. Then the browser creates `<tbody>` in the DOM automatically.
+>>>>>>> 51bc6d3cdc16b6eb79cb88820a58c4f037f3bf19
 
 HTML ਲਈ:
 
@@ -160,7 +164,11 @@ let node5 = {"name":"TABLE","nodeType":1,"children":[{"name":"TBODY","nodeType":
 drawHtmlTree(node5,  'div.domtree', 600, 200);
 </script>
 
+<<<<<<< HEAD
 ਤੁਸੀਂ ਵੇਖਿਆ? ਕਿਵੇ  <tbody>. ਪ੍ਰਗਟ ਹੋਇਆ. ਹੈਰਾਨੀ ਤੋਂ ਬਚਣ ਲਈ ਤੁਹਾਨੂੰ ਟੇਬਲਾਂ ਨਾਲ ਕੰਮ ਕਰਦੇ ਹੋਏ ਇਸ ਨੂੰ ਧਿਆਨ ਵਿੱਚ ਰੱਖਣਾ ਚਾਹੀਦਾ ਹੈ.
+=======
+You see? The `<tbody>` appeared out of nowhere. We should keep this in mind while working with tables to avoid surprises.
+>>>>>>> 51bc6d3cdc16b6eb79cb88820a58c4f037f3bf19
 ````
 
 ## ਹੋਰ ਨੋਡ ਕਿਸਮਾਂ
@@ -188,7 +196,11 @@ drawHtmlTree(node5,  'div.domtree', 600, 200);
 <div class="domtree"></div>
 
 <script>
+<<<<<<< HEAD
 let node6 = {"name":"HTML","nodeType":1,"children":[{"name":"HEAD","nodeType":1,"children":[]},{"name":"BODY","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"\n   ਭਗਵੰਤ ਬਾਰੇ ਸੱਚਾਈ.\n    "},{"name":"OL","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"\n      "},{"name":"LI","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"ਭਗਵੰਤ ਚੁਸਤ ਹੈ"}]},{"name":"#text","nodeType":3,"content":"\n      "},{"name":"#comment","nodeType":8,"content":"comment"},{"name":"#text","nodeType":3,"content":"\n      "},{"name":"LI","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"...ਅਤੇ ਚਲਾਕ ਬੰਦਾ!"}]},{"name":"#text","nodeType":3,"content":"\n    "}]},{"name":"#text","nodeType":3,"content":"\n  \n"}]}]};
+=======
+let node6 = {"name":"HTML","nodeType":1,"children":[{"name":"HEAD","nodeType":1,"children":[]},{"name":"BODY","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"\n  The truth about elk.\n  "},{"name":"OL","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"\n    "},{"name":"LI","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"An elk is a smart"}]},{"name":"#text","nodeType":3,"content":"\n    "},{"name":"#comment","nodeType":8,"content":"comment"},{"name":"#text","nodeType":3,"content":"\n    "},{"name":"LI","nodeType":1,"children":[{"name":"#text","nodeType":3,"content":"...and cunning animal!"}]},{"name":"#text","nodeType":3,"content":"\n  "}]},{"name":"#text","nodeType":3,"content":"\n\n\n"}]}]};
+>>>>>>> 51bc6d3cdc16b6eb79cb88820a58c4f037f3bf19
 
 drawHtmlTree(node6, 'div.domtree', 690, 500);
 </script>
@@ -199,7 +211,11 @@ drawHtmlTree(node6, 'div.domtree', 690, 500);
 
 **ਐਚਟੀਐਮਐਲ ਵਿੱਚ ਹਰ ਚੀਜ਼, ਇੱਥੋਂ ਤੱਕ ਕਿ ਟਿੱਪਣੀਆਂ ਵੀ, ਡੋਮ ਦਾ ਇੱਕ ਹਿੱਸਾ ਬਣ ਜਾਂਦੀਆਂ ਹਨ.**
 
+<<<<<<< HEAD
 ਇਥੋਂ ਤਕ ਕਿ ਐਚਟੀਐਮਐਲ ਦੇ ਬਹੁਤ ਸ਼ੁਰੂ ਵਿਚ  `<!DOCTYPE...>` ਨਿਰਦੇਸ਼ ਵੀ ਇਕ ਡੋਮ ਨੋਡ ਹੈ. ਇਹ <html> ਤੋਂ ਬਿਲਕੁਲ ਪਹਿਲਾਂ ਡੋਮ ਟ੍ਰੀ ਵਿਚ ਹੈ. ਅਸੀਂ ਉਸ ਨੋਡ ਨੂੰ ਛੂਹਣ ਨਹੀਂ ਜਾ ਰਹੇ, ਅਸੀਂ ਇਸ ਕਾਰਨ ਕਰਕੇ ਇਸ ਨੂੰ ਚਿੱਤਰਾਂ 'ਤੇ ਨਹੀਂ ਵਖਾਉਂਦੇ, ਪਰ ਇਹ ਉਥੇ ਹੈ.
+=======
+Even the `<!DOCTYPE...>` directive at the very beginning of HTML is also a DOM node. It's in the DOM tree right before `<html>`. Few people know about that. We are not going to touch that node, we even don't draw it on diagrams, but it's there.
+>>>>>>> 51bc6d3cdc16b6eb79cb88820a58c4f037f3bf19
 
 Document ਦਸਤਾਵੇਜ਼ `ਇਕਾਈ ਜੋ ਪੂਰੇ ਦਸਤਾਵੇਜ਼ ਨੂੰ ਦਰਸਾਉਂਦੀ ਹੈ, ਰਸਮੀ ਤੌਰ 'ਤੇ, ਇੱਕ ਡੋਮ ਨੋਡ ਵੀ ਹੈ.
 
@@ -212,7 +228,11 @@ Document ਦਸਤਾਵੇਜ਼ `ਇਕਾਈ ਜੋ ਪੂਰੇ ਦਸਤਾ
 
 ## ਇਸ ਨੂੰ ਆਪਣੇ ਆਪ ਲਈ ਵੇਖੋ
 
+<<<<<<< HEAD
 ਡੀਓਐਮ ਡੰਚੇ ਨੂੰ ਰੀਅਲ-ਟਾਈਮ ਵਿੱਚ ਵੇਖਣ ਲਈ, [ਲਾਈਵ ਡੋਮ ਵਿਉਅਰ] ਦੇਖੋ.(http://software.hixie.ch/utilities/js/live-dom-viewer/). ਸਿਰਫ ਦਸਤਾਵੇਜ਼ ਟਾਈਪ ਕਰੋ, ਅਤੇ ਇਹ ਇਕਦਮ DOM ਦੇ ਰੂਪ ਵਿਚ ਦਿਖਾਈ ਦੇਵੇਗਾ.
+=======
+To see the DOM structure in real-time, try [Live DOM Viewer](https://software.hixie.ch/utilities/js/live-dom-viewer/). Just type in the document, and it will show up as a DOM at an instant.
+>>>>>>> 51bc6d3cdc16b6eb79cb88820a58c4f037f3bf19
 
 DOM ਦੀ ਪੜਚੋਲ ਕਰਨ ਦਾ ਇਕ ਹੋਰ ਤਰੀਕਾ ਹੈ ਬ੍ਰਾਜ਼ਰ ਡਿਵੈਲਪਰ ਟੂਲਸ ਦੀ ਵਰਤੋਂ ਕਰਨਾ. ਦਰਅਸਲ, ਡਵੈਲਪਮੇਂਟ ਕਰਨ ਵੇਲੇ ਅਸੀਂ ਇਹੀ ਵਰਤਦੇ ਹਾਂ.
 
