@@ -1,5 +1,6 @@
 # ਬਰਾਜ਼ਰ ਵਾਤਾਵਰਣ, ਸਪੇਸੀਫੀਕੇਸਨ
 
+<<<<<<< HEAD
 ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਭਾਸ਼ਾ ਸ਼ੁਰੂ ਵਿੱਚ ਵੈਬ ਬ੍ਰਾਜ਼ਰਾਂ ਲਈ ਬਣਾਈ ਗਈ ਸੀ. ਉਦੋਂ ਤੋਂ ਇਹ ਵਿਕਸਤ ਹੋਈ ਹੈ ਅਤੇ ਬਹੁਤ ਸਾਰੀਆਂ ਵਰਤੋਂ ਅਤੇ ਪਲੇਟਫਾਰਮਾਂ ਵਾਲੀ ਇੱਕ ਭਾਸ਼ਾ ਬਣ ਗਈ ਹੈ।
 
 ਇਸ਼ਦਾ ਪਲੇਟਫਾਰਮ ਇੱਕ ਬ੍ਰਾਉਜ਼ਰ, ਜਾਂ ਇੱਕ ਵੈੱਬ-ਸਰਵਰ ਜਾਂ ਕੋਈ ਹੋਰ * ਹੋਸਟ * ਹੋ ਸਕਦਾ ਹੈ, ਇੱਕ ਕਾਫੀ ਮਸ਼ੀਨ ਵੀ ਹੋ ਸਕਦੀ ਹੈ. ਉਨ੍ਹਾਂ ਵਿਚੋਂ ਹਰੇਕ ਪਲੇਟਫਾਰਮ-ਵਿਸ਼ੇਸ਼ ਲਈ ਕਾਰਜਕੁਸ਼ਲਤਾ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ. ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਨਿਰਧਾਰਨ ਇੱਕ * ਹੋਸਟ ਵਾਤਾਵਰਣ * ਨੂੰ ਲੋਚਦਾ ਹੈ.
@@ -7,6 +8,15 @@
 ਇੱਕ ਮੇਜ਼ਬਾਨ ਵਾਤਾਵਰਣ ਆਪਣੀ ਖੁਦ ਦੀਆਂ ਵਸਤੂਆਂ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ ਅਤੇ ਮੇਨ ਭਾਸ਼ਾ ਲਈ ਵਾਧੂ ਕਾਰਜ ਕਰਦਾ ਹੈ. ਵੈੱਬ ਬਰਾਜ਼ਰ ਵੈਬ ਪੇਜਾਂ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਨ ਦਾ ਜ਼ਰੀਆ ਦਿੰਦੇ ਹਨ. Node।js ਸਰਵਰ-ਸਾਈਡ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ, ਅਤੇ ਹੋਰ ਖ਼ਾਸ ਵਿਸ਼ੇਸਤਾਵਾਂ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ.
 
 ਜਦੋਂ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਇੱਕ ਵੈੱਬ-ਬ੍ਰਾਜ਼ਰ ਵਿੱਚ ਚਲਦੀ ਹੈ ਤਾਂ ਇੱਥੇ ਸਾਡੇ ਕੋਲ ਇੱਕ ਪੰਛੀ ਦਾ ਨਜ਼ਰੀਆ ਦਰਸਾਉਂਦਾ ਹੈ:
+=======
+The JavaScript language was initially created for web browsers. Since then, it has evolved into a language with many uses and platforms.
+
+A platform may be a browser, or a web-server or another *host*, or even a "smart" coffee machine if it can run JavaScript. Each of these provides platform-specific functionality. The JavaScript specification calls that a *host environment*.
+
+A host environment provides its own objects and functions in addition to the language core. Web browsers give a means to control web pages. Node.js provides server-side features, and so on.
+
+Here's a bird's-eye view of what we have when JavaScript runs in a web browser:
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
 
 ![](windowObjects.svg)
 
@@ -15,9 +25,13 @@
 1. ਪਹਿਲਾਂ, ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਕੋਡ ਲਈ ਇਹ ਇਕ ਗਲੋਬਲ ਆਬਜੈਕਟ ਹੈ, ਜਿਵੇਂ ਕਿ ਇਸ ਚੈਪਟਰ ਵਿਚ ਦੱਸਿਆ ਗਿਆ ਹੈ <info:global-object>.
 2. ਦੂਜਾ, ਇਹ "ਬ੍ਰਾਜ਼ਰ ਵਿੰਡੋ" ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ ਅਤੇ ਇਸਨੂੰ ਨਿਯੰਤਰਣ ਕਰਨ ਲਈ methods ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ.
 
+<<<<<<< HEAD
 ਉਦਾਹਰਣ ਦੇ ਲਈ, ਇੱਥੇ ਅਸੀਂ ਇਸਨੂੰ ਇੱਕ ਗਲੋਬਲ ਆਬਜੈਕਟ ਦੇ ਤੌਰ ਤੇ ਵਰਤਦੇ ਹਾਂ:
+=======
+For instance, we can use it as a global object:
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
 
-```js run
+```js run global
 function sayHi() {
   alert("Hello");
 }
@@ -26,16 +40,28 @@ function sayHi() {
 window.sayHi();
 ```
 
+<<<<<<< HEAD
 ਅਤੇ ਇੱਥੇ ਅਸੀਂ ਇਸਨੂੰ ਇੱਕ ਵਿੰਡੋ ਦੇ ਤੌਰ ਤੇ ਵਰਤਦੇ ਹਾਂ, ਵਿੰਡੋ ਦੀ ਉਚਾਈ ਵੇਖਣ ਲਈ:
+=======
+And we can use it as a browser window, to show the window height:
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
 
 ```js run
 alert(window.innerHeight); // ਅੰਦਰੂਨੀ ਵਿੰਡੋ ਦੀ ਉਚਾਈ
 ```
 
+<<<<<<< HEAD
 ਇੱਥੇ ਹੋਰ ਵਿੰਡੋ-ਵਿਸ਼ੇਸ਼ methods ਅਤੇ properties ਹਨ, ਅਸੀਂ ਉਨ੍ਹਾਂ ਨੂੰ ਬਾਅਦ ਵਿੱਚ ਕਵਰ ਕਰਾਂਗੇ.
 ## DOM (Document Object Model)
 
 Document Object Model, ਜਾਂ DOM ਸੰਖੇਪ ਲਈ, ਸਾਰੇ ਪੰਨੇ ਦੀ ਸਮਗਰੀ ਨੂੰ ਇਕਾਈ ਦੇ ਤੌਰ ਤੇ ਦਰਸਾਉਂਦਾ ਹੈ ਜਿਸ ਨੂੰ ਸੋਧਿਆ ਜਾ ਸਕਦਾ ਹੈ.
+=======
+There are more window-specific methods and properties, which we'll cover later.
+
+## DOM (Document Object Model)
+
+The Document Object Model, or DOM for short, represents all page content as objects that can be modified.
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
 
  `document` ਪੇਜ 'ਤੇ ਇਕਾਈ ਦਾ ਮੁੱਖ "ਦਾਖਲਾ ਬਿੰਦੂ" ਹੈ. ਅਸੀਂ ਇਸ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਪੇਜ 'ਤੇ ਕੁਝ ਵੀ ਬਦਲ ਸਕਦੇ ਹਾਂ ਜਾਂ ਬਣਾ ਸਕਦੇ ਹਾਂ.
 
@@ -48,13 +74,18 @@ document.body.style.background = "red";
 setTimeout(() => document.body.style.background = "", 1000);
 ```
 
+<<<<<<< HEAD
 ਇੱਥੇ ਅੱਸੀ ਵਰਤਿਆ`document.body.style`, ਪਰ ਉਥੇ ਬਹੁਤ ਕੁਝ ਹੈ, ਹੋਰ ਵੀ ਬਹੁਤ ਕੁਝ. Properties ਅਤੇ methods ਨਿਰਧਾਰਨ ਵਿੱਚ ਦੱਸਿਆ ਗਿਆ ਹੈ:
 
 - **DOM Living Standard** at <https://dom.spec.whatwg.org>
+=======
+Here, we used `document.body.style`, but there's much, much more. Properties and methods are described in the specification: [DOM Living Standard](https://dom.spec.whatwg.org).
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
 
 ```smart header="DOM ਸਿਰਫ ਬ੍ਰਾਜ਼ਰਾਂ ਲਈ ਨਹੀਂ ਹੈ"
 DOM ਨਿਰਧਾਰਨ ਦਸਤਾਵੇਜ਼ ਦੇ ਢਾਂਚੇ ਬਾਰੇ ਦੱਸਦਾ ਹੈ ਅਤੇ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ objects ਇਸ ਨੂੰ ਫੇਰਬਦਲ ਕਰਨ ਲਈ. ਇੱਥੇ ਗੈਰ ਬ੍ਰਾਜ਼ਰ ਉਪਕਰਣ ਹਨ ਜੋ DOM ਦੀ ਵਰਤੋਂ ਵੀ ਕਰਦੇ ਹਨ.
 
+<<<<<<< HEAD
 ਉਦਾਹਰਣ ਦੇ ਲਈ, ਸਰਵਰ-ਸਾਈਡ ਸਕ੍ਰਿਪਟ ਜੋ HTML ਪੇਜਾਂ ਨੂੰ ਡਾਉਨਲੋਡ ਕਰਦੀਆਂ ਹਨ ਅਤੇ ਉਹਨਾਂ ਤੇ ਪ੍ਰਕਿਰਿਆ ਕਰਦਿਆਂ ਹਨ ਵੀ DOM ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੀਆਂ ਹਨ. ਉਹ ਹਾਲਾਂਕਿ ਨਿਰਧਾਰਨ ਦੇ ਸਿਰਫ ਇੱਕ ਹਿੱਸੇ ਦਾ ਸਮਰਥਨ ਕਰ ਸਕਦੇ ਹਨ.
 ```
 
@@ -62,6 +93,15 @@ DOM ਨਿਰਧਾਰਨ ਦਸਤਾਵੇਜ਼ ਦੇ ਢਾਂਚੇ ਬਾ
 CSS ਨਿਯਮ ਅਤੇ ਸਟਾਈਲਸ਼ੀਟ HTML ਤੋਂ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਬਣੀਆਂ ਹੋਈਆਂ ਹਨ. ਇਸ ਲਈ ਇੱਕ ਵੱਖਰਾ ਨਿਰਧਾਰਨ ਹੈ, [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/), ਇਹ ਦੱਸਦਾ ਹੈ ਕਿ ਉਹਨਾਂ ਨੂੰ ਕਿਵੇਂ ਇਕਾਈ ਵਜੋਂ ਦਰਸਾਇਆ ਜਾਂਦਾ ਹੈ, ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਕਿਵੇਂ ਪੜ੍ਹਨਾ ਅਤੇ ਲਿਖਣਾ ਹੈ.
 
 CSSOM ਜਦੋਂ ਅਸੀਂ ਦਸਤਾਵੇਜ਼ ਲਈ ਸ਼ੈਲੀ ਦੇ ਨਿਯਮਾਂ ਨੂੰ ਸੰਸ਼ੋਧਿਤ ਕਰਦੇ ਹਾਂ ਤਾਂ DOM ਦੇ ਨਾਲ ਮਿਲ ਕੇ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ.ਅਭਿਆਸ ਵਿੱਚ ਹਾਲਾਂਕਿ, CSSOM ਦੀ ਬਹੁਤ ਘੱਟ ਲੋੜ ਹੁੰਦੀ ਹੈ, ਕਿਉਂਕਿ ਆਮ ਤੌਰ ਤੇ CSS ਨਿਯਮ ਸਥਿਰ ਹੁੰਦੇ ਹਨ. ਸਾਨੂੰ ਜਾਵਾ ਸਕ੍ਰਿਪਟ ਤੋਂ ਸੀ ਐੱਸ ਐੱਸ ਦੇ ਨਿਯਮਾਂ ਨੂੰ ਜੋੜਨ / ਹਟਾਉਣ ਦੀ ਬਹੁਤ ਘੱਟ ਲੋੜ ਹੈ, ਪਰ ਇਹ ਵੀ ਸੰਭਵ ਹੈ.
+=======
+For instance, server-side scripts that download HTML pages and process them can also use the DOM. They may support only a part of the specification though.
+```
+
+```smart header="CSSOM for styling"
+There's also a separate specification, [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/) for CSS rules and stylesheets, that explains how they are represented as objects, and how to read and write them.
+
+The CSSOM is used together with the DOM when we modify style rules for the document. In practice though, the CSSOM is rarely required, because we rarely need to modify CSS rules from JavaScript (usually we just add/remove CSS classes, not modify their CSS rules), but that's also possible.
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
 ```
 
 ## BOM (ਬਰਾਜ਼ਰ ਆਬਜੈਕਟ ਮਾਡਲ)
@@ -70,8 +110,13 @@ CSSOM ਜਦੋਂ ਅਸੀਂ ਦਸਤਾਵੇਜ਼ ਲਈ ਸ਼ੈਲੀ 
 
 ਉਦਾਹਰਣ ਦੇ ਲਈ:
 
+<<<<<<< HEAD
 - [navigator](mdn:api/Window/navigator) ਆਬਜੈਕਟ ਬ੍ਰਾਜ਼ਰ ਅਤੇ ਓਪਰੇਟਿੰਗ ਸਿਸਟਮ ਬਾਰੇ ਬੈਕਗ੍ਰਾਉਂਡ ਦੀ ਜਾਣਕਾਰੀ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ.ਇਸ ਦੀਆਂ ਬਹੁਤ ਸਾਰੀਆਂ properties ਹਨ, ਪਰ ਦੋ ਸਭ ਤੋਂ ਵੱਧ ਜਾਣੇ ਜਾਂਦੇ ਹਨ: `navigator.userAgent` -- ਮੌਜੂਦਾ ਬ੍ਰਾਜ਼ਰ ਬਾਰੇ, ਅਤੇ `navigator.platform` -- ਪਲੇਟਫਾਰਮ ਬਾਰੇ (ਵਿੰਡੋਜ਼ / ਲੀਨਕਸ / ਮੈਕ ਆਦਿ ਵਿੱਚ ਅੰਤਰ ਕਰਨ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰ ਸਕਦਾ ਹੈ).
 - [location](mdn:api/Window/location) ਆਬਜੈਕਟ ਸਾਨੂੰ ਮੌਜੂਦਾ ਯੂਆਰਐਲ ਨੂੰ ਪੜ੍ਹਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ ਅਤੇ ਬ੍ਰਾਜ਼ਰ ਨੂੰ ਨਵੇਂ 'ਤੇ ਭੇਜ ਸਕਦਾ ਹੈ.
+=======
+- The [navigator](mdn:api/Window/navigator) object provides background information about the browser and the operating system. There are many properties, but the two most widely known are: `navigator.userAgent` -- about the current browser, and `navigator.platform` -- about the platform (can help to differentiate between Windows/Linux/Mac etc).
+- The [location](mdn:api/Window/location) object allows us to read the current URL and can redirect the browser to a new one.
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
 
 ਇੱਥੇ ਅਸੀਂ ਕਿਵੇਂ `location` object ਹੇਠ ਲਿਖੇ ਅਨੁਸਾਰ ਇਸਤੇਮਾਲ ਕਰ ਸਕਦੇ  ਹਾਂ :
 
@@ -82,33 +127,60 @@ if (confirm("Go to Wikipedia?")) {
 }
 ```
 
+<<<<<<< HEAD
 ਫੰਕਸ਼ਨ `alert/confirm/prompt` ਵੀ BOM ਇੱਕ ਹਿੱਸਾ ਹਨ : ਉਹ ਸਿੱਧੇ ਦਸਤਾਵੇਜ਼ ਨਾਲ ਸਬੰਧਤ ਨਹੀਂ ਹਨ, ਪਰ ਉਪਭੋਗਤਾ ਨਾਲ ਸੰਚਾਰ ਕਰਨ ਦੇ ਸ਼ੁੱਧ ਬ੍ਰਾਜ਼ਰ ਤਰੀਕਿਆਂ ਨੂੰ ਦਰਸਾਉਂਦੇ ਹਨ.
 
 ```smart header="Specifications"
 BOM ਜਨਰਲ ਦਾ ਹਿੱਸਾ ਹੈ [HTML specification](https://html.spec.whatwg.org).
 
 ਹਾਂ, ਤੁਸੀਂ ਇਹ ਸਹੀ ਸੁਣਿਆ ਹੈ. ਤੇ HTML ਐਕਸਚੇਜ਼<https://html.spec.whatwg.org> ਸਿਰਫ "HTML ਭਾਸ਼ਾ" ਬਾਰੇ ਨਹੀਂ(tags, attributes), ਪਰ ਇਹ ਇੱਕ ਸਮੂਹ ਨੂੰ ਕਵਰ ਕਰਦਾ ਹੈ objects, methods ਅਤੇ ਬ੍ਰਾਜ਼ਰ-ਸੰਬੰਧੀ DOM ਐਕਸਟੈਂਸ਼ਨਾਂ. ਇਹ "ਵਿਆਪਕ ਸ਼ਬਦਾਂ ਵਿੱਚ HTML" ਹੈ.ਨਾਲ ਹੀ, ਕੁਝ ਹਿੱਸਿਆਂ 'ਤੇ ਸੂਚੀਬੱਧ ਵਾਧੂ specifications ਹਨ <https://spec.whatwg.org>.
+=======
+The functions `alert/confirm/prompt` are also a part of the BOM: they are not directly related to the document, but represent pure browser methods for communicating with the user.
+
+```smart header="Specifications"
+The BOM is a part of the general [HTML specification](https://html.spec.whatwg.org).
+
+Yes, you heard that right. The HTML spec at <https://html.spec.whatwg.org> is not only about the "HTML language" (tags, attributes), but also covers a bunch of objects, methods, and browser-specific DOM extensions. That's "HTML in broad terms". Also, some parts have additional specs listed at <https://spec.whatwg.org>.
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
 ```
 
 ## ਸਾਰ
 
 ਮਾਪਦੰਡਾਂ ਬਾਰੇ ਗੱਲ ਕਰਦਿਆਂ, ਸਾਡੇ ਕੋਲ ਹੈ:
 
+<<<<<<< HEAD
 DOM ਨਿਰਧਾਰਨ
 : ਦਸਤਾਵੇਜ਼ ਦੇ ਢਾਂਚੇ, ਹੇਰਾਫੇਰ ਅਤੇ ਘਟਨਾਵਾਂ ਬਾਰੇ ਦੱਸਦਾ ਹੈ, ਵੇਖੋ <https://dom.spec.whatwg.org>.
 
 CSSOM ਨਿਰਧਾਰਨ
 : ਸਟਾਈਲਸ਼ੀਟ ਅਤੇ ਸ਼ੈਲੀ ਦੇ ਨਿਯਮਾਂ, ਉਹਨਾਂ ਨਾਲ ਹੇਰਾਫੇਰ ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਦਸਤਾਵੇਜ਼ਾਂ ਨਾਲ ਜੋੜਨ ਬਾਰੇ ਦੱਸਦਾ ਹੈ, ਵੇਖੋ <https://www.w3.org/TR/cssom-1/>.
+=======
+DOM specification
+: Describes the document structure, manipulations, and events, see <https://dom.spec.whatwg.org>.
+
+CSSOM specification
+: Describes stylesheets and style rules, manipulations with them, and their binding to documents, see <https://www.w3.org/TR/cssom-1/>.
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
 
 HTML ਨਿਰਧਾਰਨ
 : HTML ਭਾਸ਼ਾ (ਉਦਾ. ਟੈਗਸ) ਅਤੇ ਬੀਓਐਮ (ਬ੍ਰਾਜ਼ਰ ਆਬਜੈਕਟ ਮਾਡਲ) ਦਾ ਵਰਣਨ ਕਰਦਾ ਹੈ --ਵੱਖ ਵੱਖ ਬਰਾਜ਼ਰ ਫੰਕਸ਼ਨ: `setTimeout`, `alert`, `location` ਅਤੇ ਇਸ ਤਰਾਂ ਹੋਰ, ਦੇਖੋ <https://html.spec.whatwg.org>. ਇਹ DOM ਨਿਰਧਾਰਨ ਲੈਂਦਾ ਹੈ ਅਤੇ ਇਸਨੂੰ ਬਹੁਤ ਸਾਰੀਆਂ ਵਾਧੂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਵਿਧੀਆਂ ਨਾਲ ਵਧਾਉਂਦਾ ਹੈ.
 
 ਇਸ ਤੋਂ ਇਲਾਵਾ, ਕੁਝ ਕਲਾਸਾਂ ਦਾ ਵੱਖਰੇ ਤੌਰ ਤੇ ਵਰਣਨ ਕੀਤਾ ਜਾਂਦਾ ਹੈ <https://spec.whatwg.org/>.
 
+<<<<<<< HEAD
 ਕਿਰਪਾ ਕਰਕੇ ਇਨ੍ਹਾਂ ਲਿੰਕਾਂ ਨੂੰ ਨੋਟ ਕਰੋ, ਕਿਉਂਕਿ ਇੱਥੇ ਸਿੱਖਣ ਲਈ ਬਹੁਤ ਸਾਰੀਆਂ ਚੀਜ਼ਾਂ ਇਸ ਨੂੰ ਚੇਕ ਕਰਨਾ ਅਤੇ ਸਭ ਕੁਝ ਯਾਦ ਰੱਖਣਾ ਅਸੰਭਵ ਹੈ.
 
 ਜਦੋਂ ਤੁਸੀਂ ਕਿਸੇ property ਜਾਂ ਕਿਸੇ method ਬਾਰੇ ਪੜ੍ਹਨਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਮੋਜ਼ੀਲਾ ਮੈਨੂਅਲ ਐੱਨ <https://developer.mozilla.org/en-US/search> ਇਹ ਇਕ ਵਧੀਆ ਸਰੋਤ ਵੀ ਹੈ, ਪਰ ਅਨੁਸਾਰੀ ਵਿਸ਼ੇਸ਼ ਬਿਹਤਰ ਹੋ ਸਕਦੀ ਹੈ: ਇਹ ਵਧੇਰੇ ਗੁੰਝਲਦਾਰ ਅਤੇ ਪੜ੍ਹਨ ਲਈ ਲੰਮੀ ਹੈ, ਪਰ ਇਹ ਤੁਹਾਡੇ ਬੁਨਿਆਦੀ ਗਿਆਨ ਨੂੰ ਵਧੀਆ ਅਤੇ ਸੰਪੂਰਨ ਬਣਾ ਦੇਵੇਗਾ..
+=======
+Please note these links, as there's so much to learn that it's impossible to cover everything and remember it all.
+
+When you'd like to read about a property or a method, the Mozilla manual at <https://developer.mozilla.org/en-US/> is also a nice resource, but the corresponding spec may be better: it's more complex and longer to read, but will make your fundamental knowledge sound and complete.
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
 
 ਕੁਝ ਲੱਭਣ ਲਈ, ਇੰਟਰਨੈਟ ਦੀ ਵਰਤੋਂ ਕਰਨਾ ਅਕਸਰ ਟੁਕਵਾ ਹੁੰਦਾ ਹੈ "WHATWG [term]" or "MDN [term]", e.g <https://google.com?q=whatwg+localstorage>, <https://google.com?q=mdn+localstorage>.
 
+<<<<<<< HEAD
 ਹੁਣ ਅਸੀਂ DOM ਸਿੱਖਣ ਲਈ ਉਤਰਾਂਗੇ, ਕਿਉਂਕਿ ਏਹ ਦਸਤਾਵੇਜ਼ UI ਵਿਚ ਕੇਂਦਰੀ ਭੂਮਿਕਾ ਅਦਾ ਕਰਦਾ ਹੈ.
+=======
+Now, we'll get down to learning the DOM, because the document plays the central role in the UI.
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
